@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Zachodniopomorskie Centrum Informaty - szkolenia, kursy i usługi IT">
+
+<meta name="keywords"
+      content="ZPCI, informatyka, szkolenia, kursy, usługi IT, programowanie, grafika, Excel, CAD">
+
+<meta name="author"
+      content="Zachodniopomorskie Centrum Informaty">
+
+<title>Zachodniopomorskie Centrum Informaty | ZPCI</title>
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    min-height: 150px;
+
+    background: linear-gradient(
+        135deg,
+        #0b3d91,
+        #1769aa,
+        #2185d0
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 50px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0b3d91;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.logo-text h1 {
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.logo-text p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   GŁÓWNE MENU
+===================================================== */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 8px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+
+    padding: 12px 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.layout {
+    display: flex;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    width: 270px;
+
+    background: #ffffff;
+
+    min-height: calc(100vh - 150px);
+
+    border-right: 1px solid #ddd;
+
+    padding: 25px 18px;
+}
+
+.sidebar h2 {
+    color: #0b3d91;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 2px solid #1769aa;
+
+    padding-bottom: 10px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+    font-size: 16px;
+
+    background: #eaf2fb;
+
+    color: #0b3d91;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #333;
+
+    padding: 8px 10px;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background: #e8f1fa;
+
+    color: #0b3d91;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+    flex: 1;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 400px;
+
+    background:
+
+        linear-gradient(
+            rgba(8, 43, 82, 0.72),
+            rgba(20, 91, 145, 0.72)
+        ),
+
+        url("images/tlo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px;
+
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    font-size: 42px;
+
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 19px;
+
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background: white;
+
+    color: #0b3d91;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.button.blue {
+    background: #0b3d91;
+
+    color: white;
+
+    border: 1px solid white;
+}
+
+
+/* =====================================================
+   SEKCJE
+===================================================== */
+
+.section-title {
+    text-align: center;
+
+    color: #0b3d91;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+
+    color: #666;
+
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* =====================================================
+   USŁUGI IT
+===================================================== */
+
+.services {
+    margin-bottom: 45px;
+}
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.service-card {
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    border-top: 4px solid #1769aa;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 7px 18px rgba(0,0,0,0.14);
+}
+
+.service-card h3 {
+
+    color: #0b3d91;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.service-card a {
+
+    display: inline-block;
+
+    background: #0b3d91;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 9px 16px;
+
+    border-radius: 5px;
+}
+
+.service-card a:hover {
+
+    background: #1769aa;
+}
+
+
+/* =====================================================
+   O ZPCI
+===================================================== */
+
+.about {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.about h2 {
+
+    color: #0b3d91;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   KONTAKT
+===================================================== */
+
+.contact-box {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0b3d91,
+            #1769aa
+        );
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.contact-box h2 {
+
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #102a43;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+footer p {
+
+    margin: 5px 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    .logo-area {
+
+        justify-content: center;
+    }
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .layout {
+
+        flex-direction: column;
+    }
+
+    .sidebar {
+
+        width: 100%;
+
+        min-height: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+
+        padding: 20px;
+    }
+
+    .logo {
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 22px;
+    }
+
+    .logo-text h1 {
+
+        font-size: 21px;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    nav ul li {
+
+        width: 100%;
+    }
+
+    nav ul li a {
+
+        text-align: center;
+    }
+
+    main {
+
+        padding: 15px;
+    }
+
+    .hero {
+
+        padding: 30px 20px;
+
+        min-height: 350px;
+    }
+
+    .hero h2 {
+
+        font-size: 30px;
+    }
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+
+    <div class="logo-area">
+
+        <div class="logo">
+            ZPCI
+        </div>
+
+        <div class="logo-text">
+
+            <h1>
+                Zachodniopomorskie Centrum Informaty
+            </h1>
+
+            <p>
+                Szkolenia • Kursy • Usługi IT
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         GŁÓWNE MENU
+         TYLKO STRONA GŁÓWNA + KONTAKT
+    ================================================== -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Strona główna
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:biuro@zpci.pl">
+                    Kontakt
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<div class="layout">
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <h2>
+        ZPCI
+    </h2>
+
+
+    <!-- SZKOLENIA -->
+
+    <div class="sidebar-section">
+
+        <h3>
+            Szkolenia i kursy
+        </h3>
+
+        <a href="szkoleniakursy/excel.html">
+            Excel
+        </a>
+
+        <a href="szkoleniakursy/cad-poziom1.html">
+            CAD poziom I
+        </a>
+
+        <a href="szkoleniakursy/cad-poziom2.html">
+            CAD poziom II
+        </a>
+
+        <a href="szkoleniakursy/coreldraw.html">
+            CorelDRAW
+        </a>
+
+        <a href="szkoleniakursy/gimp.html">
+            GIMP
+        </a>
+
+        <a href="szkoleniakursy/ms-office-professional.html">
+            MS Office Professional
+        </a>
+
+    </div>
+
+
+    <!-- KATEGORIE -->
+
+    <div class="sidebar-section">
+
+        <h3>
+            Kategorie
+        </h3>
+
+        <a href="szkoleniakursy/MSExcel.html">
+            MS Office
+        </a>
+
+        <a href="szkoleniakursy/cad-poziom1.html">
+            CAD
+        </a>
+
+        <a href="szkoleniakursy/coreldraw.html">
+            Grafika
+        </a>
+
+        <a href="szkoleniakursy/gimp.html">
+            Obróbka grafiki
+        </a>
+
+        <a href="szkoleniakursy/ms-office-professional.html">
+            Office Professional
+        </a>
+
+    </div>
+
+
+    <!-- USŁUGI -->
+
+    <div class="sidebar-section">
+
+        <h3>
+            Usługi IT
+        </h3>
+
+        <a href="UslugiIT.html">
+            Wszystkie usługi
+        </a>
+
+        <a href="uslugi/grafika.html">
+            Usługi graficzne
+        </a>
+
+        <a href="uslugi/serwis.html">
+            Naprawa i serwis
+        </a>
+
+        <a href="uslugi/doradztwo.html">
+            Doradztwo informatyczne
+        </a>
+
+        <a href="uslugi/strony-www.html">
+            Projektowanie stron WWW
+        </a>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+
+    <div class="hero-content">
+
+
+        <h2>
+            Informatyka bez tajemnic
+        </h2>
+
+
+        <p>
+            Profesjonalne szkolenia, kursy oraz
+            usługi informatyczne dla firm i osób
+            prywatnych.
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <a class="button"
+               href="szkoleniakursy/excel.html">
+
+                Zobacz szkolenia
+
+            </a>
+
+
+            <a class="button blue"
+               href="UslugiIT.html">
+
+                Usługi IT
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     USŁUGI IT
+===================================================== -->
+
+<section class="services">
+
+
+    <h2 class="section-title">
+        Usługi IT
+    </h2>
+
+
+    <p class="section-description">
+
+        Pomagamy w rozwiązywaniu problemów
+        informatycznych oraz tworzeniu nowoczesnych
+        rozwiązań internetowych.
+
+    </p>
+
+
+    <div class="services-grid">
+
+
+        <article class="service-card">
+
+            <h3>
+                Grafika komputerowa
+            </h3>
+
+            <p>
+                Projekty graficzne, obróbka zdjęć
+                oraz przygotowanie materiałów.
+            </p>
+
+            <a href="uslugi/grafika.html">
+                Więcej
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <h3>
+                Naprawa i serwis
+            </h3>
+
+            <p>
+                Pomoc w rozwiązywaniu problemów
+                sprzętowych i programowych.
+            </p>
+
+            <a href="uslugi/serwis.html">
+                Więcej
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <h3>
+                Doradztwo informatyczne
+            </h3>
+
+            <p>
+                Doradztwo w zakresie oprogramowania,
+                komputerów i technologii IT.
+            </p>
+
+            <a href="uslugi/doradztwo.html">
+                Więcej
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <h3>
+                Projektowanie stron WWW
+            </h3>
+
+            <p>
+                Tworzenie nowoczesnych,
+                responsywnych stron internetowych.
+            </p>
+
+            <a href="uslugi/strony-www.html">
+                Więcej
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     O ZPCI
+===================================================== -->
+
+<section class="about">
+
+
+    <h2>
+        Zachodniopomorskie Centrum Informaty
+    </h2>
+
+
+    <p>
+
+        ZPCI to centrum szkoleniowe i informatyczne
+        oferujące kursy oraz usługi związane
+        z nowoczesnymi technologiami.
+
+    </p>
+
+
+    <br>
+
+
+    <p>
+
+        Naszym celem jest przekazywanie praktycznej
+        wiedzy informatycznej oraz pomoc w wykorzystaniu
+        technologii w pracy i codziennym życiu.
+
+    </p>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     KONTAKT
+===================================================== -->
+
+<section class="contact-box">
+
+
+    <h2>
+        Masz pytania?
+    </h2>
+
+
+    <p>
+        Skontaktuj się z nami:
+    </p>
+
+
+    <p>
+
+        <a href="mailto:biuro@zpci.pl">
+            biuro@zpci.pl
+        </a>
+
+    </p>
+
+
+</section>
+
+
+</main>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <p>
+        &copy; 2026 Zachodniopomorskie Centrum Informaty
+    </p>
+
+
+    <p>
+        ZPCI – Szkolenia • Kursy • Usługi IT
+    </p>
+
+
+</footer>
+
+
+</body>
+
+</html>
