@@ -1,885 +1,1794 @@
+```html
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Szkolenia dla osób z niepełnosprawnościami | ZPCI Szczecin
-    </title>
+<title>
+    Szkolenia dla osób z niepełnosprawnościami Szczecin | ZPCI
+</title>
 
-    <meta
-        name="description"
-        content="Szkolenia komputerowe dla osób z niepełnosprawnościami w ZPCI Szczecin. Obsługa komputera, MS Office, LibreOffice, grafika, HTML, CSS i podstawy programowania."
-    >
+<meta
+    name="description"
+    content="Szkolenia komputerowe i kursy IT dla osób z niepełnosprawnościami w Szczecinie. Indywidualne podejście, obsługa komputera, MS Office, grafika, HTML, CSS i podstawy programowania."
+>
 
-    <meta
-        name="keywords"
-        content="szkolenia dla osób z niepełnosprawnościami, kurs komputerowy Szczecin, szkolenia IT Szczecin, obsługa komputera, MS Office, LibreOffice, grafika komputerowa, HTML, CSS, ZPCI"
-    >
+<meta
+    name="keywords"
+    content="szkolenia dla osób z niepełnosprawnościami Szczecin, kurs komputerowy Szczecin, szkolenia IT Szczecin, obsługa komputera, MS Office, LibreOffice, grafika komputerowa, HTML, CSS, programowanie, ZPCI"
+>
 
-    <meta
-        name="robots"
-        content="index, follow, max-image-preview:large"
-    >
+<meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+>
 
-    <meta
-        name="author"
-        content="Zachodniopomorskie Centrum Informatyki"
-    >
+<meta
+    name="author"
+    content="Zachodniopomorskie Centrum Informatyki"
+>
 
-    <meta
-        name="theme-color"
-        content="#0b2148"
-    >
+<meta
+    name="theme-color"
+    content="#0b2148"
+>
 
-    <link
-        rel="canonical"
-        href="https://zpci.pl/szkoleniakursy/niepelnosprawni.html"
-    >
+<link
+    rel="canonical"
+    href="https://zpci.pl/szkoleniakursy/niepelnosprawni.html"
+>
 
-    <!-- FAVICON -->
+<link
+    rel="icon"
+    type="image/png"
+    href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
+>
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
-    >
+<link
+    rel="apple-touch-icon"
+    href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
+>
 
-    <link
-        rel="apple-touch-icon"
-        href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
-    >
 
-    <!-- OPEN GRAPH -->
+<!-- =========================
+     OPEN GRAPH
+========================= -->
 
-    <meta
-        property="og:locale"
-        content="pl_PL"
-    >
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZPCI">
 
-    <meta
-        property="og:type"
-        content="website"
-    >
+<meta
+    property="og:title"
+    content="Szkolenia dla osób z niepełnosprawnościami Szczecin | ZPCI"
+>
 
-    <meta
-        property="og:site_name"
-        content="ZPCI"
-    >
+<meta
+    property="og:description"
+    content="Szkolenia komputerowe i kursy IT dostosowane do indywidualnych potrzeb uczestników."
+>
 
-    <meta
-        property="og:title"
-        content="Szkolenia dla osób z niepełnosprawnościami | ZPCI Szczecin"
-    >
+<meta
+    property="og:url"
+    content="https://zpci.pl/szkoleniakursy/niepelnosprawni.html"
+>
 
-    <meta
-        property="og:description"
-        content="Indywidualnie dostosowane szkolenia komputerowe i kursy IT dla osób z niepełnosprawnościami."
-    >
+<meta
+    property="og:image"
+    content="https://zpci.pl/images/szkolenia-niepelnosprawni.png"
+>
 
-    <meta
-        property="og:url"
-        content="https://zpci.pl/szkoleniakursy/niepelnosprawni.html"
-    >
+<meta
+    property="og:image:alt"
+    content="Szkolenia komputerowe dla osób z niepełnosprawnościami – ZPCI"
+>
 
-    <meta
-        property="og:image"
-        content="https://zpci.pl/images/szkolenia-niepelnosprawni.png"
-    >
+<meta
+    property="og:image:type"
+    content="image/png"
+>
 
-    <meta
-        property="og:image:alt"
-        content="Szkolenia komputerowe dla osób z niepełnosprawnościami w ZPCI Szczecin"
-    >
 
-    <meta
-        property="og:image:type"
-        content="image/png"
-    >
+<!-- =========================
+     TWITTER / X
+========================= -->
 
-    <!-- TWITTER / X -->
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
 
-    <meta
-        name="twitter:card"
-        content="summary_large_image"
-    >
+<meta
+    name="twitter:title"
+    content="Szkolenia dla osób z niepełnosprawnościami | ZPCI"
+>
 
-    <meta
-        name="twitter:title"
-        content="Szkolenia dla osób z niepełnosprawnościami | ZPCI"
-    >
+<meta
+    name="twitter:description"
+    content="Kursy komputerowe i szkolenia IT dostosowane do indywidualnych potrzeb uczestników."
+>
 
-    <meta
-        name="twitter:description"
-        content="Kursy komputerowe i szkolenia IT dostosowane do indywidualnych potrzeb uczestników."
-    >
+<meta
+    name="twitter:image"
+    content="https://zpci.pl/images/szkolenia-niepelnosprawni.png"
+>
 
-    <meta
-        name="twitter:image"
-        content="https://zpci.pl/images/szkolenia-niepelnosprawni.png"
-    >
+<meta
+    name="twitter:image:alt"
+    content="Szkolenia dla osób z niepełnosprawnościami w ZPCI"
+>
 
-    <!-- DANE STRUKTURALNE SEO -->
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "@id": "https://zpci.pl/#organization",
-                "name": "Zachodniopomorskie Centrum Informatyki",
-                "alternateName": "ZPCI",
-                "url": "https://zpci.pl/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://zpci.pl/images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
-                },
-                "email": "biuro@zpci.pl"
+<!-- =========================
+     DANE STRUKTURALNE SEO
+========================= -->
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+
+        {
+            "@type": "EducationalOrganization",
+            "@id": "https://zpci.pl/#organization",
+            "name": "Zachodniopomorskie Centrum Informatyki",
+            "alternateName": "ZPCI",
+            "url": "https://zpci.pl/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://zpci.pl/images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
             },
-            {
-                "@type": "WebSite",
-                "@id": "https://zpci.pl/#website",
-                "url": "https://zpci.pl/",
-                "name": "Zachodniopomorskie Centrum Informatyki",
-                "alternateName": "ZPCI",
-                "inLanguage": "pl-PL",
-                "publisher": {
-                    "@id": "https://zpci.pl/#organization"
-                }
-            },
-            {
-                "@type": "CollectionPage",
-                "@id": "https://zpci.pl/szkoleniakursy/niepelnosprawni.html#webpage",
-                "url": "https://zpci.pl/szkoleniakursy/niepelnosprawni.html",
-                "name": "Szkolenia dla osób z niepełnosprawnościami",
-                "description": "Szkolenia komputerowe i kursy IT dla osób z niepełnosprawnościami, dostosowane do indywidualnych potrzeb uczestników.",
-                "inLanguage": "pl-PL",
-                "isPartOf": {
-                    "@id": "https://zpci.pl/#website"
-                },
-                "about": {
-                    "@id": "https://zpci.pl/#organization"
-                },
-                "primaryImageOfPage": {
-                    "@type": "ImageObject",
-                    "url": "https://zpci.pl/images/szkolenia-niepelnosprawni.png"
-                }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Strona główna",
-                        "item": "https://zpci.pl/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Szkolenia i kursy",
-                        "item": "https://zpci.pl/szkoleniakursy.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Szkolenia dla osób z niepełnosprawnościami",
-                        "item": "https://zpci.pl/szkoleniakursy/niepelnosprawni.html"
-                    }
-                ]
+            "email": "biuro@zpci.pl",
+            "telephone": "+48 503 840 567",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Boguchwały 18/2",
+                "postalCode": "71-531",
+                "addressLocality": "Szczecin",
+                "addressRegion": "zachodniopomorskie",
+                "addressCountry": "PL"
             }
-        ]
+        },
+
+        {
+            "@type": "WebSite",
+            "@id": "https://zpci.pl/#website",
+            "url": "https://zpci.pl/",
+            "name": "Zachodniopomorskie Centrum Informatyki",
+            "alternateName": "ZPCI",
+            "inLanguage": "pl-PL",
+            "publisher": {
+                "@id": "https://zpci.pl/#organization"
+            }
+        },
+
+        {
+            "@type": "CollectionPage",
+            "@id": "https://zpci.pl/szkoleniakursy/niepelnosprawni.html#webpage",
+            "url": "https://zpci.pl/szkoleniakursy/niepelnosprawni.html",
+            "name": "Szkolenia dla osób z niepełnosprawnościami",
+            "description": "Szkolenia komputerowe i kursy IT dla osób z niepełnosprawnościami, dostosowane do indywidualnych potrzeb uczestników.",
+            "inLanguage": "pl-PL",
+            "isPartOf": {
+                "@id": "https://zpci.pl/#website"
+            },
+            "about": {
+                "@id": "https://zpci.pl/#organization"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://zpci.pl/images/szkolenia-niepelnosprawni.png"
+            },
+            "image": "https://zpci.pl/images/szkolenia-niepelnosprawni.png"
+        },
+
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Strona główna",
+                    "item": "https://zpci.pl/"
+                },
+
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Szkolenia i kursy",
+                    "item": "https://zpci.pl/szkoleniakursy.html"
+                },
+
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Szkolenia dla osób z niepełnosprawnościami",
+                    "item": "https://zpci.pl/szkoleniakursy/niepelnosprawni.html"
+                }
+
+            ]
+        }
+
+    ]
+}
+</script>
+
+
+<style>
+
+/* =========================================================
+   ZPCI 3 – SZKOLENIA DLA OSÓB Z NIEPEŁNOSPRAWNOŚCIAMI
+========================================================= */
+
+:root {
+
+    --primary: #1f3b73;
+    --primary-dark: #0b2148;
+    --primary-medium: #2c65b0;
+    --primary-light: #eef5ff;
+
+    --accent: #f2b705;
+    --accent-hover: #ffd447;
+
+    --accessibility: #187bbd;
+    --accessibility-dark: #105c91;
+
+    --white: #ffffff;
+
+    --background: #f4f7fb;
+
+    --text: #29333d;
+    --muted: #5d6976;
+
+    --border: #dce5ef;
+
+    --radius: 18px;
+
+    --shadow:
+        0 14px 38px rgba(11, 33, 72, 0.12);
+
+    --shadow-hover:
+        0 22px 44px rgba(11, 33, 72, 0.20);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff 0%,
+            #f8fbff 50%,
+            #ffffff 100%
+        );
+
+    color: var(--text);
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   GŁÓWNY KONTENER
+========================================================= */
+
+.container {
+
+    width: calc(100% - 40px);
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   NAGŁÓWEK
+========================================================= */
+
+.site-header {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 42px 20px 45px;
+
+    background:
+
+        radial-gradient(
+            circle at 86% 18%,
+            rgba(255,255,255,0.12),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--primary-dark),
+            var(--primary-medium)
+        );
+
+    color: var(--white);
+
+    text-align: center;
+}
+
+.site-header::before {
+
+    content: "ZPCI";
+
+    position: absolute;
+
+    top: 50%;
+    right: 5%;
+
+    color:
+        rgba(255,255,255,0.045);
+
+    font-size:
+        clamp(100px, 18vw, 230px);
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    transform:
+        translateY(-50%);
+}
+
+.site-header::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    left: -150px;
+    bottom: -170px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.045);
+}
+
+.header-content {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.header-brand {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+
+    color: var(--white);
+}
+
+.brand-logo {
+
+    width: 96px;
+    height: 96px;
+
+    flex: 0 0 96px;
+
+    border:
+        4px solid
+        rgba(255,255,255,0.95);
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    object-fit: contain;
+
+    box-shadow:
+        0 14px 30px
+        rgba(0,0,0,0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.header-brand:hover .brand-logo {
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+    box-shadow:
+        0 18px 36px
+        rgba(0,0,0,0.32);
+}
+
+.brand-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+.brand-name {
+
+    max-width: 620px;
+
+    font-size:
+        clamp(21px, 3vw, 31px);
+
+    font-weight: 900;
+
+    line-height: 1.15;
+}
+
+.brand-subtitle {
+
+    margin-top: 6px;
+
+    color:
+        rgba(255,255,255,0.84);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+}
+
+.header-brand:focus-visible {
+
+    outline:
+        3px solid
+        var(--accent);
+
+    outline-offset: 7px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   TYTUŁ
+========================================================= */
+
+.site-header h1 {
+
+    max-width: 1050px;
+
+    margin: 0 auto 12px;
+
+    font-size:
+        clamp(31px, 5vw, 50px);
+
+    line-height: 1.15;
+}
+
+.header-description {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    color:
+        rgba(255,255,255,0.9);
+
+    font-size:
+        clamp(17px, 2.5vw, 22px);
+}
+
+
+/* =========================================================
+   NAWIGACJA
+========================================================= */
+
+.main-nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 40;
+
+    background: #071b37;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0,0,0,0.18);
+}
+
+.nav-inner {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.main-nav a {
+
+    display: flex;
+
+    min-height: 54px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 13px 21px;
+
+    color: var(--white);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--primary-dark);
+}
+
+.main-nav a:focus-visible {
+
+    outline:
+        3px solid
+        var(--accent);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+
+    position: relative;
+
+    min-height: 680px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        var(--primary-dark);
+}
+
+.hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 0;
+}
+
+.hero-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(7,27,55,0.82),
+            rgba(11,33,72,0.52)
+        );
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding: 65px 0;
+}
+
+
+/* =========================================================
+   HERO TYTUŁ
+========================================================= */
+
+.hero-title {
+
+    max-width: 1050px;
+
+    margin: 0 auto 38px;
+
+    color: var(--white);
+
+    font-size:
+        clamp(32px, 5vw, 52px);
+
+    line-height: 1.18;
+
+    text-align: center;
+
+    text-shadow:
+        0 5px 18px
+        rgba(0,0,0,0.8);
+}
+
+
+/* =========================================================
+   GŁÓWNA KARTA
+========================================================= */
+
+.hero-card {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 42px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.75);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        rgba(255,255,255,0.97);
+
+    box-shadow:
+        0 20px 55px
+        rgba(0,0,0,0.38);
+
+    backdrop-filter:
+        blur(5px);
+}
+
+.hero-card p {
+
+    margin-bottom: 18px;
+
+    color: var(--text);
+
+    font-size: 19px;
+}
+
+.hero-card p:last-of-type {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LISTA SZKOLEŃ
+========================================================= */
+
+.training-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.training-list li {
+
+    position: relative;
+
+    min-height: 58px;
+
+    padding:
+        14px 16px 14px 50px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 12px;
+
+    background:
+        #f8fbff;
+
+    color: var(--text);
+
+    font-size: 17px;
+}
+
+.training-list li::before {
+
+    content: "\2713";
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--accessibility);
+
+    color:
+        var(--white);
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SEKCJA INFORMACYJNA
+========================================================= */
+
+.info-section {
+
+    padding: 55px 0;
+}
+
+.content-box {
+
+    padding: 42px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        var(--white);
+
+    box-shadow:
+        var(--shadow);
+}
+
+.section-heading {
+
+    margin-bottom: 15px;
+
+    color:
+        var(--primary-dark);
+
+    font-size:
+        clamp(29px, 4vw, 40px);
+
+    line-height: 1.2;
+
+    text-align: center;
+}
+
+.section-lead {
+
+    max-width: 850px;
+
+    margin: 0 auto 35px;
+
+    color:
+        var(--muted);
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   KAFELKI
+========================================================= */
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.feature-card {
+
+    position: relative;
+
+    min-height: 235px;
+
+    padding: 28px 24px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-top:
+        5px solid
+        var(--accessibility);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef5ff
+        );
+
+    box-shadow:
+        0 9px 25px
+        rgba(11,33,72,0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+.feature-icon {
+
+    display: flex;
+
+    width: 62px;
+    height: 62px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 16px;
+
+    background:
+        var(--accessibility);
+
+    color:
+        var(--white);
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 9px 20px
+        rgba(24,123,189,0.25);
+}
+
+.feature-card h3 {
+
+    margin-bottom: 10px;
+
+    color:
+        var(--primary-dark);
+
+    font-size: 23px;
+
+    line-height: 1.25;
+}
+
+.feature-card p {
+
+    color:
+        var(--muted);
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   EFEKTY
+========================================================= */
+
+.outcomes-section {
+
+    margin-top: 45px;
+}
+
+.outcomes-section h2 {
+
+    margin-bottom: 28px;
+
+    color:
+        var(--primary-dark);
+
+    font-size:
+        clamp(27px, 3.5vw, 36px);
+
+    text-align: center;
+}
+
+.outcomes-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.outcome-card {
+
+    padding: 24px 20px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        #f9fbfe;
+
+    box-shadow:
+        0 7px 20px
+        rgba(11,33,72,0.07);
+}
+
+.outcome-card h3 {
+
+    margin-bottom: 13px;
+
+    color:
+        var(--primary-dark);
+
+    font-size: 22px;
+}
+
+.outcome-card ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+}
+
+.outcome-card li {
+
+    margin-bottom: 8px;
+
+    color:
+        var(--muted);
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   KORZYŚCI
+========================================================= */
+
+.benefits-box {
+
+    margin-top: 45px;
+
+    padding: 32px;
+
+    border-left:
+        6px solid
+        var(--accent);
+
+    border-radius: 15px;
+
+    background:
+        var(--primary-light);
+}
+
+.benefits-box h2 {
+
+    margin-bottom: 16px;
+
+    color:
+        var(--primary-dark);
+
+    font-size:
+        clamp(26px, 3.5vw, 34px);
+
+    line-height: 1.25;
+}
+
+.benefits-box p {
+
+    margin-bottom: 14px;
+
+    color:
+        #4e5e6d;
+}
+
+.benefits-box p:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PRZYCISKI
+========================================================= */
+
+.buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 38px;
+}
+
+.btn {
+
+    display: inline-flex;
+
+    min-height: 54px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 27px;
+
+    border:
+        2px solid transparent;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--primary);
+
+    color:
+        var(--white);
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    box-shadow:
+        0 9px 22px
+        rgba(31,59,115,0.22);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn:hover {
+
+    background:
+        var(--primary-dark);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 13px 28px
+        rgba(11,33,72,0.28);
+}
+
+.btn-signup {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--primary-dark);
+
+    box-shadow:
+        0 9px 22px
+        rgba(242,183,5,0.25);
+}
+
+.btn-signup:hover {
+
+    background:
+        var(--accent-hover);
+}
+
+.btn:focus-visible {
+
+    outline:
+        3px solid
+        var(--accent);
+
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   STOPKA
+========================================================= */
+
+footer {
+
+    padding: 28px 20px;
+
+    background:
+        var(--primary-dark);
+
+    color:
+        rgba(255,255,255,0.86);
+
+    text-align: center;
+}
+
+footer p + p {
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   TABLETY
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .outcomes-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
     }
-    </script>
 
-    <style>
+    .feature-grid {
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
 
-        body {
-            min-height: 100vh;
-            overflow-x: hidden;
+@media (max-width: 820px) {
 
-            font-family: Arial, Helvetica, sans-serif;
+    .container {
 
-            background: #f4f6f8;
-            color: #333;
+        width:
+            calc(100% - 28px);
+    }
 
-            line-height: 1.7;
-        }
+    .hero-section {
 
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
+        min-height:
+            620px;
+    }
 
-        a {
-            color: inherit;
-        }
+    .hero-card {
 
-        /* ===========================
-           NAGŁÓWEK
-        =========================== */
+        padding:
+            32px 26px;
+    }
 
-        header {
-            position: relative;
-            overflow: hidden;
+    .training-list {
 
-            padding: 30px 15px 33px;
+        grid-template-columns:
+            1fr;
+    }
 
-            background:
-                radial-gradient(
-                    circle at 88% 20%,
-                    rgba(255, 255, 255, 0.12),
-                    transparent 28%
-                ),
-                linear-gradient(
-                    135deg,
-                    #003366,
-                    #0b2148
-                );
+    .content-box {
 
-            color: white;
-            text-align: center;
-        }
+        padding:
+            32px 24px;
+    }
+}
 
-        header::before {
-            content: "ZPCI";
 
-            position: absolute;
-            top: 50%;
-            right: 5%;
+/* =========================================================
+   TELEFONY
+========================================================= */
 
-            color: rgba(255, 255, 255, 0.045);
+@media (max-width: 700px) {
 
-            font-size: clamp(90px, 16vw, 200px);
-            font-weight: 900;
-            line-height: 1;
+    .feature-grid {
 
-            transform: translateY(-50%);
-        }
+        grid-template-columns:
+            1fr;
+    }
+}
 
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
 
-        /* ===========================
-           LOGO ZPCI
-        =========================== */
+@media (max-width: 600px) {
 
-        .header-brand {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+    body {
 
-            gap: 16px;
+        font-size: 17px;
+    }
 
-            margin-bottom: 22px;
+    .container {
 
-            color: white;
-            text-decoration: none;
-        }
+        width:
+            calc(100% - 20px);
+    }
 
-        .brand-logo {
-            width: 96px;
-            height: 96px;
-            flex: 0 0 96px;
+    .site-header {
 
-            border: 4px solid rgba(255, 255, 255, 0.95);
-            border-radius: 50%;
+        padding:
+            34px 14px 38px;
+    }
 
-            background: white;
-            object-fit: contain;
+    .site-header::before {
 
-            box-shadow:
-                0 14px 30px rgba(0, 0, 0, 0.25);
+        right: 50%;
 
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
-        }
+        transform:
+            translate(50%, -50%);
+    }
 
-        .header-brand:hover .brand-logo {
-            transform:
-                translateY(-3px)
-                scale(1.03);
+    .header-brand {
 
-            box-shadow:
-                0 18px 36px rgba(0, 0, 0, 0.32);
-        }
+        flex-direction:
+            column;
 
-        .brand-text {
-            display: flex;
-            flex-direction: column;
+        gap: 12px;
+    }
 
-            align-items: flex-start;
+    .brand-logo {
 
-            text-align: left;
-        }
+        width: 84px;
+        height: 84px;
 
-        .brand-name {
-            max-width: 620px;
+        flex-basis: 84px;
+    }
 
-            font-size: clamp(21px, 3vw, 31px);
-            font-weight: 900;
-            line-height: 1.15;
-        }
+    .brand-text {
 
-        .brand-subtitle {
-            margin-top: 6px;
+        align-items:
+            center;
 
-            color: rgba(255, 255, 255, 0.84);
+        text-align:
+            center;
+    }
 
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.07em;
-            text-transform: uppercase;
-        }
+    .brand-name {
 
-        .header-brand:focus-visible {
-            outline: 3px solid #ffd447;
-            outline-offset: 7px;
+        font-size:
+            22px;
+    }
 
-            border-radius: 20px;
-        }
+    .brand-subtitle {
 
-        header h1 {
-            max-width: 1000px;
-            margin: 0 auto;
+        font-size:
+            12px;
+    }
 
-            font-size: clamp(27px, 4.5vw, 43px);
-            line-height: 1.2;
-        }
+    .site-header h1 {
 
-        .header-description {
-            max-width: 780px;
-            margin: 12px auto 0;
+        font-size:
+            29px;
+    }
 
-            color: rgba(255, 255, 255, 0.9);
+    .header-description {
 
-            font-size: clamp(16px, 2vw, 19px);
-        }
+        font-size:
+            17px;
+    }
 
-        /* ===========================
-           MENU
-        =========================== */
 
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 50;
+    /* MENU */
 
-            padding: 15px;
+    .nav-inner {
 
-            background: #00509e;
+        display: grid;
 
-            text-align: center;
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
 
-            box-shadow:
-                0 5px 18px rgba(0, 0, 0, 0.18);
-        }
+    .main-nav a {
 
-        nav a {
-            display: inline-block;
+        min-height:
+            49px;
 
-            margin: 0 15px;
+        padding:
+            10px 8px;
 
-            color: white;
+        border-bottom:
+            1px solid
+            rgba(255,255,255,0.08);
 
-            font-size: 17px;
-            font-weight: bold;
+        font-size:
+            14px;
+    }
 
-            text-decoration: none;
 
-            transition:
-                color 0.2s ease,
-                transform 0.2s ease;
-        }
+    /* HERO */
 
-        nav a:hover {
-            color: #ffd447;
-            transform: translateY(-1px);
-        }
+    .hero-section {
 
-        nav a:focus-visible,
-        .btn:focus-visible {
-            outline: 3px solid #ffd447;
-            outline-offset: 4px;
-        }
+        min-height:
+            auto;
+    }
 
-        /* ===========================
-           HERO – GRAFIKA
-        =========================== */
+    .hero-content {
 
-        .niepelnosprawni {
-            position: relative;
+        padding:
+            38px 0;
+    }
 
-            min-height: 760px;
+    .hero-title {
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        padding:
+            0 12px;
 
-            overflow: hidden;
+        margin-bottom:
+            25px;
 
-            background: #0b2148;
-        }
+        font-size:
+            30px;
+    }
 
-        .hero-image {
-            position: absolute;
-            inset: 0;
+    .hero-card {
 
-            width: 100%;
-            height: 100%;
+        width:
+            calc(100% - 20px);
 
-            object-fit: cover;
-            object-position: center;
+        padding:
+            25px 20px;
 
-            z-index: 0;
-        }
+        border-radius:
+            15px;
+    }
 
-        .niepelnosprawni::before {
-            content: "";
+    .hero-card p {
 
-            position: absolute;
-            inset: 0;
+        font-size:
+            16px;
+    }
 
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(0, 30, 70, 0.68),
-                    rgba(0, 20, 50, 0.42)
-                );
+    .training-list li {
 
-            z-index: 1;
-        }
+        font-size:
+            15px;
+    }
 
-        .container {
-            position: relative;
-            z-index: 2;
 
-            width: 90%;
-            max-width: 1200px;
+    /* CONTENT */
 
-            padding: 55px 0;
-        }
+    .info-section {
 
-        .section-title {
-            max-width: 1000px;
-            margin: 0 auto 35px;
+        padding:
+            30px 0;
+    }
 
-            color: white;
+    .content-box {
 
-            font-size: clamp(34px, 5vw, 52px);
-            line-height: 1.2;
+        padding:
+            25px 17px;
 
-            text-align: center;
+        border-radius:
+            14px;
+    }
 
-            text-shadow:
-                0 5px 15px rgba(0, 0, 0, 0.85);
-        }
+    .section-heading {
 
-        .card {
-            max-width: 850px;
+        font-size:
+            29px;
+    }
 
-            margin: auto;
-            padding: 45px;
+    .section-lead {
 
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            border-radius: 22px;
+        font-size:
+            16px;
+    }
 
-            background: rgba(255, 255, 255, 0.96);
+    .feature-card {
 
-            box-shadow:
-                0 20px 50px rgba(0, 0, 0, 0.4);
+        min-height:
+            auto;
 
-            backdrop-filter: blur(4px);
-        }
+        padding:
+            24px 20px;
+    }
 
-        .card p {
-            margin-bottom: 20px;
+    .outcomes-grid {
 
-            font-size: 21px;
-        }
+        grid-template-columns:
+            1fr;
+    }
 
-        .card ul {
-            margin: 0 0 22px 28px;
-        }
+    .benefits-box {
 
-        .card li {
-            margin-bottom: 9px;
+        padding:
+            23px 18px;
+    }
 
-            font-size: 19px;
-        }
 
-        .card li::marker {
-            color: #00509e;
-        }
+    /* BUTTONS */
 
-        /* ===========================
-           PRZYCISKI
-        =========================== */
+    .buttons {
 
-        .btn-row {
-            display: flex;
-            flex-wrap: wrap;
+        flex-direction:
+            column;
+    }
 
-            gap: 15px;
+    .buttons .btn {
 
-            margin-top: 28px;
-        }
+        width:
+            100%;
+    }
+}
 
-        .btn {
-            display: inline-flex;
-            min-height: 56px;
 
-            align-items: center;
-            justify-content: center;
+@media (max-width: 390px) {
 
-            padding: 15px 30px;
+    .container {
 
-            border: 2px solid transparent;
-            border-radius: 9px;
+        width:
+            calc(100% - 16px);
+    }
 
-            background: #00509e;
-            color: white;
+    .nav-inner {
 
-            font-size: 18px;
-            font-weight: bold;
-            line-height: 1.25;
+        grid-template-columns:
+            1fr;
+    }
 
-            text-align: center;
-            text-decoration: none;
+    .main-nav a {
 
-            box-shadow:
-                0 8px 20px rgba(0, 80, 158, 0.25);
+        min-height:
+            45px;
+    }
 
-            transition:
-                background-color 0.2s ease,
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
-        }
+    .site-header h1 {
 
-        .btn:hover {
-            background: #003366;
+        font-size:
+            27px;
+    }
 
-            transform: translateY(-2px);
+    .hero-title {
 
-            box-shadow:
-                0 12px 26px rgba(0, 51, 102, 0.32);
-        }
+        font-size:
+            27px;
+    }
+}
 
-        /* ===========================
-           STOPKA
-        =========================== */
 
-        footer {
-            padding: 24px 18px;
+/* =========================================================
+   DRUK
+========================================================= */
 
-            background: #003366;
-            color: white;
+@media print {
 
-            text-align: center;
-        }
+    body {
 
-        footer p + p {
-            margin-top: 5px;
-        }
+        background:
+            #ffffff;
 
-        /* ===========================
-           TABLETY
-        =========================== */
+        color:
+            #000000;
 
-        @media (max-width: 900px) {
+        font-size:
+            12pt;
+    }
 
-            .niepelnosprawni {
-                min-height: 650px;
-            }
+    .main-nav,
+    .hero-image,
+    .hero-section::before,
+    .buttons,
+    footer {
 
-            .section-title {
-                font-size: 38px;
-            }
+        display:
+            none;
+    }
 
-            .card {
-                width: 95%;
-                padding: 30px;
-            }
+    .site-header {
 
-            .card p {
-                font-size: 18px;
-            }
+        padding:
+            20px;
 
-        }
+        background:
+            #ffffff;
 
-        /* ===========================
-           TELEFONY
-        =========================== */
+        color:
+            #000000;
+    }
 
-        @media (max-width: 600px) {
+    .site-header::before,
+    .site-header::after {
 
-            body {
-                font-size: 15px;
-            }
+        display:
+            none;
+    }
 
-            header {
-                padding: 24px 10px 28px;
-            }
+    .brand-logo {
 
-            header::before {
-                right: 50%;
+        width:
+            72px;
 
-                transform:
-                    translate(50%, -50%);
-            }
+        height:
+            72px;
 
-            .header-brand {
-                flex-direction: column;
-                gap: 12px;
-            }
+        border:
+            1px solid #cccccc;
 
-            .brand-logo {
-                width: 84px;
-                height: 84px;
-                flex-basis: 84px;
-            }
+        box-shadow:
+            none;
+    }
 
-            .brand-text {
-                align-items: center;
-                text-align: center;
-            }
+    .brand-name,
+    .brand-subtitle,
+    .site-header h1,
+    .header-description {
 
-            .brand-name {
-                font-size: 22px;
-            }
+        color:
+            #000000;
+    }
 
-            .brand-subtitle {
-                font-size: 12px;
-            }
+    .hero-section {
 
-            header h1 {
-                font-size: 25px;
-            }
+        display:
+            block;
 
-            nav {
-                padding: 8px 10px;
-            }
+        min-height:
+            auto;
 
-            nav a {
-                display: block;
+        background:
+            #ffffff;
+    }
 
-                margin: 5px 0;
-                padding: 8px;
+    .hero-content {
 
-                border-bottom:
-                    1px solid rgba(255, 255, 255, 0.12);
-            }
+        padding:
+            20px 0;
+    }
 
-            nav a:last-child {
-                border-bottom: 0;
-            }
+    .hero-title {
 
-            .niepelnosprawni {
-                min-height: auto;
+        color:
+            #000000;
 
-                padding: 25px 0;
-            }
+        text-shadow:
+            none;
+    }
 
-            .container {
-                width: 100%;
+    .hero-card {
 
-                padding: 30px 0;
-            }
+        max-width:
+            none;
 
-            .section-title {
-                padding: 0 18px;
+        padding:
+            20px;
 
-                font-size: 30px;
-            }
+        border:
+            1px solid #cccccc;
 
-            .card {
-                width: 92%;
+        background:
+            #ffffff;
 
-                padding: 23px 20px;
+        box-shadow:
+            none;
+    }
 
-                border-radius: 16px;
-            }
+    .content-box,
+    .feature-card,
+    .outcome-card,
+    .benefits-box {
 
-            .card p,
-            .card li {
-                font-size: 16px;
-            }
+        background:
+            #ffffff;
 
-            .btn-row {
-                flex-direction: column;
-            }
+        box-shadow:
+            none;
 
-            .btn {
-                width: 100%;
+        border:
+            1px solid #cccccc;
+    }
 
-                font-size: 17px;
-            }
+    .feature-grid,
+    .outcomes-grid {
 
-        }
+        display:
+            block;
+    }
 
-        /* ===========================
-           DRUKOWANIE
-        =========================== */
+    .feature-card,
+    .outcome-card {
 
-        @media print {
+        margin-bottom:
+            15px;
 
-            body {
-                background: white;
-                color: black;
-            }
+        break-inside:
+            avoid;
+    }
+}
 
-            header {
-                background: white;
-                color: black;
-            }
-
-            header::before,
-            nav,
-            .hero-image,
-            .niepelnosprawni::before,
-            .btn-row,
-            footer {
-                display: none;
-            }
-
-            .brand-name,
-            .brand-subtitle,
-            header h1,
-            .header-description {
-                color: black;
-            }
-
-            .brand-logo {
-                width: 72px;
-                height: 72px;
-
-                border: 1px solid #cccccc;
-
-                box-shadow: none;
-            }
-
-            .niepelnosprawni {
-                display: block;
-
-                min-height: auto;
-
-                background: white;
-            }
-
-            .container {
-                width: 100%;
-                max-width: none;
-
-                padding: 20px;
-            }
-
-            .section-title {
-                color: black;
-
-                text-shadow: none;
-            }
-
-            .card {
-                max-width: none;
-
-                padding: 20px;
-
-                border: 1px solid #cccccc;
-
-                background: white;
-
-                box-shadow: none;
-            }
-
-        }
-
-    </style>
+</style>
 
 </head>
 
+
 <body>
 
-    <!-- NAGŁÓWEK -->
 
-    <header>
+<!-- =====================================================
+     NAGŁÓWEK
+===================================================== -->
 
-        <div class="header-content">
+<header class="site-header">
 
-            <a
-                class="header-brand"
-                href="../index.html"
-                aria-label="ZPCI – przejdź do strony głównej"
+    <div class="header-content">
+
+        <a
+            class="header-brand"
+            href="../index.html"
+            aria-label="ZPCI – przejdź do strony głównej"
+        >
+
+            <img
+                class="brand-logo"
+                src="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
+                alt="Logo Zachodniopomorskiego Centrum Informatyki"
+                width="96"
+                height="96"
+                loading="eager"
+                decoding="async"
             >
 
-                <img
-                    class="brand-logo"
-                    src="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
-                    alt="Logo Zachodniopomorskiego Centrum Informatyki"
-                    width="96"
-                    height="96"
-                    loading="eager"
-                    decoding="async"
-                >
+            <span class="brand-text">
 
-                <span class="brand-text">
-
-                    <span class="brand-name">
-                        Zachodniopomorskie Centrum Informatyki
-                    </span>
-
-                    <span class="brand-subtitle">
-                        Szkolenia informatyczne i usługi IT
-                    </span>
-
+                <span class="brand-name">
+                    Zachodniopomorskie Centrum Informatyki
                 </span>
 
-            </a>
+                <span class="brand-subtitle">
+                    Szkolenia informatyczne i usługi IT
+                </span>
 
-            <h1>
-                Szkolenia dla osób z niepełnosprawnościami
-            </h1>
+            </span>
 
-            <p class="header-description">
-                Kursy komputerowe dostosowane do indywidualnych
-                potrzeb uczestników
-            </p>
+        </a>
 
-        </div>
 
-    </header>
+        <h1>
+            Szkolenia dla osób z niepełnosprawnościami
+        </h1>
 
-    <!-- MENU -->
 
-    <nav aria-label="Główna nawigacja">
+        <p class="header-description">
+            Kursy komputerowe i szkolenia IT dostosowane
+            do indywidualnych potrzeb uczestników
+        </p>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     NAWIGACJA
+===================================================== -->
+
+<nav
+    class="main-nav"
+    aria-label="Główna nawigacja"
+>
+
+    <div class="container nav-inner">
 
         <a href="../index.html">
-            &#8962; Strona główna
+            Strona główna
         </a>
 
         <a href="../szkoleniakursy.html">
-            Szkolenia
+            Szkolenia / Kursy
         </a>
 
         <a href="../uslugiit.html">
@@ -890,140 +1799,450 @@
             Kontakt
         </a>
 
-    </nav>
+    </div>
 
-    <!-- GŁÓWNA TREŚĆ -->
+</nav>
 
-    <main>
 
-        <section class="niepelnosprawni">
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-            <img
-                src="../images/szkolenia-niepelnosprawni.png"
-                alt="Szkolenia komputerowe dla osób z niepełnosprawnościami"
-                class="hero-image"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
-            >
+<main>
 
-            <div class="container">
+<section class="hero-section">
 
-                <h2 class="section-title">
-                    Szkolenia komputerowe dostosowane do potrzeb uczestników
-                </h2>
+    <img
+        src="../images/szkolenia-niepelnosprawni.png"
+        alt="Szkolenia komputerowe dla osób z niepełnosprawnościami"
+        class="hero-image"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+    >
 
-                <article class="card">
 
-                    <p>
-                        Zachodniopomorskie Centrum Informatyki realizuje
-                        szkolenia informatyczne dla osób
-                        z niepełnosprawnościami.
-                    </p>
+    <div class="hero-content">
 
-                    <p>
-                        Oferujemy kursy komputerowe dostosowane
-                        do indywidualnych potrzeb uczestników oraz pomagamy
-                        zdobywać nowe kompetencje cyfrowe.
-                    </p>
+        <div class="container">
 
-                    <p>
-                        Szkolenia obejmują między innymi:
-                    </p>
+            <h2 class="hero-title">
+                Szkolenia komputerowe
+                dostosowane do potrzeb uczestników
+            </h2>
 
-                    <ul>
 
-                        <li>
-                            Obsługę komputera i Internetu
-                        </li>
+            <article class="hero-card">
 
-                        <li>
-                            Pakiety biurowe MS Office oraz LibreOffice
-                        </li>
+                <p>
+                    Zachodniopomorskie Centrum Informatyki
+                    realizuje szkolenia informatyczne dla osób
+                    z niepełnosprawnościami.
+                </p>
 
-                        <li>
-                            Grafikę komputerową
-                        </li>
+                <p>
+                    Program i sposób prowadzenia zajęć mogą zostać
+                    dostosowane do indywidualnych potrzeb uczestnika,
+                    jego poziomu umiejętności oraz celu szkolenia.
+                </p>
 
-                        <li>
-                            Tworzenie stron internetowych HTML i CSS
-                        </li>
+                <p>
+                    W ramach szkoleń można rozwijać między innymi
+                    następujące kompetencje cyfrowe:
+                </p>
 
-                        <li>
-                            Podstawy programowania
-                        </li>
 
-                    </ul>
+                <ul class="training-list">
 
-                    <p>
-                        Zapewniamy przyjazne warunki nauki, indywidualne
-                        podejście oraz wsparcie podczas całego procesu
-                        szkoleniowego.
-                    </p>
+                    <li>
+                        Obsługa komputera i Internetu
+                    </li>
 
-                    <div class="btn-row">
+                    <li>
+                        MS Office oraz LibreOffice
+                    </li>
 
-                        <a
-                            href="../cs.html"
-                            class="btn"
-                        >
-                            &#9993; Zapisz się na szkolenie
-                        </a>
+                    <li>
+                        Grafika komputerowa
+                    </li>
 
-                        <a
-                            href="../kontakt.html"
-                            class="btn"
-                        >
-                            &#9742; Kontakt
-                        </a>
+                    <li>
+                        Tworzenie stron HTML i CSS
+                    </li>
 
-                        <a
-                            href="../index.html"
-                            class="btn"
-                        >
-                            &#8962; Strona główna
-                        </a>
+                    <li>
+                        Podstawy programowania
+                    </li>
 
+                    <li>
+                        Rozwijanie praktycznych kompetencji cyfrowych
+                    </li>
+
+                </ul>
+
+
+                <p>
+                    Najważniejsze jest praktyczne wykorzystanie
+                    zdobywanych umiejętności oraz zapewnienie
+                    uczestnikowi komfortowych warunków nauki.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INFORMACJE
+===================================================== -->
+
+<section class="info-section">
+
+    <div class="container">
+
+        <article class="content-box">
+
+            <h2 class="section-heading">
+                Indywidualne podejście do uczestnika
+            </h2>
+
+            <p class="section-lead">
+                Szkolenie może zostać dopasowane do poziomu
+                wiedzy, tempa nauki oraz zakresu kompetencji,
+                które uczestnik chce zdobyć lub rozwinąć.
+            </p>
+
+
+            <div class="feature-grid">
+
+
+                <article class="feature-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        1
                     </div>
+
+                    <h3>
+                        Dopasowany poziom
+                    </h3>
+
+                    <p>
+                        Zajęcia mogą rozpoczynać się od podstaw
+                        albo rozwijać już posiadane umiejętności
+                        komputerowe.
+                    </p>
 
                 </article>
 
+
+                <article class="feature-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        2
+                    </div>
+
+                    <h3>
+                        Praktyczna nauka
+                    </h3>
+
+                    <p>
+                        Nacisk kładziemy na wykonywanie praktycznych
+                        zadań i zdobywanie umiejętności przydatnych
+                        w codziennym życiu oraz pracy.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        3
+                    </div>
+
+                    <h3>
+                        Wsparcie uczestnika
+                    </h3>
+
+                    <p>
+                        Uczestnik otrzymuje wsparcie podczas nauki
+                        oraz możliwość pracy w tempie odpowiednim
+                        do jego potrzeb.
+                    </p>
+
+                </article>
+
+
             </div>
 
-        </section>
 
-    </main>
+            <!-- =================================================
+                 EFEKTY
+            ================================================= -->
 
-    <!-- STOPKA -->
+            <section class="outcomes-section">
 
-    <footer>
+                <h2>
+                    Po ukończeniu szkolenia uczestnik
+                </h2>
 
-        <p>
-            &copy;
-            <span id="year">2026</span>
-            Zachodniopomorskie Centrum Informatyki
-        </p>
 
-        <p>
-            Szkolenia komputerowe &bull;
-            Kursy IT &bull;
-            Usługi informatyczne
-        </p>
+                <div class="outcomes-grid">
 
-    </footer>
 
-    <script>
+                    <article class="outcome-card">
 
-        const yearElement =
-            document.getElementById("year");
+                        <h3>
+                            Wie
+                        </h3>
 
-        if (yearElement) {
-            yearElement.textContent =
-                new Date().getFullYear();
-        }
+                        <ul>
 
-    </script>
+                            <li>
+                                jak korzystać z podstawowych
+                                narzędzi komputerowych,
+                            </li>
+
+                            <li>
+                                jakie możliwości oferują
+                                poznane programy,
+                            </li>
+
+                            <li>
+                                jak bezpiecznie korzystać
+                                z Internetu.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <h3>
+                            Rozumie
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                podstawowe zasady pracy
+                                z komputerem,
+                            </li>
+
+                            <li>
+                                sposób działania poznawanych
+                                aplikacji,
+                            </li>
+
+                            <li>
+                                znaczenie bezpieczeństwa
+                                cyfrowego.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <h3>
+                            Umie
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                wykonywać podstawowe zadania
+                                komputerowe,
+                            </li>
+
+                            <li>
+                                korzystać z programów biurowych
+                                i graficznych,
+                            </li>
+
+                            <li>
+                                tworzyć proste materiały
+                                cyfrowe.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="outcome-card">
+
+                        <h3>
+                            Potrafi
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                samodzielnie korzystać
+                                z komputera,
+                            </li>
+
+                            <li>
+                                wykorzystywać poznane
+                                umiejętności w praktyce,
+                            </li>
+
+                            <li>
+                                rozwijać dalej swoje
+                                kompetencje cyfrowe.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KORZYŚCI
+            ================================================= -->
+
+            <section class="benefits-box">
+
+                <h2>
+                    Korzyści ze szkolenia
+                </h2>
+
+                <p>
+                    Szkolenie pozwala zwiększyć samodzielność
+                    w korzystaniu z komputera, Internetu
+                    oraz współczesnych narzędzi cyfrowych.
+                </p>
+
+                <p>
+                    Zdobyte umiejętności mogą być przydatne
+                    zarówno w życiu codziennym, podczas nauki,
+                    jak również w przygotowaniu do aktywności
+                    zawodowej.
+                </p>
+
+                <p>
+                    Zakres szkolenia może zostać ustalony
+                    indywidualnie z uczestnikiem lub grupą
+                    zorganizowaną.
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 PRZYCISKI
+            ================================================= -->
+
+            <div class="buttons">
+
+                <a
+                    href="../cs.html"
+                    class="btn btn-signup"
+                >
+                    &#9993; Zapisz się na szkolenie
+                </a>
+
+
+                <a
+                    href="../kontakt.html"
+                    class="btn"
+                >
+                    &#9742; Kontakt
+                </a>
+
+
+                <a
+                    href="../szkoleniakursy.html"
+                    class="btn"
+                >
+                    &lsaquo; Szkolenia / Kursy
+                </a>
+
+
+                <a
+                    href="../index.html"
+                    class="btn"
+                >
+                    &#8962; Strona główna
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     STOPKA
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        &copy;
+
+        <span id="year">
+            2026
+        </span>
+
+        Zachodniopomorskie Centrum Informatyki
+
+    </p>
+
+    <p>
+        Szkolenia komputerowe &bull;
+        Kursy IT &bull;
+        Usługi informatyczne
+    </p>
+
+</footer>
+
+
+<script>
+
+const yearElement =
+    document.getElementById("year");
+
+if (yearElement) {
+
+    yearElement.textContent =
+        new Date().getFullYear();
+
+}
+
+</script>
+
 
 </body>
 
 </html>
+```

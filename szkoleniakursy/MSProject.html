@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -49,7 +50,9 @@
         href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
     >
 
-    <!-- OPEN GRAPH -->
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
 
     <meta property="og:locale" content="pl_PL">
     <meta property="og:type" content="website">
@@ -62,7 +65,7 @@
 
     <meta
         property="og:description"
-        content="Harmonogramy, wykres Gantta, zadania, zasoby, koszty, ścieżka krytyczna, plan bazowy, raportowanie i kontrola realizacji."
+        content="Praktyczna nauka harmonogramowania, wykresu Gantta, zarządzania zadaniami, zasobami, kosztami, ścieżką krytyczną i raportowania w MS Project."
     >
 
     <meta
@@ -85,7 +88,9 @@
         content="image/png"
     >
 
-    <!-- TWITTER / X -->
+    <!-- =========================
+         TWITTER / X
+    ========================== -->
 
     <meta
         name="twitter:card"
@@ -99,7 +104,7 @@
 
     <meta
         name="twitter:description"
-        content="Praktyczna nauka harmonogramowania, zarządzania zasobami, kosztami, ścieżką krytyczną i raportowaniem w MS Project."
+        content="Praktyczne szkolenie MS Project: harmonogramowanie, zasoby, koszty, ścieżka krytyczna, plan bazowy i raportowanie."
     >
 
     <meta
@@ -112,12 +117,15 @@
         content="Szkolenie MS Project w ZPCI Szczecin"
     >
 
-    <!-- DANE STRUKTURALNE SEO -->
+    <!-- =========================
+         DANE STRUKTURALNE
+    ========================== -->
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
+
             {
                 "@type": "EducationalOrganization",
                 "@id": "https://www.zpci.pl/#organization",
@@ -130,6 +138,7 @@
                 },
                 "email": "biuro@zpci.pl"
             },
+
             {
                 "@type": "WebSite",
                 "@id": "https://www.zpci.pl/#website",
@@ -141,6 +150,7 @@
                     "@id": "https://www.zpci.pl/#organization"
                 }
             },
+
             {
                 "@type": "WebPage",
                 "@id": "https://www.zpci.pl/szkoleniakursy/msproject.html#webpage",
@@ -159,11 +169,12 @@
                     "url": "https://www.zpci.pl/images/MSProject.png"
                 }
             },
+
             {
                 "@type": "Course",
                 "@id": "https://www.zpci.pl/szkoleniakursy/msproject.html#course",
                 "name": "MS Project – szkolenie zindywidualizowane",
-                "description": "Szkolenie obejmujące tworzenie harmonogramów, wykres Gantta, zależności, kamienie milowe, ścieżkę krytyczną, zasoby, koszty, plan bazowy, raporty i kontrolę postępu projektu.",
+                "description": "Szkolenie obejmujące tworzenie harmonogramów, wykres Gantta, zależności, kamienie milowe, ścieżkę krytyczną, zasoby, koszty, plan bazowy, raportowanie i kontrolę postępu projektu.",
                 "url": "https://www.zpci.pl/szkoleniakursy/msproject.html",
                 "inLanguage": "pl-PL",
                 "provider": {
@@ -172,12 +183,16 @@
                 "educationalLevel": "Poziom podstawowy i średniozaawansowany",
                 "teaches": [
                     "Tworzenie harmonogramu projektu",
-                    "Wykres Gantta i zależności między zadaniami",
-                    "Kamienie milowe i ścieżka krytyczna",
-                    "Zarządzanie zasobami i kosztami",
-                    "Plan bazowy i kontrola postępu",
-                    "Analiza odchyleń czasu i kosztów",
-                    "Raportowanie i praca z wieloma projektami"
+                    "Wykres Gantta",
+                    "Zależności między zadaniami",
+                    "Kamienie milowe",
+                    "Ścieżka krytyczna",
+                    "Zarządzanie zasobami",
+                    "Zarządzanie kosztami",
+                    "Plan bazowy",
+                    "Kontrola postępu projektu",
+                    "Analiza odchyleń",
+                    "Raportowanie"
                 ],
                 "offers": {
                     "@type": "Offer",
@@ -203,11 +218,16 @@
                     }
                 }
             }
+
         ]
     }
     </script>
 
     <style>
+
+        /* =========================
+           RESET
+        ========================== */
 
         * {
             margin: 0;
@@ -221,63 +241,113 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #eef5ff, #ffffff);
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef5ff 0%,
+                    #ffffff 48%,
+                    #eef4ff 100%
+                );
             color: #222222;
             line-height: 1.7;
         }
 
-        /* NAGŁÓWEK */
+        img {
+            max-width: 100%;
+        }
+
+        /* =========================
+           NAGŁÓWEK ZPCI 3
+        ========================== */
 
         header {
             position: relative;
             overflow: hidden;
-            padding: 42px 20px;
+            padding: 42px 20px 62px;
+
             background:
                 radial-gradient(
-                    circle at top right,
-                    rgba(255, 255, 255, 0.14),
-                    transparent 35%
+                    circle at 8% 20%,
+                    rgba(255,255,255,0.12),
+                    transparent 28%
                 ),
-                linear-gradient(135deg, #0b2148, #1f3b73);
+                radial-gradient(
+                    circle at 92% 12%,
+                    rgba(255,255,255,0.14),
+                    transparent 34%
+                ),
+                linear-gradient(
+                    135deg,
+                    #071a3a,
+                    #0b2148 42%,
+                    #1f3b73
+                );
+
             color: #ffffff;
             text-align: center;
         }
 
+        header::after {
+            content: "";
+            position: absolute;
+            left: -5%;
+            right: -5%;
+            bottom: -72px;
+            height: 110px;
+            background: #eef5ff;
+            border-radius: 50% 50% 0 0;
+        }
+
         .header-content {
+            position: relative;
+            z-index: 2;
             width: 100%;
-            max-width: 1100px;
+            max-width: 1120px;
             margin: 0 auto;
         }
 
-        /* LOGO */
+        /* =========================
+           MARKA ZPCI
+        ========================== */
 
         .header-brand {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 16px;
-            margin-bottom: 24px;
+            gap: 18px;
+
+            margin-bottom: 28px;
+
             color: #ffffff;
             text-decoration: none;
         }
 
         .brand-logo {
-            width: 96px;
-            height: 96px;
-            flex: 0 0 96px;
-            border: 4px solid rgba(255, 255, 255, 0.95);
-            border-radius: 50%;
+            width: 98px;
+            height: 98px;
+            flex: 0 0 98px;
+
+            padding: 3px;
+
             background: #ffffff;
+            border: 4px solid rgba(255,255,255,0.96);
+            border-radius: 50%;
+
             object-fit: contain;
-            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+            box-shadow:
+                0 14px 34px rgba(0,0,0,0.30);
+
             transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
         }
 
         .header-brand:hover .brand-logo {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.32);
+            transform: translateY(-4px) scale(1.04);
+
+            box-shadow:
+                0 20px 42px rgba(0,0,0,0.36);
         }
 
         .brand-copy {
@@ -288,55 +358,84 @@
         }
 
         .brand-name {
-            max-width: 620px;
-            font-size: clamp(21px, 3vw, 31px);
+            max-width: 680px;
+
+            font-size:
+                clamp(21px, 3vw, 32px);
+
             font-weight: 900;
-            line-height: 1.15;
+            line-height: 1.12;
         }
 
         .brand-subtitle {
-            margin-top: 6px;
-            color: rgba(255, 255, 255, 0.86);
+            margin-top: 7px;
+
+            color: rgba(255,255,255,0.86);
+
             font-size: 14px;
             font-weight: 700;
-            letter-spacing: 0.07em;
+
+            letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
+        /* =========================
+           TYTUŁ
+        ========================== */
+
         header h1 {
-            margin-bottom: 12px;
+            margin-bottom: 13px;
+
             color: #ffffff;
-            font-size: clamp(1.8rem, 4vw, 3rem);
-            line-height: 1.2;
+
+            font-size:
+                clamp(1.8rem, 4vw, 3rem);
+
+            font-weight: 900;
+            line-height: 1.18;
         }
 
         header p {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
+
             color: #e4ecfa;
-            font-size: clamp(1rem, 2vw, 1.15rem);
+
+            font-size:
+                clamp(1rem, 2vw, 1.17rem);
         }
 
-        /* MENU */
+        /* =========================
+           MENU
+        ========================== */
 
         nav {
+            position: relative;
+            z-index: 5;
+
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            padding: 0 10px;
-            background: #16315d;
+
+            background: #122d57;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.15);
         }
 
         nav a {
             display: block;
-            padding: 15px 20px;
+
+            padding: 15px 22px;
+
             color: #ffffff;
-            font-weight: bold;
+            font-weight: 700;
             text-decoration: none;
+
             transition:
                 background-color 0.25s ease,
-                color 0.25s ease;
+                transform 0.2s ease;
         }
 
         nav a:hover,
@@ -344,45 +443,65 @@
             background: #244b87;
         }
 
-        /* GŁÓWNA TREŚĆ */
+        /* =========================
+           GŁÓWNA TREŚĆ
+        ========================== */
 
         main {
-            padding: 35px 20px;
+            padding: 34px 20px 42px;
         }
 
         .box {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1120px;
+
             margin: 0 auto;
-            padding: 35px;
+            padding: 34px;
+
             background: #ffffff;
-            border-radius: 14px;
-            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+
+            border:
+                1px solid #dce5f1;
+
+            border-radius: 16px;
+
+            box-shadow:
+                0 10px 32px rgba(0,0,0,0.12);
         }
 
-        /* BANER */
+        /* =========================
+           BANER
+        ========================== */
 
         .banner-wrapper {
             width: 100%;
+
             margin-bottom: 30px;
             padding: 10px;
-            background: #f3f7fc;
-            border: 1px solid #dce5f1;
+
+            background: #f4f8fd;
+
+            border:
+                1px solid #dce5f1;
+
             border-radius: 15px;
         }
 
         .course-banner {
             display: block;
+
             width: 100%;
             height: auto;
-            max-width: 100%;
-            object-fit: contain;
-            object-position: center;
+
             border-radius: 10px;
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.14);
+
+            box-shadow:
+                0 6px 20px rgba(0,0,0,0.14);
         }
 
-        /* PRZYCISKI */
+        /* =========================
+           PRZYCISKI
+        ========================== */
 
         .buttons,
         .bottom-buttons {
@@ -397,35 +516,50 @@
 
         .bottom-buttons {
             justify-content: center;
-            margin-top: 22px;
+            margin-top: 24px;
         }
 
         .button {
             display: inline-flex;
-            min-height: 46px;
+
+            min-height: 47px;
+
             align-items: center;
             justify-content: center;
-            padding: 11px 19px;
+
+            padding: 11px 20px;
+
             background: #1f3b73;
-            border: none;
-            border-radius: 7px;
+
+            border: 0;
+            border-radius: 8px;
+
             color: #ffffff;
+
             font-family: inherit;
             font-size: 1rem;
-            font-weight: bold;
+            font-weight: 700;
+
             line-height: 1.3;
             text-align: center;
             text-decoration: none;
+
             cursor: pointer;
+
             transition:
                 background-color 0.25s ease,
-                transform 0.2s ease;
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
         }
 
         .button:hover,
         .button:focus {
-            background: #16305d;
+            background: #142c59;
+
             transform: translateY(-2px);
+
+            box-shadow:
+                0 7px 16px rgba(0,0,0,0.15);
         }
 
         .button-register {
@@ -434,7 +568,7 @@
 
         .button-register:hover,
         .button-register:focus {
-            background: #9f6400;
+            background: #9e6200;
         }
 
         .button-price {
@@ -443,23 +577,39 @@
 
         .button-price:hover,
         .button-price:focus {
-            background: #1c5734;
+            background: #1b5634;
         }
 
-        /* NAGŁÓWKI */
+        /* =========================
+           SEKCJE
+        ========================== */
+
+        section {
+            scroll-margin-top: 20px;
+        }
 
         h2 {
-            margin-top: 32px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
+            margin-top: 34px;
+            margin-bottom: 16px;
+            padding-bottom: 9px;
+
             color: #1f3b73;
-            font-size: clamp(1.45rem, 3vw, 2rem);
-            border-bottom: 2px solid #dce5f1;
+
+            font-size:
+                clamp(1.45rem, 3vw, 2rem);
+
+            line-height: 1.25;
+
+            border-bottom:
+                2px solid #dce5f1;
         }
 
         h3 {
             margin-bottom: 10px;
+
             color: #1f3b73;
+
+            font-size: 1.15rem;
         }
 
         p {
@@ -467,7 +617,8 @@
         }
 
         ul {
-            margin: 15px 0 25px 25px;
+            margin:
+                15px 0 25px 25px;
         }
 
         li {
@@ -478,39 +629,84 @@
             color: #1f3b73;
         }
 
-        /* INFORMACJE */
+        /* =========================
+           INFORMACJE
+        ========================== */
 
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
             gap: 18px;
+
             margin-top: 20px;
         }
 
         .info-card {
             height: 100%;
-            padding: 21px;
-            background: #f4f7fc;
-            border-left: 5px solid #1f3b73;
-            border-radius: 9px;
+
+            padding: 22px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #f5f8fd,
+                    #edf3fb
+                );
+
+            border:
+                1px solid #dce5f1;
+
+            border-left:
+                5px solid #1f3b73;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 5px 15px rgba(31,59,115,0.07);
         }
 
-        /* CZAS I CENA */
+        .info-card:nth-child(2) {
+            border-left-color: #c57c00;
+        }
+
+        .info-card:nth-child(3) {
+            border-left-color: #267044;
+        }
+
+        /* =========================
+           CZAS I CENA
+        ========================== */
 
         .training-details {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
             gap: 20px;
+
             margin-top: 22px;
         }
 
         .detail-card {
-            padding: 24px;
+            padding: 25px;
+
             background: #ffffff;
-            border: 1px solid #d8e3ef;
-            border-top: 5px solid #1f3b73;
+
+            border:
+                1px solid #d8e3ef;
+
+            border-top:
+                5px solid #1f3b73;
+
             border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(31, 59, 115, 0.1);
+
+            box-shadow:
+                0 8px 24px rgba(31,59,115,0.10);
+
             text-align: center;
         }
 
@@ -520,9 +716,13 @@
 
         .detail-value {
             margin: 0;
+
             color: #1f3b73;
-            font-size: clamp(1.45rem, 3vw, 2rem);
-            font-weight: bold;
+
+            font-size:
+                clamp(1.45rem, 3vw, 2rem);
+
+            font-weight: 900;
         }
 
         .price-value {
@@ -532,22 +732,30 @@
         .price-note {
             margin-top: 8px;
             margin-bottom: 0;
+
             color: #5b6570;
+
             font-size: 0.95rem;
         }
 
-        /* PROGRAM */
+        /* =========================
+           PROGRAM
+        ========================== */
 
         .program-list {
             columns: 2;
-            column-gap: 45px;
+            column-gap: 50px;
+
+            padding: 8px 0;
         }
 
         .program-list li {
             break-inside: avoid;
         }
 
-        /* TAKSONOMIA */
+        /* =========================
+           TAKSONOMIA
+        ========================== */
 
         .taxonomy-intro {
             margin-bottom: 22px;
@@ -555,17 +763,48 @@
 
         .taxonomy-grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
             gap: 20px;
+
             margin-top: 22px;
         }
 
         .taxonomy-card {
             height: 100%;
+
             padding: 22px;
-            background: #f4f7fc;
-            border-top: 5px solid #1f3b73;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #f6f9fd,
+                    #edf3fb
+                );
+
+            border:
+                1px solid #dce5f1;
+
+            border-top:
+                5px solid #1f3b73;
+
             border-radius: 11px;
+
+            box-shadow:
+                0 5px 16px rgba(31,59,115,0.06);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .taxonomy-card:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 23px rgba(31,59,115,0.11);
         }
 
         .taxonomy-card:nth-child(2),
@@ -573,59 +812,58 @@
             border-top-color: #c57c00;
         }
 
+        .taxonomy-card:nth-child(3) {
+            border-top-color: #267044;
+        }
+
+        .taxonomy-card:nth-child(4) {
+            border-top-color: #496b9f;
+        }
+
+        .taxonomy-card:nth-child(6) {
+            border-top-color: #8b5a9f;
+        }
+
         .taxonomy-card h3 {
             margin-bottom: 12px;
+
             font-size: 1.2rem;
         }
 
         .taxonomy-card ul {
-            margin: 0 0 0 20px;
+            margin:
+                0 0 0 20px;
+        }
+
+        .taxonomy-card li {
+            margin-bottom: 7px;
         }
 
         .taxonomy-card li::marker {
             color: #c57c00;
         }
 
-        /* TABELA */
-
-        .taxonomy-table-wrapper {
-            width: 100%;
-            margin-top: 30px;
-            overflow-x: auto;
-            border: 1px solid #d8e1ed;
-            border-radius: 10px;
-        }
-
-        .taxonomy-table {
-            width: 100%;
-            min-width: 740px;
-            border-collapse: collapse;
-        }
-
-        .taxonomy-table th,
-        .taxonomy-table td {
-            padding: 14px;
-            border: 1px solid #d8e1ed;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        .taxonomy-table th {
-            background: #1f3b73;
-            color: #ffffff;
-        }
-
-        .taxonomy-table tbody tr:nth-child(even) {
-            background: #f4f7fc;
-        }
-
-        /* ZASTOSOWANIE */
+        /* =========================
+           ZASTOSOWANIE
+        ========================== */
 
         .practice-box {
             margin-top: 32px;
-            padding: 24px;
-            background: #fff8e8;
-            border-left: 5px solid #c57c00;
+            padding: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff9ec,
+                    #fff4d9
+                );
+
+            border:
+                1px solid #f0dfb5;
+
+            border-left:
+                5px solid #c57c00;
+
             border-radius: 10px;
         }
 
@@ -633,13 +871,27 @@
             margin-top: 0;
         }
 
-        /* CENA */
+        /* =========================
+           CENA
+        ========================== */
 
         .price-info {
             margin-top: 32px;
-            padding: 26px;
-            background: #f1f8f3;
-            border-left: 5px solid #267044;
+            padding: 27px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f1f9f3,
+                    #eaf6ee
+                );
+
+            border:
+                1px solid #cfe4d5;
+
+            border-left:
+                5px solid #267044;
+
             border-radius: 10px;
         }
 
@@ -647,14 +899,33 @@
             margin-top: 0;
         }
 
-        /* KONTAKT */
+        .price-info ul {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           KONTAKT
+        ========================== */
 
         .contact-box {
             margin-top: 32px;
             padding: 28px;
-            background: #eef4ff;
-            border-left: 5px solid #1f3b73;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef4ff,
+                    #e8f0fc
+                );
+
+            border:
+                1px solid #d5e1f1;
+
+            border-left:
+                5px solid #1f3b73;
+
             border-radius: 10px;
+
             text-align: center;
         }
 
@@ -664,44 +935,98 @@
 
         .contact-box a:not(.button) {
             color: #1f3b73;
-            font-weight: bold;
+
+            font-weight: 800;
+
             text-decoration: none;
         }
 
-        /* STOPKA */
+        .contact-box a:not(.button):hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           STOPKA
+        ========================== */
 
         footer {
             margin-top: 30px;
-            padding: 20px 15px;
-            background: #1f3b73;
+            padding: 22px 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0b2148,
+                    #1f3b73
+                );
+
             color: #ffffff;
+
             text-align: center;
         }
 
-        /* TABLETY */
+        /* =========================
+           DRUKOWANIE
+        ========================== */
 
-        @media (max-width: 900px) {
+        @media print {
+
+            nav,
+            .buttons,
+            .bottom-buttons {
+                display: none !important;
+            }
+
+            body {
+                background: #ffffff;
+            }
+
+            header {
+                padding: 25px;
+            }
+
+            header::after {
+                display: none;
+            }
+
+            .box {
+                box-shadow: none;
+                border: 0;
+            }
+
+            footer {
+                margin-top: 0;
+            }
+        }
+
+        /* =========================
+           TABLETY
+        ========================== */
+
+        @media (max-width: 950px) {
 
             .info-grid {
                 grid-template-columns: 1fr;
             }
 
             .taxonomy-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
             }
 
             .box {
                 padding: 28px;
             }
-
         }
 
-        /* TELEFONY */
+        /* =========================
+           TELEFONY
+        ========================== */
 
         @media (max-width: 650px) {
 
             header {
-                padding: 30px 15px;
+                padding: 30px 15px 55px;
             }
 
             .header-brand {
@@ -725,11 +1050,15 @@
             }
 
             .brand-subtitle {
-                font-size: 12px;
+                font-size: 11px;
             }
 
             header h1 {
-                font-size: 1.75rem;
+                font-size: 1.72rem;
+            }
+
+            header p {
+                font-size: 1rem;
             }
 
             nav {
@@ -739,18 +1068,22 @@
 
             nav a {
                 width: 100%;
+
                 padding: 13px 15px;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+                border-bottom:
+                    1px solid rgba(255,255,255,0.12);
+
                 text-align: center;
             }
 
             main {
-                padding: 18px 10px;
+                padding: 18px 10px 25px;
             }
 
             .box {
                 padding: 20px 16px;
-                border-radius: 9px;
+                border-radius: 10px;
             }
 
             .banner-wrapper {
@@ -760,8 +1093,6 @@
             }
 
             .course-banner {
-                width: 100%;
-                height: auto;
                 border-radius: 7px;
             }
 
@@ -800,6 +1131,10 @@
 
 <body>
 
+    <!-- =========================
+         NAGŁÓWEK
+    ========================== -->
+
     <header>
 
         <div class="header-content">
@@ -814,8 +1149,8 @@
                     class="brand-logo"
                     src="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
                     alt="Logo Zachodniopomorskiego Centrum Informatyki"
-                    width="96"
-                    height="96"
+                    width="98"
+                    height="98"
                     loading="eager"
                     decoding="async"
                 >
@@ -834,7 +1169,9 @@
 
             </a>
 
-            <h1>MS Project – szkolenie zindywidualizowane</h1>
+            <h1>
+                MS Project – szkolenie zindywidualizowane
+            </h1>
 
             <p>
                 Planowanie, harmonogramowanie, zarządzanie zasobami,
@@ -844,6 +1181,10 @@
         </div>
 
     </header>
+
+    <!-- =========================
+         MENU
+    ========================== -->
 
     <nav aria-label="Menu główne">
 
@@ -864,6 +1205,10 @@
         </a>
 
     </nav>
+
+    <!-- =========================
+         TREŚĆ
+    ========================== -->
 
     <main>
 
@@ -912,11 +1257,15 @@
 
             </div>
 
-            <!-- DLA KOGO -->
+            <!-- =========================
+                 DLA KOGO
+            ========================== -->
 
             <section>
 
-                <h2>Kogo zapraszamy?</h2>
+                <h2>
+                    Kogo zapraszamy?
+                </h2>
 
                 <p>
                     Szkolenie przeznaczone jest dla osób chcących zdobyć
@@ -934,17 +1283,23 @@
 
             </section>
 
-            <!-- INFORMACJE ORGANIZACYJNE -->
+            <!-- =========================
+                 INFORMACJE ORGANIZACYJNE
+            ========================== -->
 
             <section>
 
-                <h2>Informacje organizacyjne</h2>
+                <h2>
+                    Informacje organizacyjne
+                </h2>
 
                 <div class="info-grid">
 
                     <article class="info-card">
 
-                        <h3>Organizacja</h3>
+                        <h3>
+                            Organizacja
+                        </h3>
 
                         <p>
                             Szkolenie prowadzone jest w trybie indywidualnym
@@ -956,7 +1311,9 @@
 
                     <article class="info-card">
 
-                        <h3>Metodyka</h3>
+                        <h3>
+                            Metodyka
+                        </h3>
 
                         <p>
                             Zajęcia mają formę praktycznych warsztatów.
@@ -968,7 +1325,9 @@
 
                     <article class="info-card">
 
-                        <h3>Certyfikaty</h3>
+                        <h3>
+                            Certyfikat
+                        </h3>
 
                         <p>
                             Po ukończeniu szkolenia uczestnik otrzymuje
@@ -982,17 +1341,23 @@
 
             </section>
 
-            <!-- CZAS I CENA -->
+            <!-- =========================
+                 CZAS I CENA
+            ========================== -->
 
             <section>
 
-                <h2>Czas trwania i cena szkolenia</h2>
+                <h2>
+                    Czas trwania i cena szkolenia
+                </h2>
 
                 <div class="training-details">
 
                     <article class="detail-card">
 
-                        <h3>Czas trwania</h3>
+                        <h3>
+                            Czas trwania
+                        </h3>
 
                         <p class="detail-value">
                             12 godzin
@@ -1006,7 +1371,9 @@
 
                     <article class="detail-card">
 
-                        <h3>Cena szkolenia</h3>
+                        <h3>
+                            Cena szkolenia
+                        </h3>
 
                         <p class="detail-value price-value">
                             379 zł netto
@@ -1022,11 +1389,15 @@
 
             </section>
 
-            <!-- PROGRAM -->
+            <!-- =========================
+                 PROGRAM
+            ========================== -->
 
             <section>
 
-                <h2>Zakres szkolenia</h2>
+                <h2>
+                    Zakres szkolenia
+                </h2>
 
                 <ul class="program-list">
 
@@ -1073,11 +1444,15 @@
 
             </section>
 
-            <!-- TAKSONOMIA -->
+            <!-- =========================
+                 TAKSONOMIA
+            ========================== -->
 
             <section>
 
-                <h2>Taksonomia efektów kształcenia</h2>
+                <h2>
+                    Taksonomia efektów kształcenia
+                </h2>
 
                 <p class="taxonomy-intro">
                     Po zakończeniu szkolenia uczestnik osiąga efekty
@@ -1090,90 +1465,216 @@
 
                     <article class="taxonomy-card">
 
-                        <h3>Uczestnik wie</h3>
+                        <h3>
+                            Uczestnik wie
+                        </h3>
 
                         <ul>
-                            <li>jak zbudowany jest interfejs MS Project,</li>
-                            <li>czym są zadania, zasoby i kamienie milowe,</li>
-                            <li>jakie rodzaje zależności łączą zadania,</li>
-                            <li>czym jest ścieżka krytyczna,</li>
-                            <li>do czego służy plan bazowy,</li>
-                            <li>jakie raporty można przygotować w programie.</li>
+
+                            <li>
+                                jak zbudowany jest interfejs MS Project,
+                            </li>
+
+                            <li>
+                                czym są zadania, zasoby i kamienie milowe,
+                            </li>
+
+                            <li>
+                                jakie rodzaje zależności łączą zadania,
+                            </li>
+
+                            <li>
+                                czym jest ścieżka krytyczna,
+                            </li>
+
+                            <li>
+                                do czego służy plan bazowy,
+                            </li>
+
+                            <li>
+                                jakie raporty można przygotować w programie.
+                            </li>
+
                         </ul>
 
                     </article>
 
                     <article class="taxonomy-card">
 
-                        <h3>Uczestnik rozumie</h3>
+                        <h3>
+                            Uczestnik rozumie
+                        </h3>
 
                         <ul>
-                            <li>zasady budowania harmonogramu projektu,</li>
-                            <li>wpływ zależności na terminy zadań,</li>
-                            <li>znaczenie kalendarzy projektu i zasobów,</li>
-                            <li>wpływ dostępności zasobów na harmonogram,</li>
-                            <li>rolę ścieżki krytycznej w projekcie,</li>
-                            <li>znaczenie porównania planu z wykonaniem.</li>
+
+                            <li>
+                                zasady budowania harmonogramu projektu,
+                            </li>
+
+                            <li>
+                                wpływ zależności na terminy zadań,
+                            </li>
+
+                            <li>
+                                znaczenie kalendarzy projektu i zasobów,
+                            </li>
+
+                            <li>
+                                wpływ dostępności zasobów na harmonogram,
+                            </li>
+
+                            <li>
+                                rolę ścieżki krytycznej w projekcie,
+                            </li>
+
+                            <li>
+                                znaczenie porównania planu z wykonaniem.
+                            </li>
+
                         </ul>
 
                     </article>
 
                     <article class="taxonomy-card">
 
-                        <h3>Uczestnik stosuje</h3>
+                        <h3>
+                            Uczestnik stosuje
+                        </h3>
 
                         <ul>
-                            <li>kalendarze projektu i zasobów,</li>
-                            <li>zależności między zadaniami,</li>
-                            <li>kamienie milowe i terminy ostateczne,</li>
-                            <li>przypisywanie zasobów do zadań,</li>
-                            <li>plan bazowy i aktualizację postępu,</li>
-                            <li>filtry, grupowanie i raporty.</li>
+
+                            <li>
+                                kalendarze projektu i zasobów,
+                            </li>
+
+                            <li>
+                                zależności między zadaniami,
+                            </li>
+
+                            <li>
+                                kamienie milowe i terminy ostateczne,
+                            </li>
+
+                            <li>
+                                przypisywanie zasobów do zadań,
+                            </li>
+
+                            <li>
+                                plan bazowy i aktualizację postępu,
+                            </li>
+
+                            <li>
+                                filtry, grupowanie i raporty.
+                            </li>
+
                         </ul>
 
                     </article>
 
                     <article class="taxonomy-card">
 
-                        <h3>Uczestnik analizuje</h3>
+                        <h3>
+                            Uczestnik analizuje
+                        </h3>
 
                         <ul>
-                            <li>strukturę harmonogramu projektu,</li>
-                            <li>zależności pomiędzy zadaniami,</li>
-                            <li>obciążenie poszczególnych zasobów,</li>
-                            <li>zadania znajdujące się na ścieżce krytycznej,</li>
-                            <li>odchylenia terminów i kosztów,</li>
-                            <li>przyczyny opóźnień projektu.</li>
+
+                            <li>
+                                strukturę harmonogramu projektu,
+                            </li>
+
+                            <li>
+                                zależności pomiędzy zadaniami,
+                            </li>
+
+                            <li>
+                                obciążenie poszczególnych zasobów,
+                            </li>
+
+                            <li>
+                                zadania znajdujące się na ścieżce krytycznej,
+                            </li>
+
+                            <li>
+                                odchylenia terminów i kosztów,
+                            </li>
+
+                            <li>
+                                przyczyny opóźnień projektu.
+                            </li>
+
                         </ul>
 
                     </article>
 
                     <article class="taxonomy-card">
 
-                        <h3>Uczestnik ocenia</h3>
+                        <h3>
+                            Uczestnik ocenia
+                        </h3>
 
                         <ul>
-                            <li>realność przygotowanego harmonogramu,</li>
-                            <li>poprawność zależności pomiędzy zadaniami,</li>
-                            <li>dostępność i wykorzystanie zasobów,</li>
-                            <li>ryzyko niedotrzymania terminów,</li>
-                            <li>zgodność wykonania z planem bazowym,</li>
-                            <li>wpływ zmian na termin i koszt projektu.</li>
+
+                            <li>
+                                realność przygotowanego harmonogramu,
+                            </li>
+
+                            <li>
+                                poprawność zależności pomiędzy zadaniami,
+                            </li>
+
+                            <li>
+                                dostępność i wykorzystanie zasobów,
+                            </li>
+
+                            <li>
+                                ryzyko niedotrzymania terminów,
+                            </li>
+
+                            <li>
+                                zgodność wykonania z planem bazowym,
+                            </li>
+
+                            <li>
+                                wpływ zmian na termin i koszt projektu.
+                            </li>
+
                         </ul>
 
                     </article>
 
                     <article class="taxonomy-card">
 
-                        <h3>Uczestnik tworzy</h3>
+                        <h3>
+                            Uczestnik tworzy
+                        </h3>
 
                         <ul>
-                            <li>kompletne harmonogramy projektów,</li>
-                            <li>struktury zadań i podzadań,</li>
-                            <li>kalendarze i listy zasobów,</li>
-                            <li>plany kosztów i budżety projektów,</li>
-                            <li>raporty postępu i odchyleń,</li>
-                            <li>projekty dopasowane do potrzeb organizacji.</li>
+
+                            <li>
+                                kompletne harmonogramy projektów,
+                            </li>
+
+                            <li>
+                                struktury zadań i podzadań,
+                            </li>
+
+                            <li>
+                                kalendarze i listy zasobów,
+                            </li>
+
+                            <li>
+                                plany kosztów i budżety projektów,
+                            </li>
+
+                            <li>
+                                raporty postępu i odchyleń,
+                            </li>
+
+                            <li>
+                                projekty dopasowane do potrzeb organizacji.
+                            </li>
+
                         </ul>
 
                     </article>
@@ -1182,11 +1683,15 @@
 
             </section>
 
-            <!-- ZASTOSOWANIE -->
+            <!-- =========================
+                 ZASTOSOWANIE
+            ========================== -->
 
             <section class="practice-box">
 
-                <h2>Zastosowanie umiejętności w pracy</h2>
+                <h2>
+                    Zastosowanie umiejętności w pracy
+                </h2>
 
                 <p>
                     Uczestnik potrafi samodzielnie przygotować harmonogram
@@ -1209,11 +1714,15 @@
 
             </section>
 
-            <!-- CENNIK -->
+            <!-- =========================
+                 CENNIK
+            ========================== -->
 
             <section class="price-info">
 
-                <h2>Informacje o cenie</h2>
+                <h2>
+                    Informacje o cenie
+                </h2>
 
                 <ul>
 
@@ -1255,14 +1764,19 @@
 
             </section>
 
-            <!-- KONTAKT -->
+            <!-- =========================
+                 KONTAKT
+            ========================== -->
 
             <section class="contact-box">
 
-                <h2>Kontakt</h2>
+                <h2>
+                    Kontakt
+                </h2>
 
                 <p>
-                    W sprawie terminów, programu i organizacji szkolenia napisz:
+                    W sprawie terminów, programu i organizacji szkolenia
+                    skontaktuj się z nami:
                 </p>
 
                 <p>
@@ -1295,6 +1809,10 @@
 
     </main>
 
+    <!-- =========================
+         STOPKA
+    ========================== -->
+
     <footer>
 
         &copy;
@@ -1305,10 +1823,12 @@
 
     <script>
 
-        const yearElement = document.getElementById("year");
+        const yearElement =
+            document.getElementById("year");
 
         if (yearElement) {
-            yearElement.textContent = new Date().getFullYear();
+            yearElement.textContent =
+                new Date().getFullYear();
         }
 
     </script>
@@ -1316,3 +1836,4 @@
 </body>
 
 </html>
+

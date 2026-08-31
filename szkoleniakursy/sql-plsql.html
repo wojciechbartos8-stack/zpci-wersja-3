@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>
         Szkolenie SQL i PL/SQL Szczecin – bazy danych | ZPCI
@@ -10,12 +16,12 @@
 
     <meta
         name="description"
-        content="Praktyczne szkolenie SQL i PL/SQL w Szczecinie: relacyjne bazy danych, zapytania SQL, JOIN, podzapytania, procedury, funkcje, kursory i wyzwalacze. Cena 649 zł."
+        content="Praktyczne szkolenie SQL i PL/SQL w Szczecinie. Relacyjne bazy danych, zapytania SQL, JOIN, podzapytania, procedury, funkcje, kursory i wyzwalacze. Cena 649 zł."
     >
 
     <meta
         name="keywords"
-        content="szkolenie SQL Szczecin, kurs PL/SQL, bazy danych, zapytania SQL, Oracle PL/SQL, JOIN, procedury składowane, kursory, wyzwalacze, ZPCI"
+        content="szkolenie SQL Szczecin, kurs PL/SQL, bazy danych, SQL, PL/SQL, Oracle, JOIN, procedury składowane, kursory, wyzwalacze, ZPCI"
     >
 
     <meta
@@ -49,11 +55,24 @@
         href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
     >
 
-    <!-- OPEN GRAPH -->
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
 
-    <meta property="og:locale" content="pl_PL">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ZPCI">
+    <meta
+        property="og:locale"
+        content="pl_PL"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="ZPCI"
+    >
 
     <meta
         property="og:title"
@@ -62,7 +81,7 @@
 
     <meta
         property="og:description"
-        content="Relacyjne bazy danych, zapytania SQL, JOIN, podzapytania, procedury, funkcje, kursory i wyzwalacze."
+        content="Praktyczne szkolenie SQL i PL/SQL. Relacyjne bazy danych, zapytania SQL, JOIN, podzapytania, procedury, funkcje, kursory i wyzwalacze."
     >
 
     <meta
@@ -85,9 +104,14 @@
         content="image/png"
     >
 
-    <!-- TWITTER / X -->
+    <!-- =====================================================
+         TWITTER / X
+    ====================================================== -->
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
 
     <meta
         name="twitter:title"
@@ -109,170 +133,215 @@
         content="Szkolenie SQL i PL/SQL w ZPCI"
     >
 
-    <!-- DANE STRUKTURALNE SEO -->
+    <!-- =====================================================
+         DANE STRUKTURALNE SEO
+    ====================================================== -->
 
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "EducationalOrganization",
-            "@id": "https://www.zpci.pl/#organization",
-            "name": "Zachodniopomorskie Centrum Informatyki",
-            "alternateName": "ZPCI",
-            "url": "https://www.zpci.pl/",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.zpci.pl/images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+
+            {
+                "@type": "EducationalOrganization",
+                "@id": "https://www.zpci.pl/#organization",
+                "name": "Zachodniopomorskie Centrum Informatyki",
+                "alternateName": "ZPCI",
+                "url": "https://www.zpci.pl/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.zpci.pl/images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
+                },
+                "email": "biuro@zpci.pl"
             },
-            "email": "biuro@zpci.pl"
-        },
-        {
-            "@type": "WebSite",
-            "@id": "https://www.zpci.pl/#website",
-            "url": "https://www.zpci.pl/",
-            "name": "Zachodniopomorskie Centrum Informatyki",
-            "alternateName": "ZPCI",
-            "inLanguage": "pl-PL",
-            "publisher": {
-                "@id": "https://www.zpci.pl/#organization"
-            }
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html#webpage",
-            "url": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html",
-            "name": "Szkolenie SQL i PL/SQL",
-            "description": "Praktyczne szkolenie z relacyjnych baz danych, języka SQL oraz programowania PL/SQL.",
-            "inLanguage": "pl-PL",
-            "isPartOf": {
-                "@id": "https://www.zpci.pl/#website"
+
+            {
+                "@type": "WebSite",
+                "@id": "https://www.zpci.pl/#website",
+                "url": "https://www.zpci.pl/",
+                "name": "Zachodniopomorskie Centrum Informatyki",
+                "alternateName": "ZPCI",
+                "inLanguage": "pl-PL",
+                "publisher": {
+                    "@id": "https://www.zpci.pl/#organization"
+                }
             },
-            "about": {
-                "@id": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html#course"
+
+            {
+                "@type": "WebPage",
+                "@id": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html#webpage",
+                "url": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html",
+                "name": "Szkolenie SQL i PL/SQL",
+                "description": "Praktyczne szkolenie z relacyjnych baz danych, języka SQL oraz programowania PL/SQL.",
+                "inLanguage": "pl-PL",
+                "isPartOf": {
+                    "@id": "https://www.zpci.pl/#website"
+                },
+                "about": {
+                    "@id": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html#course"
+                },
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.zpci.pl/images/SQL%20%2B%20PLSQL.png"
+                }
             },
-            "primaryImageOfPage": {
-                "@type": "ImageObject",
-                "url": "https://www.zpci.pl/images/SQL%20%2B%20PLSQL.png"
-            }
-        },
-        {
-            "@type": "Course",
-            "@id": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html#course",
-            "name": "SQL + PL/SQL",
-            "description": "Szkolenie obejmujące relacyjne bazy danych, instrukcje SQL, JOIN, podzapytania, funkcje analityczne, procedury, funkcje, kursory i wyzwalacze PL/SQL.",
-            "url": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html",
-            "inLanguage": "pl-PL",
-            "provider": {
-                "@id": "https://www.zpci.pl/#organization"
-            },
-            "educationalLevel": "Poziom podstawowy i średniozaawansowany",
-            "teaches": [
-                "Projektowanie relacyjnych baz danych",
-                "Zapytania SELECT, INSERT, UPDATE i DELETE",
-                "Łączenie tabel za pomocą JOIN",
-                "Podzapytania i funkcje analityczne",
-                "Procedury i funkcje PL/SQL",
-                "Kursory, wyjątki i wyzwalacze"
-            ],
-            "offers": {
-                "@type": "Offer",
-                "price": "649",
-                "priceCurrency": "PLN",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html"
-            },
-            "hasCourseInstance": [
-                {
-                    "@type": "CourseInstance",
-                    "name": "Szkolenie indywidualne SQL i PL/SQL",
-                    "courseMode": "Indywidualnie",
-                    "courseWorkload": "PT16H",
-                    "location": {
-                        "@type": "Place",
-                        "name": "Zachodniopomorskie Centrum Informatyki",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Szczecin",
-                            "addressCountry": "PL"
+
+            {
+                "@type": "Course",
+                "@id": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html#course",
+                "name": "SQL + PL/SQL",
+                "description": "Szkolenie obejmujące relacyjne bazy danych, instrukcje SQL, JOIN, podzapytania, funkcje analityczne, procedury, funkcje, kursory i wyzwalacze PL/SQL.",
+                "url": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html",
+                "inLanguage": "pl-PL",
+
+                "provider": {
+                    "@id": "https://www.zpci.pl/#organization"
+                },
+
+                "educationalLevel": "Poziom podstawowy i średniozaawansowany",
+
+                "teaches": [
+                    "Projektowanie relacyjnych baz danych",
+                    "Zapytania SELECT, INSERT, UPDATE i DELETE",
+                    "Łączenie tabel za pomocą JOIN",
+                    "Podzapytania i funkcje analityczne",
+                    "Procedury i funkcje PL/SQL",
+                    "Kursory, wyjątki i wyzwalacze"
+                ],
+
+                "offers": {
+                    "@type": "Offer",
+                    "price": "649",
+                    "priceCurrency": "PLN",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html"
+                },
+
+                "hasCourseInstance": [
+
+                    {
+                        "@type": "CourseInstance",
+                        "name": "Szkolenie indywidualne SQL i PL/SQL",
+                        "courseMode": "Indywidualnie",
+                        "courseWorkload": "PT16H",
+
+                        "location": {
+                            "@type": "Place",
+                            "name": "Zachodniopomorskie Centrum Informatyki",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "Szczecin",
+                                "addressCountry": "PL"
+                            }
+                        }
+                    },
+
+                    {
+                        "@type": "CourseInstance",
+                        "name": "Szkolenie grupowe SQL i PL/SQL",
+                        "courseMode": "Grupowo",
+                        "courseWorkload": "PT25H",
+
+                        "location": {
+                            "@type": "Place",
+                            "name": "Zachodniopomorskie Centrum Informatyki",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "Szczecin",
+                                "addressCountry": "PL"
+                            }
                         }
                     }
-                },
-                {
-                    "@type": "CourseInstance",
-                    "name": "Szkolenie grupowe SQL i PL/SQL",
-                    "courseMode": "Grupowo",
-                    "courseWorkload": "PT25H",
-                    "location": {
-                        "@type": "Place",
-                        "name": "Zachodniopomorskie Centrum Informatyki",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Szczecin",
-                            "addressCountry": "PL"
-                        }
+
+                ]
+            },
+
+            {
+                "@type": "BreadcrumbList",
+
+                "itemListElement": [
+
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Strona główna",
+                        "item": "https://www.zpci.pl/"
+                    },
+
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Szkolenia i kursy",
+                        "item": "https://www.zpci.pl/szkoleniakursy.html"
+                    },
+
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "SQL i PL/SQL",
+                        "item": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html"
                     }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Strona główna",
-                    "item": "https://www.zpci.pl/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Szkolenia i kursy",
-                    "item": "https://www.zpci.pl/szkoleniakursy.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "SQL i PL/SQL",
-                    "item": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html"
-                }
-            ]
-        }
-    ]
-}
+
+                ]
+            }
+
+        ]
+    }
     </script>
 
+
     <style>
+
         :root {
+
             --primary: #1f3b57;
             --primary-medium: #286090;
             --primary-dark: #0b2148;
             --primary-light: #eef5ff;
+
             --accent: #f2b705;
             --accent-hover: #ffd447;
+
             --background: #f4f7fb;
             --white: #ffffff;
+
             --text: #303841;
             --muted: #5c6875;
             --border: #dbe5ef;
+
             --radius: 18px;
-            --shadow: 0 14px 38px rgba(11, 33, 72, 0.11);
+
+            --shadow:
+                0 14px 38px rgba(11, 33, 72, 0.11);
         }
 
+
         * {
+
             margin: 0;
             padding: 0;
+
             box-sizing: border-box;
         }
 
+
         html {
+
             scroll-behavior: smooth;
         }
 
+
         body {
+
             min-height: 100vh;
+
             overflow-x: hidden;
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             background:
                 linear-gradient(
                     135deg,
@@ -280,307 +349,556 @@
                     #f8fbff 45%,
                     #ffffff 100%
                 );
+
             color: var(--text);
+
             font-size: 18px;
+
             line-height: 1.7;
         }
 
+
         img {
+
             display: block;
+
             max-width: 100%;
+
             height: auto;
         }
 
+
         a {
+
             color: inherit;
+
             text-decoration: none;
         }
 
+
         .page-container {
+
             width: calc(100% - 40px);
+
             max-width: 1100px;
+
             margin: 0 auto;
         }
 
-        /* =========================
+
+        /* =====================================================
            NAGŁÓWEK
-        ========================= */
+        ====================================================== */
 
         .site-header {
+
             position: relative;
+
             overflow: hidden;
+
             padding: 48px 20px;
+
             background:
+
                 radial-gradient(
                     circle at 86% 18%,
                     rgba(255, 255, 255, 0.13),
                     transparent 30%
                 ),
+
                 linear-gradient(
                     135deg,
                     var(--primary),
                     var(--primary-medium)
                 );
+
             color: var(--white);
+
             text-align: center;
         }
 
+
         .site-header::before {
+
             content: "";
+
             position: absolute;
+
             top: -150px;
             right: -90px;
+
             width: 380px;
             height: 380px;
+
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.06);
+
+            background:
+                rgba(255, 255, 255, 0.06);
         }
 
+
         .header-content {
+
             position: relative;
+
             z-index: 1;
         }
 
-        /* =========================
-           LOGO ZPCI
-        ========================= */
+
+        /* =====================================================
+           LOGO
+        ====================================================== */
 
         .header-brand {
+
             display: inline-flex;
+
             align-items: center;
+
             justify-content: center;
+
             gap: 16px;
+
             margin-bottom: 24px;
+
             color: var(--white);
+
             text-decoration: none;
         }
 
+
         .brand-logo {
+
             width: 96px;
             height: 96px;
+
             flex: 0 0 96px;
-            border: 4px solid rgba(255, 255, 255, 0.95);
+
+            border:
+                4px solid rgba(255, 255, 255, 0.95);
+
             border-radius: 50%;
+
             background: var(--white);
+
             object-fit: contain;
-            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+            box-shadow:
+                0 14px 30px rgba(0, 0, 0, 0.25);
+
             transition:
                 transform 0.2s ease,
                 box-shadow 0.2s ease;
         }
 
+
         .header-brand:hover .brand-logo {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.32);
+
+            transform:
+                translateY(-3px)
+                scale(1.03);
+
+            box-shadow:
+                0 18px 36px rgba(0, 0, 0, 0.32);
         }
 
+
         .brand-copy {
+
             display: flex;
+
             flex-direction: column;
+
             align-items: flex-start;
+
             text-align: left;
         }
 
+
         .brand-name {
+
             max-width: 620px;
-            font-size: clamp(21px, 3vw, 31px);
+
+            font-size:
+                clamp(21px, 3vw, 31px);
+
             font-weight: 900;
+
             line-height: 1.15;
         }
 
+
         .brand-subtitle {
+
             margin-top: 6px;
-            color: rgba(255, 255, 255, 0.86);
+
+            color:
+                rgba(255, 255, 255, 0.86);
+
             font-size: 14px;
+
             font-weight: 700;
+
             letter-spacing: 0.07em;
+
             text-transform: uppercase;
         }
 
+
         .header-brand:focus-visible {
-            outline: 3px solid var(--accent);
+
+            outline:
+                3px solid var(--accent);
+
             outline-offset: 7px;
+
             border-radius: 20px;
         }
 
+
         .site-header h1 {
+
             margin-bottom: 12px;
-            font-size: clamp(36px, 6vw, 58px);
+
+            font-size:
+                clamp(36px, 6vw, 58px);
+
             line-height: 1.1;
         }
 
+
         .site-header p {
+
             max-width: 760px;
+
             margin: 0 auto;
-            color: rgba(255, 255, 255, 0.92);
-            font-size: clamp(18px, 2.5vw, 23px);
+
+            color:
+                rgba(255, 255, 255, 0.92);
+
+            font-size:
+                clamp(18px, 2.5vw, 23px);
         }
 
-        /* =========================
+
+        /* =====================================================
            NAWIGACJA
-        ========================= */
+        ====================================================== */
 
         .main-nav {
+
             position: sticky;
+
             top: 0;
+
             z-index: 30;
-            background: var(--primary-dark);
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+
+            background:
+                var(--primary-dark);
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, 0.18);
         }
+
 
         .nav-inner {
+
             display: flex;
+
             flex-wrap: wrap;
+
             justify-content: center;
         }
 
+
         .main-nav a {
+
             display: flex;
+
             min-height: 54px;
+
             align-items: center;
+
             justify-content: center;
+
             padding: 13px 21px;
+
             color: var(--white);
+
             font-size: 16px;
+
             font-weight: 700;
+
             text-align: center;
+
             transition:
                 background-color 0.2s ease,
                 color 0.2s ease;
         }
 
+
         .main-nav a:hover,
         .main-nav a:focus-visible {
-            background: var(--accent);
-            color: var(--primary-dark);
+
+            background:
+                var(--accent);
+
+            color:
+                var(--primary-dark);
         }
+
 
         .main-nav a:focus-visible,
         .btn:focus-visible {
-            outline: 3px solid var(--accent);
-            outline-offset: -3px;
+
+            outline:
+                3px solid var(--accent);
+
+            outline-offset:
+                -3px;
         }
 
-        /* =========================
+
+        /* =====================================================
            BANER
-        ========================= */
+        ====================================================== */
 
         .banner-section {
-            padding: 32px 0 0;
+
+            padding:
+                32px 0 0;
         }
+
 
         .banner-box {
+
             overflow: hidden;
-            border: 5px solid var(--white);
-            border-radius: 22px;
-            background: var(--white);
-            box-shadow: 0 20px 50px rgba(11, 33, 72, 0.2);
+
+            border:
+                5px solid var(--white);
+
+            border-radius:
+                22px;
+
+            background:
+                var(--white);
+
+            box-shadow:
+                0 20px 50px rgba(11, 33, 72, 0.2);
         }
 
+
         .banner-box img {
+
             width: 100%;
+
             max-width: 100%;
+
             height: auto;
         }
 
-        /* =========================
+
+        /* =====================================================
            GŁÓWNA TREŚĆ
-        ========================= */
+        ====================================================== */
 
         main {
-            padding: 32px 0 55px;
+
+            padding:
+                32px 0 55px;
         }
 
+
         .content-wrapper {
+
             display: grid;
+
             gap: 28px;
         }
 
+
         .card {
-            padding: 35px;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            background: var(--white);
-            box-shadow: var(--shadow);
+
+            padding:
+                35px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                var(--white);
+
+            box-shadow:
+                var(--shadow);
         }
+
 
         .card h2 {
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--primary-medium);
-            color: var(--primary);
-            font-size: clamp(26px, 3.5vw, 34px);
-            line-height: 1.25;
+
+            margin-bottom:
+                20px;
+
+            padding-bottom:
+                10px;
+
+            border-bottom:
+                2px solid var(--primary-medium);
+
+            color:
+                var(--primary);
+
+            font-size:
+                clamp(26px, 3.5vw, 34px);
+
+            line-height:
+                1.25;
         }
+
 
         .card p {
-            margin-bottom: 15px;
-            color: var(--muted);
+
+            margin-bottom:
+                15px;
+
+            color:
+                var(--muted);
         }
+
 
         .card p:last-child {
-            margin-bottom: 0;
+
+            margin-bottom:
+                0;
         }
 
-        /* =========================
+
+        /* =====================================================
            KARTY INFORMACYJNE
-        ========================= */
+        ====================================================== */
 
         .info-grid {
+
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 24px;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap:
+                24px;
         }
+
 
         .info-grid .card {
-            height: 100%;
+
+            height:
+                100%;
         }
 
-        /* =========================
+
+        /* =====================================================
            PROGRAM SZKOLENIA
-        ========================= */
+        ====================================================== */
 
         .program {
+
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 14px 18px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap:
+                14px 18px;
+
+            margin:
+                0;
+
+            padding:
+                0;
+
+            list-style:
+                none;
         }
+
 
         .program li {
-            position: relative;
-            min-height: 62px;
-            padding: 15px 16px 15px 50px;
-            border: 1px solid #d5e2f0;
-            border-radius: 12px;
-            background: var(--primary-light);
+
+            position:
+                relative;
+
+            min-height:
+                62px;
+
+            padding:
+                15px 16px 15px 50px;
+
+            border:
+                1px solid #d5e2f0;
+
+            border-radius:
+                12px;
+
+            background:
+                var(--primary-light);
         }
+
 
         .program li::before {
-            content: "?";
-            position: absolute;
-            top: 15px;
-            left: 16px;
-            display: flex;
-            width: 24px;
-            height: 24px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: var(--primary-medium);
-            color: var(--white);
-            font-size: 13px;
-            font-weight: 700;
+
+            content:
+                "?";
+
+            position:
+                absolute;
+
+            top:
+                15px;
+
+            left:
+                16px;
+
+            display:
+                flex;
+
+            width:
+                24px;
+
+            height:
+                24px;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--primary-medium);
+
+            color:
+                var(--white);
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
         }
 
-        /* =========================
+
+        /* =====================================================
            EFEKTY SZKOLENIA
-        ========================= */
+        ====================================================== */
 
         .outcomes-card {
+
             background:
+
                 linear-gradient(
                     135deg,
                     var(--primary-light),
@@ -588,245 +906,514 @@
                 );
         }
 
+
         .outcomes-list {
-            display: grid;
-            gap: 12px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
+
+            display:
+                grid;
+
+            gap:
+                12px;
+
+            margin:
+                0;
+
+            padding:
+                0;
+
+            list-style:
+                none;
         }
+
 
         .outcomes-list li {
-            position: relative;
-            padding: 14px 16px 14px 50px;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            background: var(--white);
+
+            position:
+                relative;
+
+            padding:
+                14px 16px 14px 50px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                12px;
+
+            background:
+                var(--white);
         }
+
 
         .outcomes-list li::before {
-            content: "?";
-            position: absolute;
-            top: 14px;
-            left: 16px;
-            display: flex;
-            width: 24px;
-            height: 24px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: var(--primary-medium);
-            color: var(--white);
-            font-size: 13px;
-            font-weight: 700;
+
+            content:
+                "?";
+
+            position:
+                absolute;
+
+            top:
+                14px;
+
+            left:
+                16px;
+
+            display:
+                flex;
+
+            width:
+                24px;
+
+            height:
+                24px;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--primary-medium);
+
+            color:
+                var(--white);
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
         }
+
 
         .outcomes-list strong {
-            color: var(--primary-dark);
+
+            color:
+                var(--primary-dark);
         }
 
-        /* =========================
+
+        /* =====================================================
            SZCZEGÓŁY I CENA
-        ========================= */
+        ====================================================== */
 
         .details-list {
-            margin: 0;
-            padding-left: 25px;
+
+            margin:
+                0;
+
+            padding-left:
+                25px;
         }
+
 
         .details-list li {
-            margin-bottom: 9px;
+
+            margin-bottom:
+                9px;
         }
+
 
         .price-box {
-            margin-top: 28px;
-            padding: 25px;
-            border-left: 6px solid var(--accent);
-            border-radius: 15px;
-            background: #e8f1ff;
+
+            margin-top:
+                28px;
+
+            padding:
+                25px;
+
+            border-left:
+                6px solid var(--accent);
+
+            border-radius:
+                15px;
+
+            background:
+                #e8f1ff;
         }
+
 
         .price-label {
-            margin-bottom: 5px;
-            color: var(--muted);
-            font-size: 17px;
+
+            margin-bottom:
+                5px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                17px;
         }
+
 
         .price {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--primary-dark);
-            font-size: clamp(32px, 5vw, 43px);
-            font-weight: 800;
-            line-height: 1.15;
+
+            display:
+                block;
+
+            margin-bottom:
+                8px;
+
+            color:
+                var(--primary-dark);
+
+            font-size:
+                clamp(32px, 5vw, 43px);
+
+            font-weight:
+                800;
+
+            line-height:
+                1.15;
         }
+
 
         .price-box p {
-            margin: 0;
+
+            margin:
+                0;
         }
 
+
         .btn {
-            display: inline-flex;
-            min-height: 52px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 25px;
-            padding: 14px 30px;
-            border: 2px solid transparent;
-            border-radius: 999px;
-            background: var(--accent);
-            color: #1d2732;
-            font-weight: 800;
-            line-height: 1.2;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(242, 183, 5, 0.25);
+
+            display:
+                inline-flex;
+
+            min-height:
+                52px;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            margin-top:
+                25px;
+
+            padding:
+                14px 30px;
+
+            border:
+                2px solid transparent;
+
+            border-radius:
+                999px;
+
+            background:
+                var(--accent);
+
+            color:
+                #1d2732;
+
+            font-weight:
+                800;
+
+            line-height:
+                1.2;
+
+            text-align:
+                center;
+
+            box-shadow:
+                0 8px 20px rgba(242, 183, 5, 0.25);
+
             transition:
                 background-color 0.2s ease,
                 transform 0.2s ease,
                 box-shadow 0.2s ease;
         }
 
+
         .btn:hover {
-            background: var(--accent-hover);
-            box-shadow: 0 12px 26px rgba(242, 183, 5, 0.32);
-            transform: translateY(-2px);
+
+            background:
+                var(--accent-hover);
+
+            box-shadow:
+                0 12px 26px rgba(242, 183, 5, 0.32);
+
+            transform:
+                translateY(-2px);
         }
 
-        /* =========================
+
+        /* =====================================================
            STOPKA
-        ========================= */
+        ====================================================== */
 
         footer {
-            padding: 28px 20px;
-            background: var(--primary-dark);
-            color: rgba(255, 255, 255, 0.86);
-            text-align: center;
+
+            padding:
+                28px 20px;
+
+            background:
+                var(--primary-dark);
+
+            color:
+                rgba(255, 255, 255, 0.86);
+
+            text-align:
+                center;
         }
+
 
         footer p {
-            margin: 0;
+
+            margin:
+                0;
         }
 
-        /* =========================
+
+        /* =====================================================
            RESPONSYWNOŚĆ
-        ========================= */
+        ====================================================== */
 
         @media (max-width: 850px) {
 
             .page-container {
-                width: calc(100% - 28px);
+
+                width:
+                    calc(100% - 28px);
             }
+
 
             .info-grid,
             .program {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
             }
 
+
             .card {
-                padding: 30px 25px;
+
+                padding:
+                    30px 25px;
             }
+
         }
+
 
         @media (max-width: 600px) {
 
             body {
-                font-size: 17px;
+
+                font-size:
+                    17px;
             }
+
 
             .page-container {
-                width: calc(100% - 20px);
+
+                width:
+                    calc(100% - 20px);
             }
+
 
             .site-header {
-                padding: 36px 14px;
+
+                padding:
+                    36px 14px;
             }
+
 
             .header-brand {
-                flex-direction: column;
-                gap: 12px;
+
+                flex-direction:
+                    column;
+
+                gap:
+                    12px;
             }
+
 
             .brand-logo {
-                width: 84px;
-                height: 84px;
-                flex-basis: 84px;
+
+                width:
+                    84px;
+
+                height:
+                    84px;
+
+                flex-basis:
+                    84px;
             }
+
 
             .brand-copy {
-                align-items: center;
-                text-align: center;
+
+                align-items:
+                    center;
+
+                text-align:
+                    center;
             }
+
 
             .brand-name {
-                font-size: 22px;
+
+                font-size:
+                    22px;
             }
+
 
             .brand-subtitle {
-                font-size: 12px;
+
+                font-size:
+                    12px;
             }
+
 
             .nav-inner {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                display:
+                    grid;
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
             }
+
 
             .main-nav a {
-                min-height: 49px;
-                padding: 10px 8px;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-                font-size: 14px;
+
+                min-height:
+                    49px;
+
+                padding:
+                    10px 8px;
+
+                border-bottom:
+                    1px solid rgba(255, 255, 255, 0.08);
+
+                font-size:
+                    14px;
             }
+
 
             .banner-section {
-                padding-top: 20px;
+
+                padding-top:
+                    20px;
             }
+
 
             .banner-box {
-                border-width: 3px;
-                border-radius: 14px;
+
+                border-width:
+                    3px;
+
+                border-radius:
+                    14px;
             }
+
 
             main {
-                padding: 20px 0 36px;
+
+                padding:
+                    20px 0 36px;
             }
+
 
             .content-wrapper {
-                gap: 20px;
+
+                gap:
+                    20px;
             }
 
+
             .card {
-                padding: 24px 17px;
-                border-radius: 14px;
+
+                padding:
+                    24px 17px;
+
+                border-radius:
+                    14px;
             }
+
 
             .program li,
             .outcomes-list li {
-                padding-right: 13px;
+
+                padding-right:
+                    13px;
             }
+
 
             .price-box {
-                padding: 22px 18px;
+
+                padding:
+                    22px 18px;
             }
 
+
             .btn {
-                width: 100%;
+
+                width:
+                    100%;
             }
+
         }
+
 
         @media (max-width: 390px) {
 
             .nav-inner {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
             }
+
 
             .main-nav a {
-                min-height: 45px;
+
+                min-height:
+                    45px;
             }
+
         }
+
+
+        /* =====================================================
+           REDUKCJA ANIMACJI
+        ====================================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+
+                scroll-behavior:
+                    auto;
+            }
+
+
+            *,
+            *::before,
+            *::after {
+
+                transition:
+                    none !important;
+            }
+
+        }
+
     </style>
+
 </head>
 
+
 <body>
+
+
+    <!-- =====================================================
+         NAGŁÓWEK
+    ====================================================== -->
 
     <header class="site-header">
 
@@ -862,7 +1449,11 @@
 
             </a>
 
-            <h1>SQL + PL/SQL</h1>
+
+            <h1>
+                SQL + PL/SQL
+            </h1>
+
 
             <p>
                 Praktyczne szkolenie z baz danych
@@ -873,7 +1464,15 @@
 
     </header>
 
-    <nav class="main-nav" aria-label="Główna nawigacja">
+
+    <!-- =====================================================
+         NAWIGACJA
+    ====================================================== -->
+
+    <nav
+        class="main-nav"
+        aria-label="Główna nawigacja"
+    >
 
         <div class="page-container nav-inner">
 
@@ -897,7 +1496,10 @@
 
     </nav>
 
-    <!-- BANER SZKOLENIA -->
+
+    <!-- =====================================================
+         BANER
+    ====================================================== -->
 
     <section
         class="banner-section"
@@ -909,7 +1511,7 @@
             <div class="banner-box">
 
                 <img
-                    src="../images/SQL%20+%20PLSQL.png"
+                    src="../images/SQL%20%2B%20PLSQL.png"
                     alt="Szkolenie SQL i PL/SQL z programowania baz danych w ZPCI Szczecin"
                     width="1536"
                     height="1024"
@@ -924,21 +1526,36 @@
 
     </section>
 
+
+    <!-- =====================================================
+         TREŚĆ
+    ====================================================== -->
+
     <main>
 
         <div class="page-container content-wrapper">
 
+
+            <!-- =================================================
+                 INFORMACJE
+            ================================================== -->
+
             <div class="info-grid">
+
 
                 <section class="card">
 
-                    <h2>Kogo zapraszamy?</h2>
+                    <h2>
+                        Kogo zapraszamy?
+                    </h2>
+
 
                     <p>
                         Szkolenie przeznaczone jest dla przyszłych
                         projektantów zapytań w języku SQL
                         oraz programistów baz danych.
                     </p>
+
 
                     <p>
                         Adresowane jest do osób planujących pracę
@@ -948,14 +1565,19 @@
 
                 </section>
 
+
                 <section class="card">
 
-                    <h2>Organizacja szkolenia</h2>
+                    <h2>
+                        Organizacja szkolenia
+                    </h2>
+
 
                     <p>
                         Zajęcia prowadzone są indywidualnie lub
                         w grupach zorganizowanych.
                     </p>
+
 
                     <p>
                         Terminy dopasowywane są do potrzeb
@@ -968,95 +1590,186 @@
 
             </div>
 
+
+            <!-- =================================================
+                 PROGRAM
+            ================================================== -->
+
             <section class="card">
 
-                <h2>Program szkolenia</h2>
+                <h2>
+                    Program szkolenia
+                </h2>
+
 
                 <ul class="program">
 
-                    <li>Wprowadzenie do relacyjnych baz danych</li>
-                    <li>Projektowanie i budowa baz danych SQL</li>
-                    <li>Tabele, rekordy, pola i typy danych</li>
-                    <li>Podstawowe instrukcje języka SQL</li>
-                    <li>Instrukcje SELECT, INSERT, UPDATE i DELETE</li>
-                    <li>Filtrowanie i sortowanie danych</li>
-                    <li>Łączenie tabel za pomocą JOIN</li>
-                    <li>Grupowanie i funkcje agregujące</li>
-                    <li>Podzapytania i zapytania zagnieżdżone</li>
-                    <li>Funkcje analityczne OLAP</li>
-                    <li>Zaawansowane zapytania SQL</li>
-                    <li>Więzy spójności danych</li>
-                    <li>Klucze główne i klucze obce</li>
-                    <li>Wprowadzenie do języka PL/SQL</li>
-                    <li>Zmienne, instrukcje warunkowe i pętle</li>
-                    <li>Procedury i funkcje składowane</li>
-                    <li>Kursory i obsługa wyjątków</li>
-                    <li>Wyzwalacze bazodanowe</li>
-                    <li>Programowanie po stronie serwera</li>
-                    <li>XML w bazach danych</li>
+                    <li>
+                        Wprowadzenie do relacyjnych baz danych
+                    </li>
+
+                    <li>
+                        Projektowanie i budowa baz danych SQL
+                    </li>
+
+                    <li>
+                        Tabele, rekordy, pola i typy danych
+                    </li>
+
+                    <li>
+                        Podstawowe instrukcje języka SQL
+                    </li>
+
+                    <li>
+                        Instrukcje SELECT, INSERT, UPDATE i DELETE
+                    </li>
+
+                    <li>
+                        Filtrowanie i sortowanie danych
+                    </li>
+
+                    <li>
+                        Łączenie tabel za pomocą JOIN
+                    </li>
+
+                    <li>
+                        Grupowanie i funkcje agregujące
+                    </li>
+
+                    <li>
+                        Podzapytania i zapytania zagnieżdżone
+                    </li>
+
+                    <li>
+                        Funkcje analityczne OLAP
+                    </li>
+
+                    <li>
+                        Zaawansowane zapytania SQL
+                    </li>
+
+                    <li>
+                        Więzy spójności danych
+                    </li>
+
+                    <li>
+                        Klucze główne i klucze obce
+                    </li>
+
+                    <li>
+                        Wprowadzenie do języka PL/SQL
+                    </li>
+
+                    <li>
+                        Zmienne, instrukcje warunkowe i pętle
+                    </li>
+
+                    <li>
+                        Procedury i funkcje składowane
+                    </li>
+
+                    <li>
+                        Kursory i obsługa wyjątków
+                    </li>
+
+                    <li>
+                        Wyzwalacze bazodanowe
+                    </li>
+
+                    <li>
+                        Programowanie po stronie serwera
+                    </li>
+
+                    <li>
+                        XML w bazach danych
+                    </li>
 
                 </ul>
 
             </section>
 
+
+            <!-- =================================================
+                 EFEKTY
+            ================================================== -->
+
             <section class="card outcomes-card">
 
-                <h2>Po ukończeniu szkolenia uczestnik</h2>
+                <h2>
+                    Po ukończeniu szkolenia uczestnik
+                </h2>
+
 
                 <ul class="outcomes-list">
 
                     <li>
-                        <strong>Wie,</strong> jak zbudowana jest
-                        relacyjna baza danych.
+                        <strong>Wie,</strong>
+                        jak zbudowana jest relacyjna baza danych.
                     </li>
 
                     <li>
-                        <strong>Rozumie,</strong> zasady tworzenia
-                        tabel, relacji i więzów spójności.
+                        <strong>Rozumie,</strong>
+                        zasady tworzenia tabel, relacji
+                        i więzów spójności.
                     </li>
 
                     <li>
-                        <strong>Umie</strong> tworzyć zapytania
-                        wybierające i modyfikujące dane.
+                        <strong>Umie</strong>
+                        tworzyć zapytania wybierające
+                        i modyfikujące dane.
                     </li>
 
                     <li>
-                        <strong>Potrafi</strong> łączyć informacje
-                        pochodzące z wielu tabel.
+                        <strong>Potrafi</strong>
+                        łączyć informacje pochodzące
+                        z wielu tabel.
                     </li>
 
                     <li>
-                        <strong>Umie</strong> stosować funkcje
-                        agregujące, podzapytania i funkcje analityczne.
+                        <strong>Umie</strong>
+                        stosować funkcje agregujące,
+                        podzapytania i funkcje analityczne.
                     </li>
 
                     <li>
-                        <strong>Potrafi</strong> tworzyć podstawowe
-                        procedury i funkcje PL/SQL.
+                        <strong>Potrafi</strong>
+                        tworzyć podstawowe procedury
+                        i funkcje PL/SQL.
                     </li>
 
                     <li>
-                        <strong>Rozumie</strong> zasady programowania
-                        wykonywanego po stronie serwera bazy danych.
+                        <strong>Rozumie</strong>
+                        zasady programowania wykonywanego
+                        po stronie serwera bazy danych.
                     </li>
 
                     <li>
-                        <strong>Potrafi</strong> samodzielnie
-                        przygotować i obsługiwać bazę danych SQL.
+                        <strong>Potrafi</strong>
+                        samodzielnie przygotować i obsługiwać
+                        bazę danych SQL.
                     </li>
 
                 </ul>
 
             </section>
 
+
+            <!-- =================================================
+                 CERTYFIKAT
+            ================================================== -->
+
             <section class="card">
 
-                <h2>Certyfikat</h2>
+                <h2>
+                    Certyfikat
+                </h2>
+
 
                 <p>
                     Po ukończeniu szkolenia uczestnik otrzymuje
                     certyfikat w języku polskim i angielskim.
                 </p>
+
 
                 <p>
                     Na życzenie dostępne są również inne
@@ -1065,23 +1778,36 @@
 
             </section>
 
+
+            <!-- =================================================
+                 SZCZEGÓŁY
+            ================================================== -->
+
             <section class="card">
 
-                <h2>Szczegóły szkolenia</h2>
+                <h2>
+                    Szczegóły szkolenia
+                </h2>
+
 
                 <ul class="details-list">
 
                     <li>
                         Grupy zorganizowane –
-                        <strong>25 godzin dydaktycznych</strong>
+                        <strong>
+                            25 godzin dydaktycznych
+                        </strong>
                     </li>
 
                     <li>
                         Szkolenie indywidualne –
-                        <strong>16 godzin dydaktycznych</strong>
+                        <strong>
+                            16 godzin dydaktycznych
+                        </strong>
                     </li>
 
                 </ul>
+
 
                 <div class="price-box">
 
@@ -1089,15 +1815,18 @@
                         Cena szkolenia
                     </p>
 
+
                     <strong class="price">
                         649&nbsp;zł
                     </strong>
+
 
                     <p>
                         Na życzenie wystawiamy faktury VAT.
                     </p>
 
                 </div>
+
 
                 <a
                     class="btn"
@@ -1108,26 +1837,54 @@
 
             </section>
 
+
         </div>
 
     </main>
 
+
+    <!-- =====================================================
+         STOPKA
+    ====================================================== -->
+
     <footer>
 
         <p>
-            &copy; <span id="year">2026</span> ZPCI –
+
+            &copy;
+
+            <span id="year">
+                2026
+            </span>
+
+            ZPCI –
             Zachodniopomorskie Centrum Informatyki
+
         </p>
 
     </footer>
 
+
+    <!-- =====================================================
+         ROK
+    ====================================================== -->
+
     <script>
-        const yearElement = document.getElementById("year");
+
+        const yearElement =
+            document.getElementById("year");
+
 
         if (yearElement) {
-            yearElement.textContent = new Date().getFullYear();
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
         }
+
     </script>
 
+
 </body>
+
 </html>

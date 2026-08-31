@@ -217,6 +217,7 @@
     </script>
 
     <style>
+
         :root {
             --primary: #1f3b73;
             --primary-dark: #0b2148;
@@ -243,7 +244,7 @@
                 0 14px 38px rgba(11, 33, 72, 0.12);
 
             --shadow-hover:
-                0 22px 44px rgba(11, 33, 72, 0.2);
+                0 22px 44px rgba(11, 33, 72, 0.20);
         }
 
         * {
@@ -296,7 +297,7 @@
         }
 
         /* =========================
-           NAG&#321;&Oacute;WEK
+           NAGŁÓWEK
         ========================= */
 
         .site-header {
@@ -362,7 +363,6 @@
             z-index: 1;
         }
 
-
         /* =========================
            LOGO ZPCI
         ========================= */
@@ -372,7 +372,9 @@
             align-items: center;
             justify-content: center;
             gap: 16px;
+
             margin-bottom: 24px;
+
             color: var(--white);
             text-decoration: none;
         }
@@ -381,40 +383,57 @@
             width: 96px;
             height: 96px;
             flex: 0 0 96px;
+
             border: 4px solid rgba(255, 255, 255, 0.95);
             border-radius: 50%;
+
             background: var(--white);
+
             object-fit: contain;
-            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+            box-shadow:
+                0 14px 30px rgba(0, 0, 0, 0.25);
+
             transition:
                 transform 0.2s ease,
                 box-shadow 0.2s ease;
         }
 
         .header-brand:hover .brand-logo {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.32);
+            transform:
+                translateY(-3px) scale(1.03);
+
+            box-shadow:
+                0 18px 36px rgba(0, 0, 0, 0.32);
         }
 
         .brand-copy {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
             text-align: left;
         }
 
         .brand-name {
             max-width: 620px;
-            font-size: clamp(21px, 3vw, 31px);
+
+            font-size:
+                clamp(21px, 3vw, 31px);
+
             font-weight: 900;
             line-height: 1.15;
         }
 
         .brand-subtitle {
             margin-top: 6px;
-            color: rgba(255, 255, 255, 0.84);
+
+            color:
+                rgba(255, 255, 255, 0.84);
+
             font-size: 14px;
             font-weight: 700;
+
             letter-spacing: 0.07em;
             text-transform: uppercase;
         }
@@ -439,7 +458,7 @@
             margin: 0 auto;
 
             color:
-                rgba(255, 255, 255, 0.9);
+                rgba(255, 255, 255, 0.90);
 
             font-size:
                 clamp(17px, 2.5vw, 22px);
@@ -468,6 +487,7 @@
 
         .main-nav a {
             display: flex;
+
             min-height: 54px;
 
             align-items: center;
@@ -516,7 +536,7 @@
             background: var(--white);
 
             box-shadow:
-                0 20px 50px rgba(11, 33, 72, 0.2);
+                0 20px 50px rgba(11, 33, 72, 0.20);
         }
 
         .banner-box img {
@@ -526,7 +546,7 @@
         }
 
         /* =========================
-           G&#321;&Oacute;WNA TRE&#346;&#262;
+           GŁÓWNA TREŚĆ
         ========================= */
 
         main {
@@ -651,7 +671,7 @@
         }
 
         /* =========================
-           KAFELKI SZKOLE&#323;
+           KAFELKI SZKOLEŃ
         ========================= */
 
         .training-grid {
@@ -667,10 +687,12 @@
             position: relative;
 
             display: flex;
+
             min-width: 0;
             min-height: 285px;
 
             overflow: hidden;
+
             flex-direction: column;
 
             padding: 27px;
@@ -733,7 +755,7 @@
         }
 
         /* =========================
-           LOGOTYPY PROGRAM&Oacute;W
+           LOGOTYPY PROGRAMÓW
         ========================= */
 
         .program-logo {
@@ -761,7 +783,7 @@
 
             box-shadow:
                 0 10px 22px
-                rgba(11, 33, 72, 0.2);
+                rgba(11, 33, 72, 0.20);
 
             transition:
                 transform 0.25s ease,
@@ -856,7 +878,9 @@
 
         .logo-gimp .logo-eyes {
             display: flex;
+
             gap: 6px;
+
             margin-bottom: 5px;
         }
 
@@ -885,6 +909,7 @@
             color: var(--photoshop-light);
 
             font-size: 30px;
+
             font-family:
                 Arial,
                 Helvetica,
@@ -892,7 +917,6 @@
 
             letter-spacing: -2px;
         }
-
 
         .training-card h4 {
             position: relative;
@@ -950,9 +974,6 @@
 
         /* =========================
            TAKSONOMIA
-
-        /* =========================
-           TAKSONOMIA
         ========================= */
 
         .outcomes-grid {
@@ -968,7 +989,10 @@
             padding: 25px 21px;
 
             border: 1px solid var(--border);
-            border-top: 5px solid var(--primary);
+
+            border-top:
+                5px solid var(--primary);
+
             border-radius: var(--radius);
 
             background: #f9fbfe;
@@ -1005,6 +1029,7 @@
 
         .outcome-card li {
             margin-bottom: 10px;
+
             color: var(--muted);
         }
 
@@ -1013,7 +1038,7 @@
         }
 
         /* =========================
-           KORZY&#346;CI
+           KORZYŚCI
         ========================= */
 
         .benefits-box {
@@ -1040,6 +1065,7 @@
 
         .benefits-box p {
             margin-bottom: 15px;
+
             color: #4e5e6d;
         }
 
@@ -1053,8 +1079,10 @@
 
         .buttons {
             display: flex;
+
             flex-wrap: wrap;
             justify-content: center;
+
             gap: 15px;
 
             margin-top: 35px;
@@ -1062,6 +1090,7 @@
 
         .btn {
             display: inline-flex;
+
             min-height: 52px;
 
             align-items: center;
@@ -1134,10 +1163,11 @@
         }
 
         /* =========================
-           RESPONSYWNO&#346;&#262;
+           RESPONSYWNOŚĆ
         ========================= */
 
         @media (max-width: 1050px) {
+
             .outcomes-grid {
                 grid-template-columns:
                     repeat(2, minmax(0, 1fr));
@@ -1145,6 +1175,7 @@
         }
 
         @media (max-width: 950px) {
+
             .training-grid {
                 grid-template-columns:
                     repeat(2, minmax(0, 1fr));
@@ -1156,6 +1187,7 @@
         }
 
         @media (max-width: 820px) {
+
             .container {
                 width:
                     calc(100% - 28px);
@@ -1171,6 +1203,7 @@
         }
 
         @media (max-width: 600px) {
+
             body {
                 font-size: 17px;
             }
@@ -1294,6 +1327,7 @@
         }
 
         @media (max-width: 390px) {
+
             .nav-inner {
                 grid-template-columns: 1fr;
             }
@@ -1310,12 +1344,13 @@
                 font-size: 28px;
             }
         }
+
     </style>
 </head>
 
 <body>
 
-    <!-- NAG&#321;&Oacute;WEK -->
+    <!-- NAGŁÓWEK -->
 
     <header class="site-header">
 
@@ -1357,8 +1392,8 @@
 
             <p>
                 Szkolenia z grafiki rastrowej i wektorowej,
-                cyfrowej obr&oacute;bki zdj&#281;&#263;
-                oraz projektowania materia&#322;&oacute;w graficznych
+                cyfrowej obróbki zdjęć
+                oraz projektowania materiałów graficznych
             </p>
 
         </div>
@@ -1369,13 +1404,13 @@
 
     <nav
         class="main-nav"
-        aria-label="G&#322;&oacute;wna nawigacja"
+        aria-label="Główna nawigacja"
     >
 
         <div class="container nav-inner">
 
             <a href="../index.html">
-                Strona g&#322;&oacute;wna
+                Strona główna
             </a>
 
             <a href="../szkoleniakursy.html">
@@ -1383,7 +1418,7 @@
             </a>
 
             <a href="../uslugiit.html">
-                Us&#322;ugi IT
+                Usługi IT
             </a>
 
             <a href="../kontakt.html">
@@ -1398,7 +1433,7 @@
 
     <section
         class="banner-section"
-        aria-label="Baner szkole&#324; z grafiki komputerowej"
+        aria-label="Baner szkoleń z grafiki komputerowej"
     >
 
         <div class="container">
@@ -1419,7 +1454,7 @@
 
     </section>
 
-    <!-- TRE&#346;&#262; -->
+    <!-- TREŚĆ -->
 
     <main>
 
@@ -1438,22 +1473,22 @@
                     <p>
                         Szkolenia z grafiki komputerowej organizowane
                         przez Zachodniopomorskie Centrum Informatyki
-                        przeznaczone s&#261; dla os&oacute;b,
-                        kt&oacute;re chc&#261; zdoby&#263; praktyczne
-                        umiej&#281;tno&#347;ci zwi&#261;zane
-                        z projektowaniem, obr&oacute;bk&#261; grafiki
-                        oraz przygotowaniem materia&#322;&oacute;w
+                        przeznaczone są dla osób,
+                        które chcą zdobyć praktyczne
+                        umiejętności związane
+                        z projektowaniem, obróbką grafiki
+                        oraz przygotowaniem materiałów
                         do publikacji elektronicznych i druku.
                     </p>
 
                     <p>
-                        Programy szkoleniowe obejmuj&#261;
-                        zar&oacute;wno podstawy grafiki komputerowej,
+                        Programy szkoleniowe obejmują
+                        zarówno podstawy grafiki komputerowej,
                         jak i zaawansowane techniki wykorzystywane
-                        przez grafik&oacute;w, projektant&oacute;w,
-                        pracownik&oacute;w dzia&#322;&oacute;w marketingu
-                        oraz osoby prowadz&#261;ce w&#322;asn&#261;
-                        dzia&#322;alno&#347;&#263; gospodarcz&#261;.
+                        przez grafików, projektantów,
+                        pracowników działów marketingu
+                        oraz osoby prowadzące własną
+                        działalność gospodarczą.
                     </p>
 
                 </section>
@@ -1463,7 +1498,7 @@
                 <section class="content-section">
 
                     <h3>
-                        Zakres tematyczny szkole&#324;
+                        Zakres tematyczny szkoleń
                     </h3>
 
                     <ul class="topic-list">
@@ -1473,7 +1508,7 @@
                         </li>
 
                         <li>
-                            Cyfrowa obr&oacute;bka zdj&#281;&#263;
+                            Cyfrowa obróbka zdjęć
                         </li>
 
                         <li>
@@ -1481,28 +1516,28 @@
                         </li>
 
                         <li>
-                            Projektowanie materia&#322;&oacute;w reklamowych
+                            Projektowanie materiałów reklamowych
                         </li>
 
                         <li>
-                            Tworzenie logotyp&oacute;w
+                            Tworzenie logotypów
                             i identyfikacji wizualnej
                         </li>
 
                         <li>
-                            Przygotowanie materia&#322;&oacute;w do druku
+                            Przygotowanie materiałów do druku
                         </li>
 
                     </ul>
 
                 </section>
 
-                <!-- KAFELKI SZKOLE&#323; -->
+                <!-- KAFELKI SZKOLEŃ -->
 
                 <section class="content-section">
 
                     <h3>
-                        Dost&#281;pne szkolenia
+                        Dostępne szkolenia
                     </h3>
 
                     <div class="training-grid">
@@ -1527,8 +1562,8 @@
 
                             <p>
                                 Grafika wektorowa, tworzenie
-                                logotyp&oacute;w, wizyt&oacute;wek,
-                                ulotek i materia&#322;&oacute;w
+                                logotypów, wizytówek,
+                                ulotek i materiałów
                                 reklamowych.
                             </p>
 
@@ -1538,7 +1573,7 @@
 
                         </a>
 
-                        <!-- GIMP CYFROWA OBR&Oacute;BKA -->
+                        <!-- GIMP -->
 
                         <a
                             class="training-card"
@@ -1565,12 +1600,12 @@
                             </span>
 
                             <h4>
-                                GIMP &ndash; cyfrowa obr&oacute;bka zdj&#281;&#263;
+                                GIMP – cyfrowa obróbka zdjęć
                             </h4>
 
                             <p>
-                                Retusz fotografii, korekta kolor&oacute;w,
-                                kadrowanie oraz przygotowanie zdj&#281;&#263;
+                                Retusz fotografii, korekta kolorów,
+                                kadrowanie oraz przygotowanie zdjęć
                                 do publikacji internetowej i druku.
                             </p>
 
@@ -1595,7 +1630,7 @@
                             </span>
 
                             <h4>
-                                Photoshop &ndash; cyfrowa obr&oacute;bka zdj&#281;&#263;
+                                Photoshop – cyfrowa obróbka zdjęć
                             </h4>
 
                             <p>
@@ -1619,7 +1654,7 @@
                 <section class="content-section">
 
                     <h3>
-                        Po uko&#324;czeniu szkolenia uczestnik
+                        Po ukończeniu szkolenia uczestnik
                     </h3>
 
                     <div class="outcomes-grid">
@@ -1633,18 +1668,18 @@
                             <ul>
 
                                 <li>
-                                    Jakie s&#261; podstawowe zasady
+                                    Jakie są podstawowe zasady
                                     projektowania grafiki komputerowej.
                                 </li>
 
                                 <li>
-                                    Jak dzia&#322;aj&#261; programy
+                                    Jak działają programy
                                     graficzne wykorzystywane
                                     w projektowaniu.
                                 </li>
 
                                 <li>
-                                    Jak przygotowa&#263; materia&#322;y
+                                    Jak przygotować materiały
                                     do publikacji elektronicznych
                                     i druku.
                                 </li>
@@ -1662,18 +1697,18 @@
                             <ul>
 
                                 <li>
-                                    R&oacute;&#380;nice pomi&#281;dzy
-                                    grafik&#261; rastrow&#261;
-                                    i wektorow&#261;.
+                                    Różnice pomiędzy
+                                    grafiką rastrową
+                                    i wektorową.
                                 </li>
 
                                 <li>
                                     Zasady kompozycji, kolorystyki
-                                    i estetyki projekt&oacute;w.
+                                    i estetyki projektów.
                                 </li>
 
                                 <li>
-                                    Znaczenie jako&#347;ci materia&#322;&oacute;w
+                                    Znaczenie jakości materiałów
                                     graficznych w komunikacji wizualnej.
                                 </li>
 
@@ -1690,18 +1725,18 @@
                             <ul>
 
                                 <li>
-                                    Obs&#322;ugiwa&#263; podstawowe
-                                    narz&#281;dzia program&oacute;w
+                                    Obsługiwać podstawowe
+                                    narzędzia programów
                                     graficznych.
                                 </li>
 
                                 <li>
-                                    Edytowa&#263; i retuszowa&#263;
+                                    Edytować i retuszować
                                     fotografie cyfrowe.
                                 </li>
 
                                 <li>
-                                    Stosowa&#263; kolory, warstwy,
+                                    Stosować kolory, warstwy,
                                     maski i efekty.
                                 </li>
 
@@ -1718,23 +1753,23 @@
                             <ul>
 
                                 <li>
-                                    Samodzielnie tworzy&#263;
+                                    Samodzielnie tworzyć
                                     projekty graficzne.
                                 </li>
 
                                 <li>
-                                    Projektowa&#263; ulotki, plakaty,
-                                    wizyt&oacute;wki i logotypy.
+                                    Projektować ulotki, plakaty,
+                                    wizytówki i logotypy.
                                 </li>
 
                                 <li>
-                                    Przygotowywa&#263; materia&#322;y
+                                    Przygotowywać materiały
                                     do Internetu i druku.
                                 </li>
 
                                 <li>
-                                    Wykorzystywa&#263; zdobyte
-                                    umiej&#281;tno&#347;ci w pracy
+                                    Wykorzystywać zdobyte
+                                    umiejętności w pracy
                                     zawodowej.
                                 </li>
 
@@ -1746,30 +1781,30 @@
 
                 </section>
 
-                <!-- KORZY&#346;CI -->
+                <!-- KORZYŚCI -->
 
                 <section class="content-section benefits-box">
 
                     <h3>
-                        Korzy&#347;ci z uko&#324;czenia szkolenia
+                        Korzyści z ukończenia szkolenia
                     </h3>
 
                     <p>
-                        Zdobyte umiej&#281;tno&#347;ci mog&#261;
-                        zosta&#263; wykorzystane w pracy zwi&#261;zanej
-                        z marketingiem, reklam&#261;, projektowaniem
-                        graficznym, administracj&#261; stron
-                        internetowych, przygotowaniem materia&#322;&oacute;w promocyjnych,
-                        publikacj&#261; tre&#347;ci internetowych
-                        oraz prowadzeniem w&#322;asnej dzia&#322;alno&#347;ci.
+                        Zdobyte umiejętności mogą
+                        zostać wykorzystane w pracy związanej
+                        z marketingiem, reklamą, projektowaniem
+                        graficznym, administracją stron
+                        internetowych, przygotowaniem materiałów
+                        promocyjnych, publikacją treści internetowych
+                        oraz prowadzeniem własnej działalności.
                     </p>
 
                     <p>
-                        Szkolenia maj&#261; charakter praktyczny
-                        i pozwalaj&#261; zdoby&#263; wiedz&#281;
-                        przydatn&#261; zar&oacute;wno osobom
-                        rozpoczynaj&#261;cym nauk&#281; grafiki,
-                        jak i uczestnikom chc&#261;cym rozwin&#261;&#263;
+                        Szkolenia mają charakter praktyczny
+                        i pozwalają zdobyć wiedzę
+                        przydatną zarówno osobom
+                        rozpoczynającym naukę grafiki,
+                        jak i uczestnikom chcącym rozwinąć
                         kwalifikacje zawodowe.
                     </p>
 
@@ -1783,14 +1818,14 @@
                         href="../index.html"
                         class="btn"
                     >
-                        &lsaquo; Powr&oacute;t do strony g&#322;&oacute;wnej
+                        &lsaquo; Powrót do strony głównej
                     </a>
 
                     <a
                         href="../cs.html"
                         class="btn btn-signup"
                     >
-                        Zapisz si&#281; na szkolenie
+                        Zapisz się na szkolenie
                     </a>
 
                 </div>
@@ -1814,17 +1849,21 @@
         <p>
             Szkolenia komputerowe &bull;
             Grafika wektorowa &bull;
-            Obr&oacute;bka zdj&#281;&#263;
+            Obróbka zdjęć
         </p>
 
     </footer>
 
     <script>
-        const yearElement = document.getElementById("year");
+
+        const yearElement =
+            document.getElementById("year");
 
         if (yearElement) {
-            yearElement.textContent = new Date().getFullYear();
+            yearElement.textContent =
+                new Date().getFullYear();
         }
+
     </script>
 
 </body>

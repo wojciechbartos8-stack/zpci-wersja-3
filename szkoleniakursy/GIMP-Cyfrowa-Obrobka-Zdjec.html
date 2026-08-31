@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
+
 <head>
 
     <meta charset="UTF-8">
@@ -125,7 +126,7 @@
         content="https://zpci.pl/images/Gimp.png"
     >
 
-    <!-- DANE STRUKTURALNE SEO -->
+    <!-- DANE STRUKTURALNE -->
 
     <script type="application/ld+json">
     {
@@ -153,6 +154,12 @@
                 "inLanguage": "pl-PL",
                 "provider": {
                     "@id": "https://zpci.pl/#organization"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "249",
+                    "priceCurrency": "PLN",
+                    "url": "https://zpci.pl/szkolenia/gimp-cyfrowa-obrobka-zdjec.html"
                 }
             },
             {
@@ -268,9 +275,9 @@
             margin: 0 auto;
         }
 
-        /* =========================
-           NAGŁÓWEK
-        ========================= */
+        /* =========================================
+           NAGŁÓWEK ZPCI 3
+        ========================================= */
 
         .site-header {
             position: relative;
@@ -281,7 +288,7 @@
             background:
                 radial-gradient(
                     circle at 88% 18%,
-                    rgba(255, 255, 255, 0.14),
+                    rgba(255,255,255,0.14),
                     transparent 30%
                 ),
                 linear-gradient(
@@ -302,7 +309,7 @@
             right: 7%;
 
             color:
-                rgba(255, 255, 255, 0.055);
+                rgba(255,255,255,0.055);
 
             font-size:
                 clamp(100px, 18vw, 220px);
@@ -319,14 +326,12 @@
             z-index: 1;
         }
 
-        /* =========================
-           LOGO ZPCI
-        ========================= */
-
         .header-brand {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
+
             gap: 16px;
 
             margin-bottom: 25px;
@@ -340,19 +345,20 @@
             flex: 0 0 96px;
 
             border:
-                4px solid rgba(255, 255, 255, 0.95);
+                4px solid rgba(255,255,255,0.95);
 
             border-radius: 50%;
 
             background: var(--white);
+
             object-fit: contain;
 
             box-shadow:
-                0 14px 30px rgba(0, 0, 0, 0.22);
+                0 14px 30px rgba(0,0,0,0.22);
 
             transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
+                transform .2s ease,
+                box-shadow .2s ease;
         }
 
         .header-brand:hover .brand-mark {
@@ -361,11 +367,12 @@
                 scale(1.03);
 
             box-shadow:
-                0 18px 35px rgba(0, 0, 0, 0.28);
+                0 18px 35px rgba(0,0,0,0.28);
         }
 
         .brand-copy {
             display: flex;
+
             flex-direction: column;
             align-items: flex-start;
 
@@ -374,7 +381,7 @@
 
         .brand-name {
             font-size:
-                clamp(20px, 2.6vw, 29px);
+                clamp(20px,2.6vw,29px);
 
             font-weight: 900;
             line-height: 1.15;
@@ -384,48 +391,43 @@
             margin-top: 6px;
 
             color:
-                rgba(255, 255, 255, 0.82);
+                rgba(255,255,255,0.82);
 
             font-size: 14px;
             font-weight: 700;
-            letter-spacing: 0.08em;
+
+            letter-spacing: .08em;
             text-transform: uppercase;
-        }
-
-        .header-brand:focus-visible {
-            outline:
-                3px solid var(--accent);
-
-            outline-offset: 7px;
-            border-radius: 20px;
         }
 
         .site-header h1 {
             max-width: 950px;
+
             margin: 0 auto 12px;
 
             color: var(--white);
 
             font-size:
-                clamp(31px, 5vw, 51px);
+                clamp(31px,5vw,51px);
 
             line-height: 1.15;
         }
 
         .site-header > .header-content > p {
             max-width: 820px;
+
             margin: 0 auto;
 
             color:
-                rgba(255, 255, 255, 0.9);
+                rgba(255,255,255,0.9);
 
             font-size:
-                clamp(17px, 2.3vw, 21px);
+                clamp(17px,2.3vw,21px);
         }
 
-        /* =========================
-           NAWIGACJA
-        ========================= */
+        /* =========================================
+           NAWIGACJA ZPCI 3
+        ========================================= */
 
         .main-nav {
             position: sticky;
@@ -435,17 +437,20 @@
             background: #071b37;
 
             box-shadow:
-                0 5px 18px rgba(0, 0, 0, 0.18);
+                0 5px 18px rgba(0,0,0,.18);
         }
 
         .nav-inner {
             display: flex;
+
             flex-wrap: wrap;
+
             justify-content: center;
         }
 
         .main-nav a {
             display: flex;
+
             min-height: 54px;
 
             align-items: center;
@@ -457,11 +462,12 @@
 
             font-size: 16px;
             font-weight: 700;
+
             text-align: center;
 
             transition:
-                background-color 0.2s ease,
-                color 0.2s ease;
+                background-color .2s ease,
+                color .2s ease;
         }
 
         .main-nav a:hover,
@@ -474,13 +480,15 @@
         .button:focus-visible,
         .email-link:focus-visible,
         .text-link:focus-visible {
-            outline: 3px solid var(--accent);
+            outline:
+                3px solid var(--accent);
+
             outline-offset: 3px;
         }
 
-        /* =========================
+        /* =========================================
            BANER
-        ========================= */
+        ========================================= */
 
         .banner-section {
             padding: 32px 0 0;
@@ -489,24 +497,27 @@
         .banner-box {
             overflow: hidden;
 
-            border: 5px solid var(--white);
+            border:
+                5px solid var(--white);
+
             border-radius: 23px;
 
             background: var(--white);
 
             box-shadow:
-                0 21px 50px rgba(11, 33, 72, 0.20);
+                0 21px 50px rgba(11,33,72,.20);
         }
 
         .banner-box img {
             width: 100%;
             height: auto;
+
             object-fit: contain;
         }
 
-        /* =========================
+        /* =========================================
            GŁÓWNA TREŚĆ
-        ========================= */
+        ========================================= */
 
         main {
             padding: 32px 0 58px;
@@ -515,7 +526,9 @@
         .content-box {
             padding: 42px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
+
             border-radius: 23px;
 
             background: var(--white);
@@ -559,11 +572,12 @@
 
             font-size: 20px;
             font-weight: 900;
+
             letter-spacing: 1px;
 
             box-shadow:
                 0 11px 25px
-                rgba(64, 59, 50, 0.25);
+                rgba(64,59,50,.25);
         }
 
         .intro h2 {
@@ -572,30 +586,30 @@
             color: var(--primary-dark);
 
             font-size:
-                clamp(30px, 4.5vw, 44px);
+                clamp(30px,4.5vw,44px);
 
             line-height: 1.2;
         }
 
         .intro p {
             max-width: 920px;
+
             margin: 0 auto 14px;
 
             color: var(--muted);
         }
 
-        .intro p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* =========================
+        /* =========================================
            PRZYCISKI
-        ========================= */
+        ========================================= */
 
         .buttons {
             display: flex;
+
             flex-wrap: wrap;
+
             justify-content: center;
+
             gap: 15px;
 
             margin-top: 32px;
@@ -603,6 +617,7 @@
 
         .button {
             display: inline-flex;
+
             min-height: 52px;
 
             align-items: center;
@@ -616,23 +631,26 @@
             border-radius: 999px;
 
             background: var(--accent);
+
             color: var(--primary-dark);
 
             font-weight: 800;
+
             line-height: 1.2;
+
             text-align: center;
 
             cursor: pointer;
 
             box-shadow:
                 0 9px 22px
-                rgba(242, 183, 5, 0.25);
+                rgba(242,183,5,.25);
 
             transition:
-                background-color 0.2s ease,
-                color 0.2s ease,
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
+                background-color .2s ease,
+                color .2s ease,
+                transform .2s ease,
+                box-shadow .2s ease;
         }
 
         .button:hover {
@@ -640,18 +658,19 @@
 
             box-shadow:
                 0 13px 28px
-                rgba(242, 183, 5, 0.32);
+                rgba(242,183,5,.32);
 
             transform: translateY(-2px);
         }
 
         .button-secondary {
             background: var(--primary);
+
             color: var(--white);
 
             box-shadow:
                 0 9px 22px
-                rgba(31, 59, 115, 0.22);
+                rgba(31,59,115,.22);
         }
 
         .button-secondary:hover {
@@ -662,6 +681,7 @@
             border-color: var(--primary);
 
             background: var(--white);
+
             color: var(--primary);
 
             box-shadow: none;
@@ -669,12 +689,13 @@
 
         .button-outline:hover {
             background: var(--primary-light);
+
             color: var(--primary-dark);
         }
 
-        /* =========================
+        /* =========================================
            SEKCJE
-        ========================= */
+        ========================================= */
 
         .content-section {
             margin-top: 44px;
@@ -682,6 +703,7 @@
 
         .content-section > h2 {
             margin-bottom: 21px;
+
             padding-bottom: 10px;
 
             border-bottom:
@@ -690,29 +712,26 @@
             color: var(--primary-dark);
 
             font-size:
-                clamp(25px, 3.2vw, 34px);
+                clamp(25px,3.2vw,34px);
 
             line-height: 1.3;
         }
 
         .content-section > p {
             margin-bottom: 15px;
+
             color: var(--muted);
         }
 
-        .content-section > p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* =========================
+        /* =========================================
            INFORMACJE
-        ========================= */
+        ========================================= */
 
         .information-grid {
             display: grid;
 
             grid-template-columns:
-                repeat(3, minmax(0, 1fr));
+                repeat(3,minmax(0,1fr));
 
             gap: 20px;
         }
@@ -720,7 +739,9 @@
         .information-card {
             padding: 27px 23px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
+
             border-radius: 16px;
 
             background:
@@ -732,15 +753,16 @@
 
             box-shadow:
                 0 9px 25px
-                rgba(11, 33, 72, 0.07);
+                rgba(11,33,72,.07);
 
             transition:
-                transform 0.22s ease,
-                box-shadow 0.22s ease;
+                transform .22s ease,
+                box-shadow .22s ease;
         }
 
         .information-card:hover {
             box-shadow: var(--shadow-hover);
+
             transform: translateY(-5px);
         }
 
@@ -758,6 +780,7 @@
             border-radius: 15px;
 
             background: var(--gimp);
+
             color: var(--white);
 
             font-size: 27px;
@@ -769,23 +792,25 @@
             color: var(--primary-dark);
 
             font-size: 22px;
+
             line-height: 1.3;
         }
 
         .information-card p {
             color: var(--muted);
+
             font-size: 16px;
         }
 
-        /* =========================
-           PROGRAM SZKOLENIA
-        ========================= */
+        /* =========================================
+           PROGRAM
+        ========================================= */
 
         .program-grid {
             display: grid;
 
             grid-template-columns:
-                repeat(2, minmax(0, 1fr));
+                repeat(2,minmax(0,1fr));
 
             gap: 15px 18px;
         }
@@ -798,7 +823,9 @@
             padding:
                 17px 17px 17px 58px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
+
             border-radius: 13px;
 
             background:
@@ -809,9 +836,9 @@
                 );
 
             transition:
-                transform 0.2s ease,
-                border-color 0.2s ease,
-                box-shadow 0.2s ease;
+                transform .2s ease,
+                border-color .2s ease,
+                box-shadow .2s ease;
         }
 
         .program-card:hover {
@@ -819,7 +846,7 @@
 
             box-shadow:
                 0 10px 24px
-                rgba(102, 95, 80, 0.13);
+                rgba(102,95,80,.13);
 
             transform: translateY(-3px);
         }
@@ -828,6 +855,7 @@
             content: "\2713";
 
             position: absolute;
+
             top: 18px;
             left: 17px;
 
@@ -842,9 +870,11 @@
             border-radius: 50%;
 
             background: var(--gimp);
+
             color: var(--white);
 
             font-size: 14px;
+
             font-weight: 900;
         }
 
@@ -854,6 +884,7 @@
             color: var(--primary-dark);
 
             font-size: 19px;
+
             line-height: 1.3;
         }
 
@@ -861,15 +892,17 @@
             color: var(--muted);
 
             font-size: 15px;
+
             line-height: 1.55;
         }
 
-        /* =========================
+        /* =========================================
            TAKSONOMIA
-        ========================= */
+        ========================================= */
 
         .taxonomy-intro {
             margin-bottom: 25px;
+
             color: var(--muted);
         }
 
@@ -877,7 +910,7 @@
             display: grid;
 
             grid-template-columns:
-                repeat(4, minmax(0, 1fr));
+                repeat(4,minmax(0,1fr));
 
             gap: 19px;
         }
@@ -885,7 +918,9 @@
         .taxonomy-card {
             padding: 25px 21px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
+
             border-top:
                 5px solid var(--primary);
 
@@ -900,11 +935,11 @@
 
             box-shadow:
                 0 9px 24px
-                rgba(11, 33, 72, 0.08);
+                rgba(11,33,72,.08);
 
             transition:
-                transform 0.22s ease,
-                box-shadow 0.22s ease;
+                transform .22s ease,
+                box-shadow .22s ease;
         }
 
         .taxonomy-card:nth-child(2) {
@@ -921,6 +956,7 @@
 
         .taxonomy-card:hover {
             box-shadow: var(--shadow-hover);
+
             transform: translateY(-5px);
         }
 
@@ -930,6 +966,7 @@
             color: var(--primary-dark);
 
             font-size: 24px;
+
             line-height: 1.25;
         }
 
@@ -939,19 +976,17 @@
 
         .taxonomy-card li {
             margin-bottom: 10px;
+
             color: var(--muted);
         }
 
-        .taxonomy-card li:last-child {
-            margin-bottom: 0;
-        }
-
-        /* =========================
-           EFEKTY PRAKTYCZNE
-        ========================= */
+        /* =========================================
+           EFEKTY
+        ========================================= */
 
         .outcomes-box {
             margin-top: 44px;
+
             padding: 30px;
 
             border-left:
@@ -973,7 +1008,7 @@
             color: var(--primary-dark);
 
             font-size:
-                clamp(25px, 3vw, 32px);
+                clamp(25px,3vw,32px);
 
             line-height: 1.3;
         }
@@ -982,7 +1017,7 @@
             display: grid;
 
             grid-template-columns:
-                repeat(2, minmax(0, 1fr));
+                repeat(2,minmax(0,1fr));
 
             gap: 13px 26px;
         }
@@ -1001,7 +1036,7 @@
             border-radius: 12px;
 
             background:
-                rgba(255, 255, 255, 0.88);
+                rgba(255,255,255,.88);
 
             color: var(--muted);
         }
@@ -1010,6 +1045,7 @@
             content: "\2713";
 
             position: absolute;
+
             top: 13px;
             left: 14px;
 
@@ -1024,18 +1060,21 @@
             border-radius: 50%;
 
             background: var(--gimp);
+
             color: var(--white);
 
             font-size: 13px;
+
             font-weight: 900;
         }
 
-        /* =========================
+        /* =========================================
            INFORMACJE DODATKOWE
-        ========================= */
+        ========================================= */
 
         .details-box {
             margin-top: 44px;
+
             padding: 30px;
 
             border-left:
@@ -1052,7 +1091,7 @@
             color: var(--primary-dark);
 
             font-size:
-                clamp(25px, 3vw, 32px);
+                clamp(25px,3vw,32px);
 
             line-height: 1.3;
         }
@@ -1061,7 +1100,7 @@
             display: grid;
 
             grid-template-columns:
-                repeat(2, minmax(0, 1fr));
+                repeat(2,minmax(0,1fr));
 
             gap: 21px;
         }
@@ -1083,6 +1122,7 @@
             color: var(--primary-dark);
 
             font-size: 22px;
+
             line-height: 1.3;
         }
 
@@ -1094,27 +1134,26 @@
             margin-bottom: 8px;
         }
 
-        .detail-card li:last-child {
-            margin-bottom: 0;
-        }
-
         .price-label {
             margin-bottom: 4px;
 
             color: var(--muted);
+
             font-size: 16px;
         }
 
         .price {
             display: block;
+
             margin-bottom: 10px;
 
             color: var(--gimp-dark);
 
             font-size:
-                clamp(35px, 5vw, 47px);
+                clamp(35px,5vw,47px);
 
             font-weight: 900;
+
             line-height: 1.1;
         }
 
@@ -1124,11 +1163,8 @@
 
         .details-text p {
             margin-bottom: 12px;
-            color: #4d5d6c;
-        }
 
-        .details-text p:last-child {
-            margin-bottom: 0;
+            color: #4d5d6c;
         }
 
         .email-link,
@@ -1140,16 +1176,19 @@
             overflow-wrap: anywhere;
 
             text-decoration: underline;
+
             text-decoration-thickness: 2px;
+
             text-underline-offset: 4px;
         }
 
-        /* =========================
+        /* =========================================
            KONTAKT
-        ========================= */
+        ========================================= */
 
         .contact-box {
             margin-top: 44px;
+
             padding: 32px;
 
             border-radius: 18px;
@@ -1162,11 +1201,12 @@
                 );
 
             color: var(--white);
+
             text-align: center;
 
             box-shadow:
                 0 18px 42px
-                rgba(11, 33, 72, 0.22);
+                rgba(11,33,72,.22);
         }
 
         .contact-box h2 {
@@ -1175,27 +1215,29 @@
             color: var(--white);
 
             font-size:
-                clamp(26px, 3vw, 34px);
+                clamp(26px,3vw,34px);
 
             line-height: 1.3;
         }
 
         .contact-box p {
             max-width: 800px;
+
             margin: 0 auto 9px;
 
             color:
-                rgba(255, 255, 255, 0.9);
+                rgba(255,255,255,.9);
         }
 
         .contact-box .email-link {
             color: var(--accent);
+
             font-size: 20px;
         }
 
-        /* =========================
+        /* =========================================
            STOPKA
-        ========================= */
+        ========================================= */
 
         footer {
             padding: 28px 20px;
@@ -1203,7 +1245,7 @@
             background: var(--primary-dark);
 
             color:
-                rgba(255, 255, 255, 0.88);
+                rgba(255,255,255,.88);
 
             text-align: center;
         }
@@ -1212,29 +1254,28 @@
             margin-top: 5px;
         }
 
-        /* =========================
+        /* =========================================
            RESPONSYWNOŚĆ
-        ========================= */
+        ========================================= */
 
-        @media (max-width: 1050px) {
+        @media (max-width:1050px) {
 
             .taxonomy-grid {
                 grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
+                    repeat(2,minmax(0,1fr));
             }
 
             .information-grid {
                 grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
+                    repeat(2,minmax(0,1fr));
             }
 
             .information-card:last-child {
                 grid-column: 1 / -1;
             }
-
         }
 
-        @media (max-width: 850px) {
+        @media (max-width:850px) {
 
             body {
                 font-size: 17px;
@@ -1248,20 +1289,18 @@
             .content-box {
                 padding: 32px 24px;
             }
-
         }
 
-        @media (max-width: 700px) {
+        @media (max-width:700px) {
 
             .program-grid,
             .outcomes-grid,
             .details-grid {
                 grid-template-columns: 1fr;
             }
-
         }
 
-        @media (max-width: 600px) {
+        @media (max-width:600px) {
 
             .page-container {
                 width:
@@ -1274,17 +1313,20 @@
 
             .header-brand {
                 flex-direction: column;
+
                 gap: 12px;
             }
 
             .brand-copy {
                 align-items: center;
+
                 text-align: center;
             }
 
             .brand-mark {
                 width: 84px;
                 height: 84px;
+
                 flex-basis: 84px;
             }
 
@@ -1292,14 +1334,14 @@
                 right: 50%;
 
                 transform:
-                    translate(50%, -50%);
+                    translate(50%,-50%);
             }
 
             .nav-inner {
                 display: grid;
 
                 grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
+                    repeat(2,minmax(0,1fr));
             }
 
             .main-nav a {
@@ -1309,7 +1351,7 @@
 
                 border-bottom:
                     1px solid
-                    rgba(255, 255, 255, 0.08);
+                    rgba(255,255,255,.08);
 
                 font-size: 14px;
             }
@@ -1320,6 +1362,7 @@
 
             .banner-box {
                 border-width: 3px;
+
                 border-radius: 14px;
             }
 
@@ -1329,6 +1372,7 @@
 
             .content-box {
                 padding: 24px 17px;
+
                 border-radius: 15px;
             }
 
@@ -1339,6 +1383,7 @@
             .intro-logo {
                 width: 66px;
                 height: 66px;
+
                 font-size: 17px;
             }
 
@@ -1362,6 +1407,7 @@
 
             .program-card {
                 min-height: auto;
+
                 padding-right: 14px;
             }
 
@@ -1372,10 +1418,9 @@
             .buttons .button {
                 width: 100%;
             }
-
         }
 
-        @media (max-width: 390px) {
+        @media (max-width:390px) {
 
             .nav-inner {
                 grid-template-columns: 1fr;
@@ -1388,24 +1433,27 @@
             .site-header h1 {
                 font-size: 27px;
             }
-
         }
 
-        /* =========================
+        /* =========================================
            DRUKOWANIE
-        ========================= */
+        ========================================= */
 
         @media print {
 
             body {
                 background: #ffffff;
+
                 color: #000000;
+
                 font-size: 12pt;
             }
 
             .site-header {
                 padding: 20px;
+
                 background: #ffffff;
+
                 color: #000000;
             }
 
@@ -1416,15 +1464,12 @@
                 color: #000000;
             }
 
-            .header-brand {
-                margin-bottom: 15px;
-            }
-
             .brand-mark {
                 width: 70px;
                 height: 70px;
 
-                border: 1px solid #cccccc;
+                border:
+                    1px solid #cccccc;
 
                 box-shadow: none;
             }
@@ -1438,6 +1483,7 @@
 
             .page-container {
                 width: 100%;
+
                 max-width: none;
             }
 
@@ -1454,7 +1500,9 @@
             .details-box,
             .detail-card,
             .contact-box {
-                border: 1px solid #cccccc;
+                border:
+                    1px solid #cccccc;
+
                 box-shadow: none;
             }
 
@@ -1476,11 +1524,13 @@
             .outcome-item,
             .detail-card {
                 margin-bottom: 14px;
+
                 page-break-inside: avoid;
             }
 
             .contact-box {
                 background: #ffffff;
+
                 color: #000000;
             }
 
@@ -1489,7 +1539,6 @@
             .contact-box .email-link {
                 color: #000000;
             }
-
         }
 
     </style>
@@ -1498,7 +1547,9 @@
 
 <body>
 
-    <!-- NAGŁÓWEK -->
+    <!-- =========================================
+         NAGŁÓWEK
+    ========================================= -->
 
     <header class="site-header">
 
@@ -1548,7 +1599,10 @@
 
     </header>
 
-    <!-- NAWIGACJA -->
+
+    <!-- =========================================
+         NAWIGACJA
+    ========================================= -->
 
     <nav
         class="main-nav"
@@ -1565,7 +1619,7 @@
                 Szkolenia / Kursy
             </a>
 
-            <a href="../uslugiit.html">
+            <a href="../UslugiIT.html">
                 Usługi IT
             </a>
 
@@ -1577,7 +1631,10 @@
 
     </nav>
 
-    <!-- BANER -->
+
+    <!-- =========================================
+         BANER
+    ========================================= -->
 
     <section
         class="banner-section"
@@ -1604,13 +1661,17 @@
 
     </section>
 
-    <!-- GŁÓWNA TREŚĆ -->
+
+    <!-- =========================================
+         GŁÓWNA TREŚĆ
+    ========================================= -->
 
     <main>
 
         <div class="page-container">
 
             <article class="content-box">
+
 
                 <!-- WPROWADZENIE -->
 
@@ -1644,6 +1705,7 @@
 
                 </section>
 
+
                 <!-- PRZYCISKI -->
 
                 <div class="buttons">
@@ -1665,6 +1727,7 @@
 
                 </div>
 
+
                 <!-- INFORMACJE -->
 
                 <section class="content-section">
@@ -1674,6 +1737,7 @@
                     </h2>
 
                     <div class="information-grid">
+
 
                         <article class="information-card">
 
@@ -1697,6 +1761,7 @@
 
                         </article>
 
+
                         <article class="information-card">
 
                             <span
@@ -1717,6 +1782,7 @@
                             </p>
 
                         </article>
+
 
                         <article class="information-card">
 
@@ -1739,9 +1805,11 @@
 
                         </article>
 
+
                     </div>
 
                 </section>
+
 
                 <!-- PROGRAM -->
 
@@ -1753,321 +1821,227 @@
 
                     <div class="program-grid">
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Podstawy fotografii
-                            </h3>
-
+                            <h3>Podstawy fotografii</h3>
                             <p>
                                 Funkcje aparatu cyfrowego,
                                 ekspozycja, ostrość i kompozycja kadru.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Interfejs programu GIMP
-                            </h3>
-
+                            <h3>Interfejs programu GIMP</h3>
                             <p>
                                 Obszar roboczy, przybornik,
                                 doki, menu i ustawienia programu.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Otwieranie i zapisywanie
-                            </h3>
-
+                            <h3>Otwieranie i zapisywanie</h3>
                             <p>
                                 Format XCF, JPG, PNG,
                                 eksportowanie i zapisywanie projektu.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Zmiana rozdzielczości
-                            </h3>
-
+                            <h3>Zmiana rozdzielczości</h3>
                             <p>
                                 Skalowanie obrazu i przygotowanie
                                 zdjęcia do Internetu lub druku.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Kadrowanie
-                            </h3>
-
+                            <h3>Kadrowanie</h3>
                             <p>
                                 Zmiana kompozycji i proporcji
                                 fotografii.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Prostowanie kadru
-                            </h3>
-
+                            <h3>Prostowanie kadru</h3>
                             <p>
                                 Obracanie obrazu i poprawianie
                                 linii horyzontu.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Ekspozycja
-                            </h3>
-
+                            <h3>Ekspozycja</h3>
                             <p>
                                 Korekcja jasności, kontrastu
                                 i poziomów obrazu.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Balans bieli
-                            </h3>
-
+                            <h3>Balans bieli</h3>
                             <p>
                                 Poprawianie temperatury barwowej
                                 fotografii.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Korekcja kolorów
-                            </h3>
-
+                            <h3>Korekcja kolorów</h3>
                             <p>
                                 Nasycenie, odcień, krzywe,
                                 balans kolorów i selektywna korekta.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Warstwy
-                            </h3>
-
+                            <h3>Warstwy</h3>
                             <p>
                                 Tworzenie, kopiowanie, łączenie
                                 i porządkowanie warstw.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Zaznaczenia
-                            </h3>
-
+                            <h3>Zaznaczenia</h3>
                             <p>
                                 Zaznaczenia prostokątne,
                                 eliptyczne, odręczne i według koloru.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Maski warstw
-                            </h3>
-
+                            <h3>Maski warstw</h3>
                             <p>
                                 Ukrywanie fragmentów obrazu
                                 bez trwałego usuwania danych.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Retusz fotografii
-                            </h3>
-
+                            <h3>Retusz fotografii</h3>
                             <p>
                                 Narzędzia klonowania, leczenia
                                 i usuwania niedoskonałości.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Rozjaśnianie i przyciemnianie
-                            </h3>
-
+                            <h3>Rozjaśnianie i przyciemnianie</h3>
                             <p>
                                 Lokalna korekcja jasnych
                                 i ciemnych obszarów zdjęcia.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Wyostrzanie zdjęć
-                            </h3>
-
+                            <h3>Wyostrzanie zdjęć</h3>
                             <p>
                                 Poprawa szczegółowości
                                 i ostrości fotografii.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Głębia ostrości
-                            </h3>
-
+                            <h3>Głębia ostrości</h3>
                             <p>
                                 Rozmywanie tła i wyróżnianie
                                 głównego obiektu.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Filtry i efekty
-                            </h3>
-
+                            <h3>Filtry i efekty</h3>
                             <p>
                                 Rozmycia, zniekształcenia,
                                 efekty artystyczne i korekcyjne.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Efekt ruchu
-                            </h3>
-
+                            <h3>Efekt ruchu</h3>
                             <p>
                                 Tworzenie kierunkowego rozmycia
                                 i wrażenia dynamiki.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Zmiana koloru oczu
-                            </h3>
-
+                            <h3>Zmiana koloru oczu</h3>
                             <p>
                                 Selektywna zmiana koloru
                                 wybranego fragmentu fotografii.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Usuwanie obiektów
-                            </h3>
-
+                            <h3>Usuwanie obiektów</h3>
                             <p>
                                 Usuwanie niepożądanych elementów
                                 i odtwarzanie tła.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Kolorowanie fotografii
-                            </h3>
-
+                            <h3>Kolorowanie fotografii</h3>
                             <p>
                                 Kolorowanie zdjęć czarno-białych
                                 przy użyciu warstw.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Wstawianie tekstu
-                            </h3>
-
+                            <h3>Wstawianie tekstu</h3>
                             <p>
                                 Dodawanie napisów, formatowanie
                                 i stosowanie efektów.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Fotomontaż
-                            </h3>
-
+                            <h3>Fotomontaż</h3>
                             <p>
                                 Łączenie kilku fotografii
                                 w jeden spójny projekt.
                             </p>
-
                         </article>
 
+
                         <article class="program-card">
-
-                            <h3>
-                                Prezentacja ze zdjęć
-                            </h3>
-
+                            <h3>Prezentacja ze zdjęć</h3>
                             <p>
                                 Przygotowanie fotografii do pokazu,
                                 publikacji i udostępnienia.
                             </p>
-
                         </article>
+
 
                     </div>
 
                 </section>
+
 
                 <!-- TAKSONOMIA -->
 
@@ -2086,7 +2060,6 @@
 
                     <div class="taxonomy-grid">
 
-                        <!-- WIE -->
 
                         <article class="taxonomy-card">
 
@@ -2123,7 +2096,6 @@
 
                         </article>
 
-                        <!-- ROZUMIE -->
 
                         <article class="taxonomy-card">
 
@@ -2161,7 +2133,6 @@
 
                         </article>
 
-                        <!-- UMIE -->
 
                         <article class="taxonomy-card">
 
@@ -2197,7 +2168,6 @@
 
                         </article>
 
-                        <!-- POTRAFI -->
 
                         <article class="taxonomy-card">
 
@@ -2235,9 +2205,11 @@
 
                         </article>
 
+
                     </div>
 
                 </section>
+
 
                 <!-- EFEKTY -->
 
@@ -2288,6 +2260,7 @@
 
                 </section>
 
+
                 <!-- INFORMACJE DODATKOWE -->
 
                 <section class="details-box">
@@ -2297,6 +2270,7 @@
                     </h2>
 
                     <div class="details-grid">
+
 
                         <article class="detail-card">
 
@@ -2326,6 +2300,7 @@
 
                         </article>
 
+
                         <article class="detail-card">
 
                             <h3>
@@ -2347,7 +2322,9 @@
 
                         </article>
 
+
                     </div>
+
 
                     <div class="details-text">
 
@@ -2374,6 +2351,7 @@
                         </p>
 
                         <p>
+
                             Zobacz również
 
                             <a
@@ -2384,11 +2362,13 @@
                             </a>
 
                             oraz aktualne promocje.
+
                         </p>
 
                     </div>
 
                 </section>
+
 
                 <!-- KONTAKT -->
 
@@ -2438,6 +2418,7 @@
 
                 </section>
 
+
                 <!-- POWROTY -->
 
                 <div class="buttons">
@@ -2458,30 +2439,43 @@
 
                 </div>
 
+
             </article>
 
         </div>
 
     </main>
 
-    <!-- STOPKA -->
+
+    <!-- =========================================
+         STOPKA
+    ========================================= -->
 
     <footer>
 
         <p>
+
             &copy;
-            <span id="year">2026</span>
+
+            <span id="year">
+                2026
+            </span>
+
             Zachodniopomorskie Centrum Informatyki.
             Wszelkie prawa zastrzeżone.
+
         </p>
 
         <p>
+
             GIMP &bull;
             Cyfrowa obróbka zdjęć &bull;
             Retusz fotografii
+
         </p>
 
     </footer>
+
 
     <script>
 
@@ -2489,11 +2483,14 @@
             document.getElementById("year");
 
         if (yearElement) {
+
             yearElement.textContent =
                 new Date().getFullYear();
+
         }
 
     </script>
 
 </body>
+
 </html>
