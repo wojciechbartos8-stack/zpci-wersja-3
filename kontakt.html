@@ -16,7 +16,17 @@
 
     <meta
         name="description"
-        content="Kontakt z Zachodniopomorskim Centrum Informatyki. Telefon, adres e-mail oraz adres biura konsultacyjnego w Szczecinie."
+        content="Skontaktuj się z Zachodniopomorskim Centrum Informatyki. Telefon, e-mail oraz adres biura konsultacyjnego w Szczecinie."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b2148"
     >
 
     <!-- IKONA STRONY -->
@@ -34,951 +44,1942 @@
 
     <style>
 
+        /* =========================================================
+           ZPCI – KONTAKT – WERSJA 3
+        ========================================================= */
+
         :root {
+
             --primary: #1f3b73;
             --primary-dark: #0b2148;
             --primary-medium: #2c65b0;
             --primary-light: #eef5ff;
+
             --accent: #f2b705;
             --accent-hover: #ffd447;
+
             --white: #ffffff;
             --text: #29333d;
             --muted: #5d6976;
             --border: #dce5ef;
 
+            --success: #24845c;
+            --info: #2878b5;
+
+            --radius-small: 14px;
+            --radius-medium: 18px;
+            --radius-large: 24px;
+
             --shadow:
                 0 14px 38px rgba(11, 33, 72, 0.12);
 
             --shadow-hover:
-                0 21px 45px rgba(11, 33, 72, 0.20);
+                0 22px 48px rgba(11, 33, 72, 0.20);
+
+            --transition:
+                0.25s ease;
         }
 
-        * {
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
+
             min-height: 100vh;
+
             overflow-x: hidden;
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: var(--text);
 
             background:
                 linear-gradient(
                     135deg,
                     #edf4ff 0%,
-                    #f8fbff 52%,
+                    #f8fbff 50%,
                     #ffffff 100%
                 );
-
-            color: var(--text);
-
-            font-size: 18px;
-            line-height: 1.7;
         }
 
+
         img {
+
             display: block;
+
             max-width: 100%;
+
             height: auto;
         }
 
+
         a {
+
             color: inherit;
+
             text-decoration: none;
         }
 
-        .page-container {
-            width: calc(100% - 40px);
-            max-width: 1160px;
-            margin: 0 auto;
+
+        button,
+        a {
+
+            -webkit-tap-highlight-color:
+                transparent;
         }
 
-        /* =========================
-           NAGŁÓWEK
-        ========================= */
 
-        .site-header {
-            position: relative;
-            overflow: hidden;
+        .page-container {
 
-            padding: 38px 20px 43px;
+            width:
+                calc(100% - 40px);
+
+            max-width: 1180px;
+
+            margin:
+                0 auto;
+        }
+
+
+        /* =========================================================
+           SKIP LINK
+        ========================================================= */
+
+        .skip-link {
+
+            position: fixed;
+
+            top: -100px;
+            left: 20px;
+
+            z-index: 999;
+
+            padding:
+                10px 18px;
+
+            border-radius:
+                0 0 10px 10px;
 
             background:
+                var(--accent);
+
+            color:
+                var(--primary-dark);
+
+            font-weight:
+                800;
+
+            transition:
+                top 0.2s ease;
+        }
+
+
+        .skip-link:focus {
+
+            top: 0;
+        }
+
+
+        /* =========================================================
+           NAGŁÓWEK
+        ========================================================= */
+
+        .site-header {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                42px 20px 48px;
+
+            color:
+                var(--white);
+
+            text-align:
+                center;
+
+            background:
+
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(255,255,255,0.08),
+                    transparent 27%
+                ),
+
                 radial-gradient(
                     circle at 86% 18%,
-                    rgba(255, 255, 255, 0.13),
+                    rgba(255,255,255,0.13),
                     transparent 30%
                 ),
+
                 linear-gradient(
                     135deg,
                     var(--primary-dark),
                     var(--primary-medium)
                 );
-
-            color: var(--white);
-
-            text-align: center;
         }
+
 
         .site-header::before {
-            content: "ZPCI";
 
-            position: absolute;
-            top: 50%;
-            right: 4%;
+            content:
+                "ZPCI";
+
+            position:
+                absolute;
+
+            right:
+                4%;
+
+            top:
+                50%;
 
             color:
-                rgba(255, 255, 255, 0.045);
+                rgba(255,255,255,0.045);
 
             font-size:
-                clamp(100px, 17vw, 220px);
+                clamp(
+                    120px,
+                    18vw,
+                    240px
+                );
 
-            font-weight: 900;
-            line-height: 1;
+            font-weight:
+                900;
 
-            transform: translateY(-50%);
+            line-height:
+                1;
+
+            pointer-events:
+                none;
+
+            transform:
+                translateY(-50%);
         }
+
+
+        .site-header::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            left:
+                50%;
+
+            bottom:
+                -110px;
+
+            width:
+                360px;
+
+            height:
+                220px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            transform:
+                translateX(-50%);
+        }
+
 
         .header-content {
-            position: relative;
-            z-index: 1;
+
+            position:
+                relative;
+
+            z-index:
+                1;
         }
 
-        /* =========================
-           LOGO ZPCI
-        ========================= */
+
+        /* =========================================================
+           LOGO I MARKA
+        ========================================================= */
 
         .header-brand {
-            display: inline-flex;
 
-            align-items: center;
-            justify-content: center;
+            display:
+                inline-flex;
 
-            gap: 16px;
+            align-items:
+                center;
 
-            margin-bottom: 24px;
+            justify-content:
+                center;
 
-            color: var(--white);
+            gap:
+                17px;
+
+            margin-bottom:
+                26px;
+
+            color:
+                var(--white);
         }
+
 
         .brand-logo {
-            width: 96px;
-            height: 96px;
-            flex: 0 0 96px;
+
+            width:
+                98px;
+
+            height:
+                98px;
+
+            flex:
+                0 0 98px;
+
+            padding:
+                2px;
 
             border:
-                4px solid rgba(255, 255, 255, 0.95);
+                4px solid
+                rgba(255,255,255,0.96);
 
-            border-radius: 50%;
+            border-radius:
+                50%;
 
-            background: var(--white);
+            background:
+                var(--white);
 
-            object-fit: contain;
+            object-fit:
+                contain;
 
             box-shadow:
-                0 14px 30px rgba(0, 0, 0, 0.25);
+                0 14px 32px
+                rgba(0,0,0,0.25);
 
             transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
+                transform var(--transition),
+                box-shadow var(--transition);
         }
 
+
         .header-brand:hover .brand-logo {
+
             transform:
-                translateY(-3px)
+                translateY(-4px)
                 scale(1.03);
 
             box-shadow:
-                0 18px 36px rgba(0, 0, 0, 0.32);
+                0 19px 38px
+                rgba(0,0,0,0.32);
         }
+
 
         .brand-copy {
-            display: flex;
-            flex-direction: column;
 
-            align-items: flex-start;
+            display:
+                flex;
 
-            text-align: left;
+            flex-direction:
+                column;
+
+            align-items:
+                flex-start;
+
+            text-align:
+                left;
         }
+
 
         .brand-name {
-            max-width: 620px;
+
+            max-width:
+                650px;
 
             font-size:
-                clamp(21px, 3vw, 31px);
+                clamp(
+                    21px,
+                    3vw,
+                    31px
+                );
 
-            font-weight: 900;
-            line-height: 1.15;
+            font-weight:
+                900;
+
+            line-height:
+                1.15;
         }
+
 
         .brand-subtitle {
-            margin-top: 6px;
+
+            margin-top:
+                7px;
 
             color:
-                rgba(255, 255, 255, 0.84);
+                rgba(255,255,255,0.82);
 
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.07em;
-            text-transform: uppercase;
+            font-size:
+                14px;
+
+            font-weight:
+                700;
+
+            letter-spacing:
+                0.07em;
+
+            text-transform:
+                uppercase;
         }
 
-        .header-brand:focus-visible {
-            outline: 3px solid var(--accent);
-            outline-offset: 7px;
-
-            border-radius: 20px;
-        }
 
         .site-header h1 {
-            margin-bottom: 10px;
 
-            color: var(--white);
-
-            font-size:
-                clamp(34px, 5vw, 52px);
-
-            line-height: 1.15;
-        }
-
-        .header-description {
-            max-width: 760px;
-
-            margin: 0 auto;
+            margin-bottom:
+                12px;
 
             color:
-                rgba(255, 255, 255, 0.90);
+                var(--white);
 
             font-size:
-                clamp(17px, 2.3vw, 21px);
+                clamp(
+                    35px,
+                    5.5vw,
+                    56px
+                );
+
+            line-height:
+                1.1;
         }
 
-        /* =========================
-           NAWIGACJA
-        ========================= */
 
-        .main-nav {
-            position: sticky;
-            top: 0;
-            z-index: 40;
+        .header-description {
 
-            background: #071b37;
+            max-width:
+                800px;
 
-            box-shadow:
-                0 5px 18px rgba(0, 0, 0, 0.18);
+            margin:
+                0 auto;
+
+            color:
+                rgba(255,255,255,0.91);
+
+            font-size:
+                clamp(
+                    17px,
+                    2.2vw,
+                    22px
+                );
         }
 
-        .nav-inner {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
 
-        .main-nav a {
-            display: flex;
+        /* =========================================================
+           FOCUS
+        ========================================================= */
 
-            min-height: 54px;
-
-            align-items: center;
-            justify-content: center;
-
-            padding: 13px 22px;
-
-            color: var(--white);
-
-            font-size: 16px;
-            font-weight: 700;
-            text-align: center;
-
-            transition:
-                background-color 0.2s ease,
-                color 0.2s ease;
-        }
-
-        .main-nav a:hover,
-        .main-nav a:focus-visible,
-        .main-nav a.active {
-            background: var(--accent);
-            color: var(--primary-dark);
-        }
-
+        .header-brand:focus-visible,
         .main-nav a:focus-visible,
         .contact-link:focus-visible,
         .button:focus-visible {
-            outline: 3px solid var(--accent);
-            outline-offset: 3px;
+
+            outline:
+                3px solid
+                var(--accent);
+
+            outline-offset:
+                4px;
         }
 
-        /* =========================
-           BANER
-        ========================= */
 
-        .banner-section {
-            padding: 32px 0 0;
-        }
+        /* =========================================================
+           NAWIGACJA
+        ========================================================= */
 
-        .banner-box {
-            position: relative;
-            overflow: hidden;
+        .main-nav {
 
-            border: 5px solid var(--white);
-            border-radius: 24px;
+            position:
+                sticky;
 
-            background: var(--white);
+            top:
+                0;
+
+            z-index:
+                50;
+
+            background:
+                #071b37;
 
             box-shadow:
-                0 22px 52px rgba(11, 33, 72, 0.22);
+                0 5px 20px
+                rgba(0,0,0,0.18);
         }
 
-        .banner-box img {
-            width: 100%;
-            height: auto;
 
-            object-fit: contain;
+        .nav-inner {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            justify-content:
+                center;
         }
 
-        /* =========================
-           GŁÓWNA TREŚĆ
-        ========================= */
 
-        main {
-            padding: 34px 0 58px;
-        }
+        .main-nav a {
 
-        .contact-wrapper {
-            padding: 42px;
+            display:
+                flex;
 
-            border: 1px solid var(--border);
-            border-radius: 24px;
+            min-height:
+                55px;
 
-            background: var(--white);
+            align-items:
+                center;
 
-            box-shadow: var(--shadow);
-        }
+            justify-content:
+                center;
 
-        .section-intro {
-            max-width: 840px;
+            padding:
+                13px 23px;
 
-            margin: 0 auto 36px;
-
-            text-align: center;
-        }
-
-        .section-intro h2 {
-            margin-bottom: 14px;
-
-            color: var(--primary-dark);
+            color:
+                var(--white);
 
             font-size:
-                clamp(29px, 4vw, 42px);
+                16px;
 
-            line-height: 1.2;
+            font-weight:
+                700;
+
+            text-align:
+                center;
+
+            transition:
+                background-color var(--transition),
+                color var(--transition);
         }
+
+
+        .main-nav a:hover,
+        .main-nav a.active {
+
+            background:
+                var(--accent);
+
+            color:
+                var(--primary-dark);
+        }
+
+
+        .main-nav a[aria-current="page"] {
+
+            background:
+                var(--accent);
+
+            color:
+                var(--primary-dark);
+        }
+
+
+        /* =========================================================
+           BANER
+        ========================================================= */
+
+        .banner-section {
+
+            padding:
+                32px 0 0;
+        }
+
+
+        .banner-box {
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            border:
+                5px solid
+                var(--white);
+
+            border-radius:
+                var(--radius-large);
+
+            background:
+                var(--white);
+
+            box-shadow:
+                0 22px 52px
+                rgba(11,33,72,0.22);
+        }
+
+
+        .banner-box img {
+
+            width:
+                100%;
+
+            height:
+                auto;
+
+            object-fit:
+                contain;
+        }
+
+
+        /* =========================================================
+           MAIN
+        ========================================================= */
+
+        main {
+
+            padding:
+                36px 0 62px;
+        }
+
+
+        .contact-wrapper {
+
+            padding:
+                44px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                var(--radius-large);
+
+            background:
+                var(--white);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .section-intro {
+
+            max-width:
+                860px;
+
+            margin:
+                0 auto 38px;
+
+            text-align:
+                center;
+        }
+
+
+        .section-label {
+
+            display:
+                inline-block;
+
+            margin-bottom:
+                14px;
+
+            padding:
+                7px 15px;
+
+            border-radius:
+                999px;
+
+            background:
+                var(--primary-light);
+
+            color:
+                var(--primary);
+
+            font-size:
+                13px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                0.06em;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .section-intro h2 {
+
+            margin-bottom:
+                14px;
+
+            color:
+                var(--primary-dark);
+
+            font-size:
+                clamp(
+                    30px,
+                    4vw,
+                    43px
+                );
+
+            line-height:
+                1.18;
+        }
+
 
         .section-intro p {
-            color: var(--muted);
+
+            color:
+                var(--muted);
         }
 
-        /* =========================
+
+        /* =========================================================
            KARTY KONTAKTOWE
-        ========================= */
+        ========================================================= */
 
         .contact-grid {
-            display: grid;
+
+            display:
+                grid;
 
             grid-template-columns:
-                repeat(3, minmax(0, 1fr));
+                repeat(
+                    3,
+                    minmax(0,1fr)
+                );
 
-            gap: 22px;
+            gap:
+                22px;
         }
 
+
         .contact-card {
-            position: relative;
 
-            display: flex;
-            min-width: 0;
-            min-height: 235px;
-            overflow: hidden;
+            position:
+                relative;
 
-            flex-direction: column;
+            display:
+                flex;
 
-            padding: 28px;
+            min-width:
+                0;
 
-            border: 1px solid var(--border);
-            border-radius: 18px;
+            min-height:
+                250px;
+
+            overflow:
+                hidden;
+
+            flex-direction:
+                column;
+
+            padding:
+                29px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-top:
+                5px solid
+                var(--primary);
+
+            border-radius:
+                var(--radius-medium);
 
             background:
                 linear-gradient(
                     145deg,
                     #ffffff,
-                    #f1f6ff
+                    #f2f7fd
                 );
 
             box-shadow:
-                0 9px 25px rgba(11, 33, 72, 0.08);
+                0 10px 28px
+                rgba(11,33,72,0.08);
 
             transition:
-                transform 0.22s ease,
-                box-shadow 0.22s ease,
-                border-color 0.22s ease;
+                transform var(--transition),
+                box-shadow var(--transition),
+                border-color var(--transition);
         }
+
+
+        .contact-card:nth-child(1) {
+
+            border-top-color:
+                var(--success);
+        }
+
+
+        .contact-card:nth-child(2) {
+
+            border-top-color:
+                var(--info);
+        }
+
+
+        .contact-card:nth-child(3) {
+
+            border-top-color:
+                var(--accent);
+        }
+
 
         .contact-card::after {
-            content: "";
 
-            position: absolute;
-            top: -70px;
-            right: -70px;
+            content:
+                "";
 
-            width: 160px;
-            height: 160px;
+            position:
+                absolute;
 
-            border-radius: 50%;
+            top:
+                -75px;
+
+            right:
+                -75px;
+
+            width:
+                170px;
+
+            height:
+                170px;
+
+            border-radius:
+                50%;
 
             background:
-                rgba(31, 59, 115, 0.07);
+                rgba(31,59,115,0.055);
+
+            pointer-events:
+                none;
 
             transition:
-                transform 0.25s ease,
-                background-color 0.25s ease;
+                transform var(--transition),
+                background-color var(--transition);
         }
+
 
         .contact-card:hover {
-            border-color: #b7cbe3;
 
-            box-shadow: var(--shadow-hover);
-
-            transform: translateY(-6px);
-        }
-
-        .contact-card:hover::after {
-            background:
-                rgba(242, 183, 5, 0.16);
-
-            transform: scale(1.15);
-        }
-
-        .contact-icon {
-            position: relative;
-            z-index: 1;
-
-            display: flex;
-
-            width: 58px;
-            height: 58px;
-
-            align-items: center;
-            justify-content: center;
-
-            margin-bottom: 18px;
-
-            border-radius: 16px;
-
-            background: var(--primary);
-            color: var(--white);
-
-            font-size: 28px;
+            border-color:
+                #b6cbe3;
 
             box-shadow:
-                0 8px 20px rgba(31, 59, 115, 0.22);
+                var(--shadow-hover);
 
-            transition:
-                background-color 0.22s ease,
-                color 0.22s ease,
-                transform 0.22s ease;
+            transform:
+                translateY(-7px);
         }
 
-        .contact-card:hover .contact-icon {
-            background: var(--accent);
-            color: var(--primary-dark);
 
-            transform: scale(1.06);
-        }
-
-        .contact-card h3 {
-            position: relative;
-            z-index: 1;
-
-            margin-bottom: 9px;
-
-            color: var(--primary-dark);
-
-            font-size: 23px;
-            line-height: 1.25;
-        }
-
-        .contact-card p {
-            position: relative;
-            z-index: 1;
-
-            color: var(--muted);
-        }
-
-        .contact-link {
-            position: relative;
-            z-index: 1;
-
-            display: inline-flex;
-
-            margin-top: auto;
-            padding-top: 16px;
-
-            overflow-wrap: anywhere;
-
-            color: var(--primary);
-
-            font-size: 19px;
-            font-weight: 800;
-
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 4px;
-        }
-
-        .contact-link:hover {
-            color: var(--primary-dark);
-        }
-
-        .address {
-            position: relative;
-            z-index: 1;
-
-            margin-top: auto;
-            padding-top: 16px;
-
-            color: var(--primary-dark);
-
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.55;
-        }
-
-        /* =========================
-           INFORMACJA O WIZYCIE
-        ========================= */
-
-        .appointment-box {
-            position: relative;
-            overflow: hidden;
-
-            margin-top: 32px;
-            padding: 32px 34px;
-
-            border-radius: 18px;
+        .contact-card:hover::after {
 
             background:
+                rgba(242,183,5,0.16);
+
+            transform:
+                scale(1.16);
+        }
+
+
+        /* =========================================================
+           IKONA KONTAKTU
+        ========================================================= */
+
+        .contact-icon {
+
+            position:
+                relative;
+
+            z-index:
+                1;
+
+            display:
+                flex;
+
+            width:
+                62px;
+
+            height:
+                62px;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            margin-bottom:
+                18px;
+
+            border-radius:
+                17px;
+
+            background:
+                var(--primary);
+
+            color:
+                var(--white);
+
+            font-size:
+                29px;
+
+            box-shadow:
+                0 9px 21px
+                rgba(31,59,115,0.22);
+
+            transition:
+                transform var(--transition),
+                background-color var(--transition),
+                color var(--transition);
+        }
+
+
+        .contact-card:nth-child(1)
+        .contact-icon {
+
+            background:
+                var(--success);
+        }
+
+
+        .contact-card:nth-child(2)
+        .contact-icon {
+
+            background:
+                var(--info);
+        }
+
+
+        .contact-card:nth-child(3)
+        .contact-icon {
+
+            background:
+                var(--accent);
+
+            color:
+                var(--primary-dark);
+        }
+
+
+        .contact-card:hover .contact-icon {
+
+            transform:
+                translateY(-3px)
+                scale(1.06);
+        }
+
+
+        /* =========================================================
+           TEKST KART
+        ========================================================= */
+
+        .contact-card h3 {
+
+            position:
+                relative;
+
+            z-index:
+                1;
+
+            margin-bottom:
+                9px;
+
+            color:
+                var(--primary-dark);
+
+            font-size:
+                24px;
+
+            line-height:
+                1.25;
+        }
+
+
+        .contact-card p {
+
+            position:
+                relative;
+
+            z-index:
+                1;
+
+            color:
+                var(--muted);
+
+            font-size:
+                16px;
+        }
+
+
+        .contact-link {
+
+            position:
+                relative;
+
+            z-index:
+                1;
+
+            display:
+                inline-flex;
+
+            width:
+                fit-content;
+
+            margin-top:
+                auto;
+
+            padding-top:
+                18px;
+
+            overflow-wrap:
+                anywhere;
+
+            color:
+                var(--primary);
+
+            font-size:
+                20px;
+
+            font-weight:
+                800;
+
+            text-decoration:
+                underline;
+
+            text-decoration-thickness:
+                2px;
+
+            text-underline-offset:
+                4px;
+
+            transition:
+                color var(--transition);
+        }
+
+
+        .contact-link:hover {
+
+            color:
+                var(--primary-dark);
+        }
+
+
+        .address {
+
+            position:
+                relative;
+
+            z-index:
+                1;
+
+            margin-top:
+                auto;
+
+            padding-top:
+                18px;
+
+            color:
+                var(--primary-dark);
+
+            font-size:
+                18px;
+
+            font-style:
+                normal;
+
+            font-weight:
+                800;
+
+            line-height:
+                1.55;
+        }
+
+
+        /* =========================================================
+           INFORMACJA O WIZYCIE
+        ========================================================= */
+
+        .appointment-box {
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            margin-top:
+                34px;
+
+            padding:
+                34px 36px;
+
+            border-radius:
+                20px;
+
+            background:
+
+                radial-gradient(
+                    circle at 95% 50%,
+                    rgba(255,255,255,0.08),
+                    transparent 24%
+                ),
+
                 linear-gradient(
                     135deg,
                     var(--primary),
                     var(--primary-dark)
                 );
 
-            color: var(--white);
+            color:
+                var(--white);
 
             box-shadow:
-                0 18px 42px rgba(11, 33, 72, 0.22);
+                0 18px 42px
+                rgba(11,33,72,0.22);
         }
+
 
         .appointment-box::after {
-            content: "\1F4C5";
 
-            position: absolute;
-            top: 50%;
-            right: 30px;
+            content:
+                "\1F4C5";
+
+            position:
+                absolute;
+
+            right:
+                30px;
+
+            top:
+                50%;
 
             color:
-                rgba(255, 255, 255, 0.08);
-
-            font-size: 125px;
-            line-height: 1;
-
-            transform: translateY(-50%);
-        }
-
-        .appointment-content {
-            position: relative;
-            z-index: 1;
-
-            max-width: 820px;
-        }
-
-        .appointment-box h2 {
-            margin-bottom: 12px;
-
-            color: var(--white);
+                rgba(255,255,255,0.08);
 
             font-size:
-                clamp(25px, 3vw, 32px);
+                125px;
 
-            line-height: 1.3;
+            line-height:
+                1;
+
+            pointer-events:
+                none;
+
+            transform:
+                translateY(-50%);
         }
+
+
+        .appointment-content {
+
+            position:
+                relative;
+
+            z-index:
+                1;
+
+            max-width:
+                820px;
+        }
+
+
+        .appointment-box h2 {
+
+            margin-bottom:
+                12px;
+
+            color:
+                var(--white);
+
+            font-size:
+                clamp(
+                    25px,
+                    3vw,
+                    33px
+                );
+
+            line-height:
+                1.25;
+        }
+
 
         .appointment-box p {
+
             color:
-                rgba(255, 255, 255, 0.90);
+                rgba(255,255,255,0.90);
+
+            font-size:
+                17px;
         }
 
-        /* =========================
+
+        /* =========================================================
            PRZYCISKI
-        ========================= */
+        ========================================================= */
 
         .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
 
-            gap: 15px;
+            display:
+                flex;
 
-            margin-top: 34px;
+            flex-wrap:
+                wrap;
+
+            justify-content:
+                center;
+
+            gap:
+                14px;
+
+            margin-top:
+                34px;
         }
+
 
         .button {
-            display: inline-flex;
 
-            min-height: 52px;
+            display:
+                inline-flex;
 
-            align-items: center;
-            justify-content: center;
+            min-height:
+                53px;
 
-            padding: 14px 27px;
+            align-items:
+                center;
 
-            border: 2px solid transparent;
-            border-radius: 999px;
+            justify-content:
+                center;
 
-            background: var(--accent);
-            color: var(--primary-dark);
+            padding:
+                14px 28px;
 
-            font-weight: 800;
-            line-height: 1.2;
-            text-align: center;
+            border:
+                2px solid
+                transparent;
 
-            box-shadow:
-                0 9px 22px rgba(242, 183, 5, 0.25);
+            border-radius:
+                999px;
 
-            transition:
-                background-color 0.2s ease,
-                color 0.2s ease,
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
-        }
-
-        .button:hover {
-            background: var(--accent-hover);
-
-            box-shadow:
-                0 13px 28px rgba(242, 183, 5, 0.32);
-
-            transform: translateY(-2px);
-        }
-
-        .button-secondary {
-            background: var(--primary);
-            color: var(--white);
-
-            box-shadow:
-                0 9px 22px rgba(31, 59, 115, 0.22);
-        }
-
-        .button-secondary:hover {
-            background: var(--primary-dark);
-        }
-
-        /* =========================
-           STOPKA
-        ========================= */
-
-        footer {
-            padding: 28px 20px;
-
-            background: var(--primary-dark);
+            background:
+                var(--accent);
 
             color:
-                rgba(255, 255, 255, 0.87);
+                var(--primary-dark);
 
-            text-align: center;
+            font-size:
+                16px;
+
+            font-weight:
+                800;
+
+            line-height:
+                1.2;
+
+            text-align:
+                center;
+
+            box-shadow:
+                0 9px 22px
+                rgba(242,183,5,0.25);
+
+            transition:
+                transform var(--transition),
+                background-color var(--transition),
+                color var(--transition),
+                box-shadow var(--transition);
         }
+
+
+        .button:hover {
+
+            background:
+                var(--accent-hover);
+
+            box-shadow:
+                0 13px 29px
+                rgba(242,183,5,0.32);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        .button-secondary {
+
+            background:
+                var(--primary);
+
+            color:
+                var(--white);
+
+            box-shadow:
+                0 9px 22px
+                rgba(31,59,115,0.22);
+        }
+
+
+        .button-secondary:hover {
+
+            background:
+                var(--primary-dark);
+
+            color:
+                var(--white);
+        }
+
+
+        /* =========================================================
+           STOPKA
+        ========================================================= */
+
+        footer {
+
+            padding:
+                30px 20px;
+
+            background:
+                var(--primary-dark);
+
+            color:
+                rgba(255,255,255,0.87);
+
+            text-align:
+                center;
+
+            font-size:
+                16px;
+        }
+
 
         footer p + p {
-            margin-top: 5px;
+
+            margin-top:
+                5px;
         }
+
 
         footer a {
-            color: var(--white);
 
-            font-weight: 700;
+            color:
+                var(--white);
+
+            font-weight:
+                800;
         }
+
 
         footer a:hover {
-            text-decoration: underline;
-            text-underline-offset: 4px;
+
+            color:
+                var(--accent);
+
+            text-decoration:
+                underline;
+
+            text-underline-offset:
+                4px;
         }
 
-        /* =========================
-           TABLETY
-        ========================= */
 
-        @media (max-width: 900px) {
+        /* =========================================================
+           TABLETY
+        ========================================================= */
+
+        @media (max-width: 980px) {
 
             .contact-grid {
+
                 grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
+                    repeat(
+                        2,
+                        minmax(0,1fr)
+                    );
             }
+
 
             .contact-card:last-child {
-                grid-column: 1 / -1;
-            }
 
+                grid-column:
+                    1 / -1;
+            }
         }
 
-        @media (max-width: 720px) {
+
+        @media (max-width: 800px) {
 
             body {
-                font-size: 17px;
+
+                font-size:
+                    17px;
             }
 
+
             .page-container {
+
                 width:
                     calc(100% - 28px);
             }
 
+
             .contact-wrapper {
-                padding: 32px 24px;
+
+                padding:
+                    34px 25px;
             }
 
+
+            .appointment-box {
+
+                padding:
+                    30px 28px;
+            }
         }
 
-        /* =========================
-           TELEFONY
-        ========================= */
 
-        @media (max-width: 600px) {
+        /* =========================================================
+           TELEFONY
+        ========================================================= */
+
+        @media (max-width: 620px) {
 
             .page-container {
+
                 width:
                     calc(100% - 20px);
             }
 
+
             .site-header {
-                padding: 30px 14px 34px;
+
+                padding:
+                    32px 14px 39px;
             }
+
 
             .site-header::before {
-                right: 50%;
+
+                right:
+                    50%;
 
                 transform:
-                    translate(50%, -50%);
+                    translate(
+                        50%,
+                        -50%
+                    );
             }
+
 
             .header-brand {
-                flex-direction: column;
 
-                gap: 12px;
+                flex-direction:
+                    column;
+
+                gap:
+                    12px;
             }
+
 
             .brand-logo {
-                width: 84px;
-                height: 84px;
-                flex-basis: 84px;
+
+                width:
+                    86px;
+
+                height:
+                    86px;
+
+                flex-basis:
+                    86px;
             }
+
 
             .brand-copy {
-                align-items: center;
 
-                text-align: center;
+                align-items:
+                    center;
+
+                text-align:
+                    center;
             }
+
 
             .brand-name {
-                font-size: 22px;
+
+                font-size:
+                    22px;
             }
+
 
             .brand-subtitle {
-                font-size: 12px;
+
+                font-size:
+                    11px;
             }
+
+
+            .site-header h1 {
+
+                font-size:
+                    34px;
+            }
+
+
+            .header-description {
+
+                font-size:
+                    17px;
+            }
+
+
+            /* NAWIGACJA */
 
             .nav-inner {
-                display: grid;
+
+                display:
+                    grid;
 
                 grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
+                    repeat(
+                        2,
+                        minmax(0,1fr)
+                    );
             }
+
 
             .main-nav a {
-                min-height: 49px;
 
-                padding: 10px 8px;
+                min-height:
+                    49px;
+
+                padding:
+                    10px 8px;
 
                 border-bottom:
-                    1px solid rgba(255, 255, 255, 0.08);
+                    1px solid
+                    rgba(255,255,255,0.08);
 
-                font-size: 14px;
+                font-size:
+                    14px;
             }
+
+
+            /* BANER */
 
             .banner-section {
-                padding-top: 20px;
+
+                padding-top:
+                    20px;
             }
+
 
             .banner-box {
-                border-width: 3px;
-                border-radius: 14px;
+
+                border-width:
+                    3px;
+
+                border-radius:
+                    15px;
             }
+
+
+            /* MAIN */
 
             main {
-                padding: 20px 0 38px;
+
+                padding:
+                    21px 0 40px;
             }
+
 
             .contact-wrapper {
-                padding: 24px 17px;
 
-                border-radius: 15px;
+                padding:
+                    26px 17px;
+
+                border-radius:
+                    16px;
             }
+
 
             .section-intro {
-                margin-bottom: 26px;
+
+                margin-bottom:
+                    28px;
             }
+
+
+            .section-intro h2 {
+
+                font-size:
+                    29px;
+            }
+
+
+            /* KARTY */
 
             .contact-grid {
-                grid-template-columns: 1fr;
 
-                gap: 17px;
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    17px;
             }
+
 
             .contact-card:last-child {
-                grid-column: auto;
+
+                grid-column:
+                    auto;
             }
+
 
             .contact-card {
-                min-height: auto;
 
-                padding: 23px 20px;
+                min-height:
+                    auto;
+
+                padding:
+                    25px 21px;
             }
+
+
+            .contact-icon {
+
+                width:
+                    58px;
+
+                height:
+                    58px;
+
+                font-size:
+                    27px;
+            }
+
+
+            .contact-card h3 {
+
+                font-size:
+                    22px;
+            }
+
+
+            .contact-link {
+
+                font-size:
+                    18px;
+            }
+
+
+            /* WIZYTA */
 
             .appointment-box {
-                padding: 25px 19px;
+
+                margin-top:
+                    22px;
+
+                padding:
+                    27px 20px;
             }
+
 
             .appointment-box::after {
-                right: -10px;
 
-                font-size: 100px;
+                right:
+                    -15px;
+
+                font-size:
+                    95px;
             }
+
+
+            .appointment-box h2 {
+
+                font-size:
+                    25px;
+            }
+
+
+            .appointment-box p {
+
+                font-size:
+                    16px;
+            }
+
+
+            /* BUTTONY */
 
             .buttons {
-                flex-direction: column;
+
+                flex-direction:
+                    column;
+
+                gap:
+                    11px;
             }
+
 
             .buttons .button {
-                width: 100%;
+
+                width:
+                    100%;
             }
 
+
+            footer {
+
+                font-size:
+                    14px;
+            }
         }
+
 
         @media (max-width: 390px) {
 
             .nav-inner {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
             }
+
 
             .main-nav a {
-                min-height: 45px;
+
+                min-height:
+                    45px;
             }
+
 
             .site-header h1 {
-                font-size: 32px;
+
+                font-size:
+                    31px;
             }
+
+
+            .brand-name {
+
+                font-size:
+                    20px;
+            }
+
+
+            .contact-card {
+
+                padding:
+                    23px 18px;
+            }
+
 
             .contact-link {
-                font-size: 17px;
-            }
 
+                font-size:
+                    17px;
+            }
         }
 
-        /* =========================
+
+        /* =========================================================
+           REDUKCJA ANIMACJI
+        ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+
+                scroll-behavior:
+                    auto;
+            }
+
+
+            *,
+            *::before,
+            *::after {
+
+                transition:
+                    none !important;
+
+                animation:
+                    none !important;
+            }
+        }
+
+
+        /* =========================================================
            DRUKOWANIE
-        ========================= */
+        ========================================================= */
 
         @media print {
 
             body {
-                background: #ffffff;
-                color: #000000;
+
+                background:
+                    #ffffff;
+
+                color:
+                    #000000;
             }
+
 
             .site-header {
-                padding: 20px;
 
-                background: #ffffff;
-                color: #000000;
+                padding:
+                    20px;
+
+                background:
+                    #ffffff;
+
+                color:
+                    #000000;
             }
+
 
             .site-header::before,
+            .site-header::after,
             .main-nav,
             .buttons,
-            footer {
-                display: none;
+            footer,
+            .skip-link {
+
+                display:
+                    none;
             }
+
 
             .brand-logo {
-                width: 72px;
-                height: 72px;
 
-                border: 1px solid #cccccc;
+                width:
+                    72px;
 
-                box-shadow: none;
+                height:
+                    72px;
+
+                border:
+                    1px solid #cccccc;
+
+                box-shadow:
+                    none;
             }
+
 
             .brand-name,
             .brand-subtitle,
             .site-header h1,
             .header-description {
-                color: #000000;
+
+                color:
+                    #000000;
             }
+
 
             .banner-box,
             .contact-wrapper,
             .contact-card,
             .appointment-box {
-                border: 1px solid #cccccc;
 
-                background: #ffffff;
-                color: #000000;
+                border:
+                    1px solid #cccccc;
 
-                box-shadow: none;
+                background:
+                    #ffffff;
+
+                color:
+                    #000000;
+
+                box-shadow:
+                    none;
             }
+
 
             .contact-grid {
-                display: block;
+
+                display:
+                    block;
             }
+
 
             .contact-card {
-                min-height: auto;
 
-                margin-bottom: 15px;
+                min-height:
+                    auto;
 
-                page-break-inside: avoid;
+                margin-bottom:
+                    15px;
+
+                page-break-inside:
+                    avoid;
             }
+
+
+            .appointment-box {
+
+                margin-top:
+                    20px;
+            }
+
 
             .appointment-box h2,
             .appointment-box p {
-                color: #000000;
-            }
 
+                color:
+                    #000000;
+            }
         }
 
     </style>
 
 </head>
 
+
 <body>
 
-    <!-- NAGŁÓWEK -->
+
+    <!-- SKIP LINK -->
+
+    <a
+        class="skip-link"
+        href="#main-content"
+    >
+        Przejdź do głównej treści
+    </a>
+
+
+    <!-- =========================================================
+         NAGŁÓWEK
+    ========================================================= -->
 
     <header class="site-header">
 
@@ -994,8 +1995,8 @@
                     class="brand-logo"
                     src="images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
                     alt="Logo Zachodniopomorskiego Centrum Informatyki"
-                    width="96"
-                    height="96"
+                    width="98"
+                    height="98"
                     loading="eager"
                     decoding="async"
                 >
@@ -1014,9 +2015,11 @@
 
             </a>
 
+
             <h1>
                 Kontakt
             </h1>
+
 
             <p class="header-description">
                 Skontaktuj się z Zachodniopomorskim
@@ -1027,7 +2030,10 @@
 
     </header>
 
-    <!-- NAWIGACJA -->
+
+    <!-- =========================================================
+         NAWIGACJA
+    ========================================================= -->
 
     <nav
         class="main-nav"
@@ -1060,7 +2066,10 @@
 
     </nav>
 
-    <!-- BANER -->
+
+    <!-- =========================================================
+         BANER
+    ========================================================= -->
 
     <section
         class="banner-section"
@@ -1073,7 +2082,7 @@
 
                 <img
                     src="images/kontakt.png"
-                    alt="Dane kontaktowe Zachodniopomorskiego Centrum Informatyki"
+                    alt="Kontakt z Zachodniopomorskim Centrum Informatyki"
                     width="1536"
                     height="1024"
                     loading="eager"
@@ -1087,15 +2096,25 @@
 
     </section>
 
-    <!-- GŁÓWNA TREŚĆ -->
 
-    <main>
+    <!-- =========================================================
+         GŁÓWNA TREŚĆ
+    ========================================================= -->
+
+    <main id="main-content">
 
         <div class="page-container">
 
             <article class="contact-wrapper">
 
+
+                <!-- INTRO -->
+
                 <section class="section-intro">
+
+                    <span class="section-label">
+                        Kontakt z ZPCI
+                    </span>
 
                     <h2>
                         Dane kontaktowe
@@ -1109,7 +2128,16 @@
 
                 </section>
 
-                <div class="contact-grid">
+
+                <!-- =================================================
+                     KARTY KONTAKTOWE
+                ================================================= -->
+
+                <section
+                    class="contact-grid"
+                    aria-label="Dane kontaktowe"
+                >
+
 
                     <!-- TELEFON -->
 
@@ -1134,11 +2162,13 @@
                         <a
                             class="contact-link"
                             href="tel:+48503840567"
+                            aria-label="Zadzwoń pod numer 503 840 567"
                         >
                             503 840 567
                         </a>
 
                     </article>
+
 
                     <!-- E-MAIL -->
 
@@ -1163,11 +2193,13 @@
                         <a
                             class="contact-link"
                             href="mailto:biuro@zpci.pl"
+                            aria-label="Wyślij wiadomość na adres biuro@zpci.pl"
                         >
                             biuro@zpci.pl
                         </a>
 
                     </article>
+
 
                     <!-- ADRES -->
 
@@ -1196,9 +2228,12 @@
 
                     </article>
 
-                </div>
+                </section>
 
-                <!-- INFORMACJA O WIZYCIE -->
+
+                <!-- =================================================
+                     UMÓWIENIE WIZYTY
+                ================================================= -->
 
                 <section class="appointment-box">
 
@@ -1218,7 +2253,10 @@
 
                 </section>
 
-                <!-- PRZYCISKI -->
+
+                <!-- =================================================
+                     PRZYCISKI
+                ================================================= -->
 
                 <div class="buttons">
 
@@ -1245,23 +2283,35 @@
 
                 </div>
 
+
             </article>
 
         </div>
 
     </main>
 
-    <!-- STOPKA -->
+
+    <!-- =========================================================
+         STOPKA
+    ========================================================= -->
 
     <footer>
 
         <p>
+
             &copy;
-            <span id="year">2026</span>
+
+            <span id="year">
+                2026
+            </span>
+
             Zachodniopomorskie Centrum Informatyki
+
         </p>
 
+
         <p>
+
             Telefon:
 
             <a href="tel:+48503840567">
@@ -1275,21 +2325,30 @@
             <a href="mailto:biuro@zpci.pl">
                 biuro@zpci.pl
             </a>
+
         </p>
 
     </footer>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
 
     <script>
 
         const yearElement =
             document.getElementById("year");
 
+
         if (yearElement) {
+
             yearElement.textContent =
                 new Date().getFullYear();
         }
 
     </script>
+
 
 </body>
 

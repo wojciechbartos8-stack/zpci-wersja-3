@@ -1,29 +1,123 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
+
 <html lang="pl">
 
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-<meta name="description"
-      content="Zachodniopomorskie Centrum Informatyki - szkolenia, kursy, usługi IT, grafika, serwis, doradztwo i projektowanie stron WWW">
+<meta
+    name="description"
+    content="Zachodniopomorskie Centrum Informatyki - szkolenia, kursy, usługi IT, grafika, serwis, doradztwo i projektowanie stron WWW"
+>
 
-<meta name="keywords"
-      content="ZPCI, Zachodniopomorskie Centrum Informatyki, szkolenia, kursy, usługi IT, programowanie, grafika, Excel, CAD, SQL, bazy danych, strony WWW">
+<meta
+    name="author"
+    content="Zachodniopomorskie Centrum Informatyki"
+>
 
-<meta name="author"
-      content="Zachodniopomorskie Centrum Informatyki">
+<meta
+    name="theme-color"
+    content="#0b3d91"
+>
 
-<meta name="theme-color"
-      content="#0b3d91">
+<meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+>
+
+<meta
+    name="referrer"
+    content="strict-origin-when-cross-origin"
+>
+
+<!--
+=========================================================
+CONTENT SECURITY POLICY
+
+Ogranicza możliwość uruchamiania nieautoryzowanych
+skryptów, ramek, obiektów oraz wysyłania formularzy
+do nieznanych miejsc.
+=========================================================
+-->
+
+<meta
+    http-equiv="Content-Security-Policy"
+    content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        font-src 'self' data:;
+        connect-src 'self';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        frame-src 'none';
+        frame-ancestors 'none';
+        worker-src 'none';
+        manifest-src 'self';
+        media-src 'self';
+        upgrade-insecure-requests;
+    "
+>
+
+<!--
+=========================================================
+OCHRONA PRZED MIME SNIFFING
+=========================================================
+-->
+
+<meta
+    http-equiv="X-Content-Type-Options"
+    content="nosniff"
+>
+
+<!--
+=========================================================
+OGRANICZENIE INFORMACJI REFERRER
+=========================================================
+-->
+
+<meta
+    http-equiv="Referrer-Policy"
+    content="strict-origin-when-cross-origin"
+>
+
+<!--
+=========================================================
+OGRANICZENIE UPRAWNIEŃ PRZEGLĄDARKI
+=========================================================
+-->
+
+<meta
+    http-equiv="Permissions-Policy"
+    content="
+        camera=(),
+        microphone=(),
+        geolocation=(),
+        payment=(),
+        usb=(),
+        bluetooth=(),
+        accelerometer=(),
+        gyroscope=(),
+        magnetometer=()
+    "
+>
 
 <title>
     Zachodniopomorskie Centrum Informatyki | ZPCI
 </title>
 
+
+<!-- =====================================================
+     CSS
+===================================================== -->
 
 <style>
 
@@ -32,20 +126,51 @@
 ===================================================== */
 
 * {
+
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
+
 }
+
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     background: #f2f4f7;
+
     color: #222;
+
     line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   DOSTĘPNOŚĆ
+===================================================== */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+
+    outline:
+        3px solid #f2b705;
+
+    outline-offset: 3px;
+
 }
 
 
@@ -58,6 +183,7 @@ header {
     min-height: 150px;
 
     background:
+
         linear-gradient(
             135deg,
             #0b3d91,
@@ -68,7 +194,9 @@ header {
     color: white;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     padding: 25px 50px;
@@ -86,15 +214,18 @@ header {
 .logo-area {
 
     display: flex;
+
     align-items: center;
 
     gap: 20px;
 
 }
 
+
 .logo {
 
     width: 90px;
+
     height: 90px;
 
     background: white;
@@ -102,7 +233,9 @@ header {
     border-radius: 15px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     box-shadow:
@@ -114,14 +247,17 @@ header {
 
 }
 
+
 .logo img {
 
     width: 82px;
+
     height: 82px;
 
     object-fit: contain;
 
 }
+
 
 .logo-text h1 {
 
@@ -130,6 +266,7 @@ header {
     margin-bottom: 3px;
 
 }
+
 
 .logo-text p {
 
@@ -154,11 +291,13 @@ nav ul {
 
 }
 
+
 nav ul li {
 
     position: relative;
 
 }
+
 
 nav ul li a {
 
@@ -177,6 +316,7 @@ nav ul li a {
     transition: 0.3s;
 
 }
+
 
 nav ul li a:hover {
 
@@ -228,6 +368,7 @@ nav ul li a:hover {
 
 }
 
+
 .sidebar h2 {
 
     color: #0b3d91;
@@ -256,6 +397,7 @@ nav ul li a:hover {
 
 }
 
+
 .sidebar-section summary {
 
     position: relative;
@@ -283,15 +425,17 @@ nav ul li a:hover {
 
 }
 
+
 .sidebar-section summary::-webkit-details-marker {
 
     display: none;
 
 }
 
+
 .sidebar-section summary::after {
 
-    content: "?";
+    content: "ˇ";
 
     position: absolute;
 
@@ -302,12 +446,13 @@ nav ul li a:hover {
     transform:
         translateY(-50%);
 
-    font-size: 14px;
+    font-size: 12px;
 
     transition:
         transform 0.25s;
 
 }
+
 
 .sidebar-section[open]
 summary::after {
@@ -317,6 +462,7 @@ summary::after {
         rotate(180deg);
 
 }
+
 
 .sidebar-section summary:hover {
 
@@ -349,6 +495,7 @@ summary::after {
 
 }
 
+
 .category summary {
 
     position: relative;
@@ -374,11 +521,13 @@ summary::after {
 
 }
 
+
 .category summary::-webkit-details-marker {
 
     display: none;
 
 }
+
 
 .category summary::after {
 
@@ -400,6 +549,7 @@ summary::after {
 
 }
 
+
 .category[open]
 summary::after {
 
@@ -408,6 +558,7 @@ summary::after {
         rotate(90deg);
 
 }
+
 
 .category summary:hover {
 
@@ -434,6 +585,7 @@ summary::after {
 
 }
 
+
 .sidebar a {
 
     display: block;
@@ -456,6 +608,7 @@ summary::after {
 
 }
 
+
 .sidebar a:hover {
 
     background: #e8f1fa;
@@ -473,7 +626,8 @@ summary::after {
 
 .training-groups a {
 
-    padding: 8px 10px;
+    padding:
+        8px 10px;
 
     margin-bottom: 3px;
 
@@ -495,6 +649,7 @@ summary::after {
 
 }
 
+
 .sidebar-special a {
 
     background: #f7faff;
@@ -507,6 +662,7 @@ summary::after {
     font-weight: bold;
 
 }
+
 
 .sidebar-special a:hover {
 
@@ -550,6 +706,7 @@ main {
         0 5px 15px rgba(0,0,0,0.15);
 
 }
+
 
 .training-banner img {
 
@@ -602,11 +759,13 @@ main {
 
 }
 
+
 .hero-content {
 
     max-width: 750px;
 
 }
+
 
 .hero h2 {
 
@@ -616,6 +775,7 @@ main {
 
 }
 
+
 .hero p {
 
     font-size: 19px;
@@ -623,6 +783,7 @@ main {
     margin-bottom: 25px;
 
 }
+
 
 .hero-buttons {
 
@@ -660,6 +821,7 @@ main {
 
 }
 
+
 .button:hover {
 
     transform:
@@ -669,6 +831,7 @@ main {
         0 4px 10px rgba(0,0,0,0.25);
 
 }
+
 
 .button.blue {
 
@@ -698,6 +861,7 @@ main {
 
 }
 
+
 .section-description {
 
     text-align: center;
@@ -722,6 +886,7 @@ main {
 
 }
 
+
 .services-grid {
 
     display: grid;
@@ -735,6 +900,7 @@ main {
     gap: 20px;
 
 }
+
 
 .service-card {
 
@@ -756,6 +922,7 @@ main {
 
 }
 
+
 .service-card:hover {
 
     transform:
@@ -766,6 +933,7 @@ main {
 
 }
 
+
 .service-card h3 {
 
     color: #0b3d91;
@@ -774,6 +942,7 @@ main {
 
 }
 
+
 .service-card p {
 
     color: #555;
@@ -781,6 +950,7 @@ main {
     margin-bottom: 15px;
 
 }
+
 
 .service-card a {
 
@@ -798,6 +968,7 @@ main {
     border-radius: 5px;
 
 }
+
 
 .service-card a:hover {
 
@@ -825,149 +996,12 @@ main {
 
 }
 
+
 .about h2 {
 
     color: #0b3d91;
 
     margin-bottom: 15px;
-
-}
-
-
-/* =====================================================
-   CENNIKI
-===================================================== */
-
-.price-section {
-
-    margin-bottom: 45px;
-
-}
-
-.price-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(
-            auto-fit,
-            minmax(240px, 1fr)
-        );
-
-    gap: 20px;
-
-}
-
-.price-card {
-
-    background: white;
-
-    padding: 25px;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 3px 10px rgba(0,0,0,0.08);
-
-    border-top:
-        4px solid #1769aa;
-
-}
-
-.price-card h3 {
-
-    color: #0b3d91;
-
-    margin-bottom: 12px;
-
-}
-
-.price {
-
-    font-size: 25px;
-
-    color: #1769aa;
-
-    font-weight: bold;
-
-    margin:
-        10px 0 15px;
-
-}
-
-.price-card ul {
-
-    list-style: none;
-
-}
-
-.price-card li {
-
-    padding:
-        5px 0;
-
-    border-bottom:
-        1px solid #edf0f4;
-
-}
-
-.price-card li:last-child {
-
-    border-bottom: none;
-
-}
-
-
-/* =====================================================
-   VOUCHER
-===================================================== */
-
-.voucher {
-
-    background:
-
-        linear-gradient(
-            135deg,
-            #0b3d91,
-            #1769aa,
-            #2185d0
-        );
-
-    color: white;
-
-    padding: 40px;
-
-    border-radius: 12px;
-
-    text-align: center;
-
-    margin-bottom: 35px;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-.voucher h2 {
-
-    font-size: 30px;
-
-    margin-bottom: 12px;
-
-}
-
-.voucher p {
-
-    max-width: 750px;
-
-    margin:
-        0 auto 20px;
-
-}
-
-.voucher .button {
-
-    color: #0b3d91;
 
 }
 
@@ -998,11 +1032,13 @@ main {
 
 }
 
+
 .contact-box h2 {
 
     margin-bottom: 10px;
 
 }
+
 
 .contact-box a {
 
@@ -1011,6 +1047,89 @@ main {
     font-weight: bold;
 
     text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   SEKCJA CYBERBEZPIECZEŃSTWA
+===================================================== */
+
+.cyber-security {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    margin-bottom: 35px;
+
+    border-left:
+        5px solid #0b3d91;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.08);
+
+}
+
+
+.cyber-security h2 {
+
+    color: #0b3d91;
+
+    margin-bottom: 15px;
+
+}
+
+
+.cyber-security-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 18px;
+
+    margin-top: 20px;
+
+}
+
+
+.cyber-card {
+
+    background: #f5f8fc;
+
+    border:
+        1px solid #dce5ef;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+}
+
+
+.cyber-card h3 {
+
+    color: #1769aa;
+
+    margin-bottom: 8px;
+
+    font-size: 18px;
+
+}
+
+
+.cyber-card p {
+
+    color: #555;
+
+    font-size: 14px;
 
 }
 
@@ -1032,6 +1151,7 @@ footer {
     margin-top: 30px;
 
 }
+
 
 footer p {
 
@@ -1056,11 +1176,13 @@ footer p {
 
     }
 
+
     .logo-area {
 
         justify-content: center;
 
     }
+
 
     nav ul {
 
@@ -1070,11 +1192,13 @@ footer p {
 
     }
 
+
     .layout {
 
         flex-direction: column;
 
     }
+
 
     .sidebar {
 
@@ -1100,6 +1224,7 @@ footer p {
 
     }
 
+
     .logo {
 
         width: 70px;
@@ -1107,6 +1232,7 @@ footer p {
         height: 70px;
 
     }
+
 
     .logo img {
 
@@ -1116,11 +1242,13 @@ footer p {
 
     }
 
+
     .logo-text h1 {
 
         font-size: 21px;
 
     }
+
 
     nav ul {
 
@@ -1130,11 +1258,13 @@ footer p {
 
     }
 
+
     nav ul li {
 
         width: 100%;
 
     }
+
 
     nav ul li a {
 
@@ -1142,17 +1272,20 @@ footer p {
 
     }
 
+
     main {
 
         padding: 15px;
 
     }
 
+
     .training-banner {
 
         margin-bottom: 25px;
 
     }
+
 
     .hero {
 
@@ -1163,11 +1296,13 @@ footer p {
 
     }
 
+
     .hero h2 {
 
         font-size: 30px;
 
     }
+
 
     .hero p {
 
@@ -1175,15 +1310,45 @@ footer p {
 
     }
 
+
     .about {
 
-        padding: 25px 20px;
+        padding:
+            25px 20px;
 
     }
 
-    .voucher {
 
-        padding: 30px 20px;
+    .cyber-security {
+
+        padding:
+            25px 20px;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUKCJA ANIMACJI
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        transition: none !important;
+
+        animation: none !important;
 
     }
 
@@ -1203,54 +1368,82 @@ footer p {
 
 <header>
 
-    <div class="logo-area">
 
-        <div class="logo">
+<div class="logo-area">
 
-            <img
-                src="images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
-                alt="Logo Zachodniopomorskiego Centrum Informatyki">
 
-        </div>
+    <div class="logo">
 
-        <div class="logo-text">
-
-            <h1>
-                Zachodniopomorskie Centrum Informatyki
-            </h1>
-
-            <p>
-                Szkolenia • Kursy • Usługi IT
-            </p>
-
-        </div>
+        <img
+            src="images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
+            alt="Logo Zachodniopomorskiego Centrum Informatyki"
+            width="82"
+            height="82"
+            loading="eager"
+            decoding="async"
+        >
 
     </div>
 
 
-    <!-- =================================================
-         GŁÓWNE MENU
-    ================================================== -->
+    <div class="logo-text">
 
-    <nav>
+        <h1>
+            Zachodniopomorskie Centrum Informatyki
+        </h1>
 
-        <ul>
+        <p>
+            Szkolenia • Kursy • Usługi IT
+        </p>
 
-            <li>
-                <a href="index.html">
-                    Strona główna
-                </a>
-            </li>
+    </div>
 
-            <li>
-                <a href="mailto:biuro@zpci.pl">
-                    Kontakt
-                </a>
-            </li>
 
-        </ul>
+</div>
 
-    </nav>
+
+<!-- =================================================
+     GŁÓWNE MENU
+================================================== -->
+
+<nav
+    aria-label="Główna nawigacja"
+>
+
+<ul>
+
+
+    <li>
+
+        <a href="szkoleniakursy.html">
+            Szkolenia i kursy
+        </a>
+
+    </li>
+
+
+    <li>
+
+        <a href="uslugiit.html">
+            Usługi IT
+        </a>
+
+    </li>
+
+
+    <li>
+
+        <a href="mailto:biuro@zpci.pl">
+            Kontakt
+        </a>
+
+    </li>
+
+
+</ul>
+
+</nav>
+
 
 </header>
 
@@ -1263,443 +1456,640 @@ footer p {
      SIDEBAR
 ===================================================== -->
 
-<aside class="sidebar">
+<aside
+    class="sidebar"
+    aria-label="Menu ZPCI"
+>
 
 
-    <h2>
-        ZPCI
-    </h2>
+<h2>
+    ZPCI
+</h2>
 
 
-    <!-- =================================================
-         SZKOLENIA I KURSY
-    ================================================== -->
+<!-- =================================================
+     SZKOLENIA I KURSY
+================================================== -->
 
-    <details class="sidebar-section" open>
+<details
+    class="sidebar-section"
+    open
+>
 
-        <summary>
-            Szkolenia i kursy
-        </summary>
 
+<summary>
+    Szkolenia i kursy
+</summary>
 
-        <div class="sidebar-links">
 
+<div class="sidebar-links">
 
-            <!-- BIUROWE -->
 
-            <details class="category">
+<!-- BIUROWE -->
 
-                <summary>
-                    Biurowe
-                </summary>
+<details class="category">
 
-                <div class="category-links">
 
-                    <a href="szkoleniakursy/ms-office-poziom-1.html">
-                        MS Office – poziom 1
-                    </a>
+<summary>
+    Biurowe
+</summary>
 
-                    <a href="szkoleniakursy/msoffice2.html">
-                        MS Office – poziom 2
-                    </a>
 
-                    <a href="szkoleniakursy/msexcel.html">
-                        MS Excel
-                    </a>
+<div class="category-links">
 
-                    <a href="szkoleniakursy/msoffice-professional.html">
-                        MS Office Professional
-                    </a>
 
-                    <a href="szkoleniakursy/msproject.html">
-                        MS Project
-                    </a>
+<a
+    href="szkoleniakursy/ms-office-poziom-1.html"
+>
+    MS Office – poziom 1
+</a>
 
-                    <a href="szkoleniakursy/PowerPoint-Profesjonalne.html">
-                        PowerPoint Profesjonalne
-                    </a>
 
-                    <a href="szkoleniakursy/vba.html">
-                        VBA
-                    </a>
+<a
+    href="szkoleniakursy/msoffice2.html"
+>
+    MS Office – poziom 2
+</a>
 
-                    <a href="szkoleniakursy/libreoffice-openoffice.html">
-                        LibreOffice / OpenOffice
-                    </a>
 
-                    <a href="szkoleniakursy/PowerPivot-PowerMap.html">
-                        Power Pivot + Power Map
-                    </a>
+<a
+    href="szkoleniakursy/msexcel.html"
+>
+    MS Excel
+</a>
 
-                    <a href="szkoleniakursy/PowerQuery.html">
-                        Power Query
-                    </a>
 
-                </div>
+<a
+    href="szkoleniakursy/msoffice-professional.html"
+>
+    MS Office Professional
+</a>
 
-            </details>
 
+<a
+    href="szkoleniakursy/msproject.html"
+>
+    MS Project
+</a>
 
-            <!-- KSIĘGOWE -->
 
-            <details class="category">
+<a
+    href="szkoleniakursy/PowerPoint-Profesjonalne.html"
+>
+    PowerPoint Profesjonalne
+</a>
 
-                <summary>
-                    Księgowe
-                </summary>
 
-                <div class="category-links">
+<a
+    href="szkoleniakursy/vba.html"
+>
+    VBA
+</a>
 
-                    <a href="szkoleniakursy/platnik.html">
-                        Płatnik
-                    </a>
 
-                    <a href="szkoleniakursy/symfonia-faktura.html">
-                        Symfonia Faktura
-                    </a>
+<a
+    href="szkoleniakursy/libreoffice-openoffice.html"
+>
+    LibreOffice / OpenOffice
+</a>
 
-                </div>
 
-            </details>
+<a
+    href="szkoleniakursy/PowerPivot-PowerMap.html"
+>
+    Power Pivot + Power Map
+</a>
 
 
-            <!-- BAZY DANYCH -->
+<a
+    href="szkoleniakursy/PowerQuery.html"
+>
+    Power Query
+</a>
 
-            <details class="category">
 
-                <summary>
-                    Bazy danych
-                </summary>
+</div>
 
-                <div class="category-links">
+</details>
 
-                    <a href="szkoleniakursy/MSAccess.html">
-                        MS Access
-                    </a>
 
-                    <a href="szkoleniakursy/sql-plsql.html">
-                        SQL / PL-SQL
-                    </a>
 
-                </div>
+<!-- KSIĘGOWE -->
 
-            </details>
+<details class="category">
 
 
-            <!-- PROGRAMOWANIE -->
+<summary>
+    Księgowe
+</summary>
 
-            <details class="category">
 
-                <summary>
-                    Programowanie
-                </summary>
+<div class="category-links">
 
-                <div class="category-links">
 
-                    <a href="szkoleniakursy/cpp.html">
-                        C++
-                    </a>
+<a
+    href="szkoleniakursy/platnik.html"
+>
+    Płatnik
+</a>
 
-                    <a href="szkoleniakursy/csharp-sharp.html">
-                        C#
-                    </a>
 
-                    <a href="szkoleniakursy/java.html">
-                        Java
-                    </a>
+<a
+    href="szkoleniakursy/symfonia-faktura.html"
+>
+    Symfonia Faktura
+</a>
 
-                </div>
 
-            </details>
+</div>
 
+</details>
 
-            <!-- STRONY WWW -->
 
-            <details class="category">
 
-                <summary>
-                    Strony WWW
-                </summary>
+<!-- BAZY DANYCH -->
 
-                <div class="category-links">
+<details class="category">
 
-                    <a href="szkoleniakursy/html-css-strony-www.html">
-                        HTML + CSS
-                    </a>
 
-                    <a href="szkoleniakursy/javascript-programowanie-dynamiczne-strony.html">
-                        JavaScript
-                    </a>
+<summary>
+    Bazy danych
+</summary>
 
-                    <a href="szkoleniakursy/php-mysql-programowanie-stron.html">
-                        PHP + MySQL
-                    </a>
 
-                </div>
+<div class="category-links">
 
-            </details>
 
+<a
+    href="szkoleniakursy/MSAccess.html"
+>
+    MS Access
+</a>
 
-            <!-- GRAFIKA -->
 
-            <details class="category">
+<a
+    href="szkoleniakursy/sql-plsql.html"
+>
+    SQL / PL-SQL
+</a>
 
-                <summary>
-                    Grafika
-                </summary>
 
-                <div class="category-links">
+</div>
 
-                    <a href="szkoleniakursy/coreldraw.html">
-                        CorelDRAW
-                    </a>
+</details>
 
-                    <a href="szkoleniakursy/GIMP-Cyfrowa-Obrobka-Zdjec.html">
-                        GIMP – cyfrowa obróbka zdjęć
-                    </a>
 
-                    <a href="szkoleniakursy/Photoshop-Cyfrowa-Obrobka-Zdjec.html">
-                        Photoshop – cyfrowa obróbka zdjęć
-                    </a>
 
-                </div>
+<!-- PROGRAMOWANIE -->
 
-            </details>
+<details class="category">
 
 
-            <!-- CAD -->
+<summary>
+    Programowanie
+</summary>
 
-            <details class="category">
 
-                <summary>
-                    CAD
-                </summary>
+<div class="category-links">
 
-                <div class="category-links">
 
-                    <a href="szkoleniakursy/CAD-poziom-1.html">
-                        CAD – poziom 1
-                    </a>
+<a
+    href="szkoleniakursy/cpp.html"
+>
+    C++
+</a>
 
-                    <a href="szkoleniakursy/CAD-poziom-2.html">
-                        CAD – poziom 2
-                    </a>
 
-                </div>
+<a
+    href="szkoleniakursy/csharp-sharp.html"
+>
+    C#
+</a>
 
-            </details>
 
+<a
+    href="szkoleniakursy/java.html"
+>
+    Java
+</a>
 
-            <!-- INNE -->
 
-            <details class="category">
+</div>
 
-                <summary>
-                    Inne
-                </summary>
+</details>
 
-                <div class="category-links">
 
-                    <a href="szkoleniakursy/analiza-danych.html">Analiza danych
-										 <a href="szkoleniakursy/niepelnosprawni.html">Osoby z niepełnosprawnościami</a></a>
-                    <a href="szkoleniakursy/Bezwzrokowe-pisanie-na-klawiaturze.html">Bezwzrokowe pisanie na klawiaturze
-										</a>
-                    <a href="szkoleniakursy/narzedzia-it-w-edukacji.html">Narzędzia IT w edukacji
-										</a>
-                    <a href="szkoleniakursy/podstawy-obslugi-komputera-i-internetu.html">Podstawy obsługi komputera i Internetu
-										</a>
-                    <a href="szkoleniakursy/konsultacje-indywidualne.html">Konsultacje indywidualne
-										</a>
-                    
 
-                </div>
+<!-- STRONY WWW -->
 
-            </details>
+<details class="category">
 
 
-        </div>
+<summary>
+    Strony WWW
+</summary>
 
-    </details>
 
+<div class="category-links">
 
 
-    <!-- =================================================
-         GRUPY SZKOLENIOWE
-    ================================================== -->
+<a
+    href="szkoleniakursy/html-css-strony-www.html"
+>
+    HTML + CSS
+</a>
 
-    <details class="sidebar-section" open>
 
-        <summary>
-            Grupy szkoleniowe
-        </summary>
+<a
+    href="szkoleniakursy/javascript-programowanie-dynamiczne-strony.html"
+>
+    JavaScript
+</a>
 
-        <div class="sidebar-links training-groups">
 
-            <a href="szkoleniakursy/firmy.html">
-                Dla firm
-            </a>
+<a
+    href="szkoleniakursy/php-mysql-programowanie-stron.html"
+>
+    PHP + MySQL
+</a>
 
-            <a href="szkoleniakursy/indywidualne.html">
-                Szkolenia indywidualne
-            </a>
-						<a href="szkoleniakursy/akademia-mlodego-informatyka.html">Akademia Młodego Informatyka
-						</a>
 
-            <a href="szkoleniakursy/seniorzy.html">
-                Kursy dla seniorów
-            </a>
- <a href="szkoleniakursy/niepelnosprawni.html">Osoby z niepełnosprawnościami
- </a>
-		
+</div>
 
-        </div>
+</details>
 
-    </details>
 
 
+<!-- GRAFIKA -->
 
-    <!-- =================================================
-         USŁUGI IT
-    ================================================== -->
+<details class="category">
 
-    <details class="sidebar-section" open>
 
-        <summary>
-            Usługi IT
-        </summary>
+<summary>
+    Grafika
+</summary>
 
 
-        <div class="sidebar-links">
+<div class="category-links">
 
 
-            <!-- GRAFIKA -->
+<a
+    href="szkoleniakursy/coreldraw.html"
+>
+    CorelDRAW
+</a>
 
-            <details class="category">
 
-                <summary>
-                    Grafika
-                </summary>
+<a
+    href="szkoleniakursy/GIMP-Cyfrowa-Obrobka-Zdjec.html"
+>
+    GIMP – cyfrowa obróbka zdjęć
+</a>
 
-                <div class="category-links">
 
-                    <a href="uslugi/grafika.html">
-                        Usługi graficzne
-                    </a>
+<a
+    href="szkoleniakursy/Photoshop-Cyfrowa-Obrobka-Zdjec.html"
+>
+    Photoshop – cyfrowa obróbka zdjęć
+</a>
 
-                </div>
 
-            </details>
+</div>
 
+</details>
 
-            <!-- SERWIS -->
 
-            <details class="category">
 
-                <summary>
-                    Serwis
-                </summary>
+<!-- CAD -->
 
-                <div class="category-links">
+<details class="category">
 
-                    <a href="uslugi/serwis.html">
-                        Naprawa i serwis
-                    </a>
 
-                </div>
+<summary>
+    CAD
+</summary>
 
-            </details>
 
+<div class="category-links">
 
-            <!-- DORADZTWO -->
 
-            <details class="category">
+<a
+    href="szkoleniakursy/CAD-poziom-1.html"
+>
+    CAD – poziom 1
+</a>
 
-                <summary>
-                    Doradztwo
-                </summary>
 
-                <div class="category-links">
+<a
+    href="szkoleniakursy/CAD-poziom-2.html"
+>
+    CAD – poziom 2
+</a>
 
-                    <a href="uslugi/doradztwo.html">
-                        Doradztwo informatyczne
-                    </a>
 
-                </div>
+</div>
 
-            </details>
+</details>
 
 
-            <!-- STRONY WWW -->
 
-            <details class="category">
+<!-- INNE -->
 
-                <summary>
-                    Strony WWW
-                </summary>
+<details class="category">
 
-                <div class="category-links">
 
-                    <a href="uslugi/strony-www.html">
-                        Projektowanie stron WWW
-                    </a>
+<summary>
+    Inne
+</summary>
 
-                </div>
 
-            </details>
+<div class="category-links">
 
 
-            <!-- PROGRAMOWANIE -->
+<a
+    href="szkoleniakursy/analiza-danych.html"
+>
+    Analiza danych
+</a>
 
-            <details class="category">
 
-                <summary>
-                    Programowanie
-                </summary>
+<a
+    href="szkoleniakursy/niepelnosprawni.html"
+>
+    Osoby z niepełnosprawnościami
+</a>
 
-                <div class="category-links">
 
-                    <a href="uslugi/programowanie.html">
-                        Programowanie aplikacji
-                    </a>
+<a
+    href="szkoleniakursy/Bezwzrokowe-pisanie-na-klawiaturze.html"
+>
+    Bezwzrokowe pisanie na klawiaturze
+</a>
 
-                </div>
 
-            </details>
+<a
+    href="szkoleniakursy/narzedzia-it-w-edukacji.html"
+>
+    Narzędzia IT w edukacji
+</a>
 
 
-        </div>
+<a
+    href="szkoleniakursy/podstawy-obslugi-komputera-i-internetu.html"
+>
+    Podstawy obsługi komputera i Internetu
+</a>
 
-    </details>
 
+<a
+    href="szkoleniakursy/konsultacje-indywidualne.html"
+>
+    Konsultacje indywidualne
+</a>
 
 
-    <!-- =================================================
-         CENNIKI I VOUCHER
-    ================================================== -->
+</div>
 
-    <details class="sidebar-section">
+</details>
 
-        <summary>
-            Cenniki i oferta
-        </summary>
 
-        <div class="sidebar-links sidebar-special">
+</div>
 
-            <a href="#cennik-szkolen">
-                Cennik szkoleń
-            </a>
+</details>
 
-            <a href="#cennik-uslug">
-                Cennik usług IT
-            </a>
 
-            <a href="#voucher">
-                Voucher / karta podarunkowa
-            </a>
 
-        </div>
+<!-- =================================================
+     GRUPY SZKOLENIOWE
+================================================== -->
 
-    </details>
+<details
+    class="sidebar-section"
+    open
+>
+
+
+<summary>
+    Grupy szkoleniowe
+</summary>
+
+
+<div class="sidebar-links training-groups">
+
+
+<a
+    href="szkoleniakursy/firmy.html"
+>
+    Dla firm
+</a>
+
+
+<a
+    href="szkoleniakursy/indywidualne.html"
+>
+    Szkolenia indywidualne
+</a>
+
+
+<a
+    href="szkoleniakursy/akademia-mlodego-informatyka.html"
+>
+    Akademia Młodego Informatyka
+</a>
+
+
+<a
+    href="szkoleniakursy/seniorzy.html"
+>
+    Kursy dla seniorów
+</a>
+
+
+<a
+    href="szkoleniakursy/niepelnosprawni.html"
+>
+    Osoby z niepełnosprawnościami
+</a>
+
+
+</div>
+
+</details>
+
+
+
+<!-- =================================================
+     USŁUGI IT
+================================================== -->
+
+<details
+    class="sidebar-section"
+    open
+>
+
+
+<summary>
+    Usługi IT
+</summary>
+
+
+<div class="sidebar-links">
+
+
+<details class="category">
+
+
+<summary>
+    Grafika
+</summary>
+
+
+<div class="category-links">
+
+<a
+    href="uslugi/grafika.html"
+>
+    Usługi graficzne
+</a>
+
+</div>
+
+</details>
+
+
+
+<details class="category">
+
+
+<summary>
+    Serwis
+</summary>
+
+
+<div class="category-links">
+
+<a
+    href="uslugi/serwis.html"
+>
+    Naprawa i serwis
+</a>
+
+</div>
+
+</details>
+
+
+
+<details class="category">
+
+
+<summary>
+    Doradztwo
+</summary>
+
+
+<div class="category-links">
+
+<a
+    href="uslugi/doradztwo.html"
+>
+    Doradztwo informatyczne
+</a>
+
+</div>
+
+</details>
+
+
+
+<details class="category">
+
+
+<summary>
+    Strony WWW
+</summary>
+
+
+<div class="category-links">
+
+<a
+    href="uslugi/strony-www.html"
+>
+    Projektowanie stron WWW
+</a>
+
+</div>
+
+</details>
+
+
+
+<details class="category">
+
+
+<summary>
+    Programowanie
+</summary>
+
+
+<div class="category-links">
+
+<a
+    href="uslugi/programowanie.html"
+>
+    Programowanie aplikacji
+</a>
+
+</div>
+
+</details>
+
+
+</div>
+
+</details>
+
+
+
+<!-- =================================================
+     CENNIKI I VOUCHER
+================================================== -->
+
+<details class="sidebar-section">
+
+
+<summary>
+    Cenniki i oferta
+</summary>
+
+
+<div class="sidebar-links sidebar-special">
+
+
+<a
+    href="cenniki-szkolen.html"
+>
+    Cennik szkoleń
+</a>
+
+
+<a
+    href="cennik-uslug.html"
+>
+    Cennik usług IT
+</a>
+
+
+<a
+    href="voucher.html"
+>
+    Voucher / karta podarunkowa
+</a>
+
+
+</div>
+
+</details>
 
 
 </aside>
@@ -1713,628 +2103,522 @@ footer p {
 <main>
 
 
-    <!-- =================================================
-         BANNER
-    ================================================== -->
+<!-- =================================================
+     BANNER
+================================================== -->
 
-    <section
-        class="training-banner"
-        aria-label="Szkolenia i kursy ZPCI">
+<section
+    class="training-banner"
+    aria-label="Szkolenia i kursy ZPCI"
+>
 
-        <img
-            src="images/szkolenieprogram.jpeg"
-            alt="Szkolenia i kursy Zachodniopomorskiego Centrum Informatyki">
 
-    </section>
+<img
+    src="images/szkolenieprogram.jpeg"
+    alt="Szkolenia i kursy Zachodniopomorskiego Centrum Informatyki"
+    width="1200"
+    height="500"
+    loading="eager"
+    decoding="async"
+>
 
 
+</section>
 
-    <!-- =================================================
-         HERO
-    ================================================== -->
 
-    <section class="hero">
 
-        <div class="hero-content">
+<!-- =================================================
+     HERO
+================================================== -->
 
-            <h2>
-                Informatyka bez tajemnic
-            </h2>
+<section class="hero">
 
-            <p>
-                Profesjonalne szkolenia, kursy oraz
-                usługi informatyczne dla firm i osób
-                prywatnych.
-            </p>
 
-            <div class="hero-buttons">
+<div class="hero-content">
 
-                <a
-                    class="button"
-                    href="#szkolenia">
 
-                    Zobacz szkolenia
+<h2>
+    Informatyka bez tajemnic
+</h2>
 
-                </a>
 
-                <a
-                    class="button blue"
-                    href="#uslugi">
+<p>
+    Profesjonalne szkolenia, kursy oraz
+    usługi informatyczne dla firm i osób
+    prywatnych.
+</p>
 
-                    Usługi IT
 
-                </a>
+<div class="hero-buttons">
 
-            </div>
 
-        </div>
+<a
+    class="button"
+    href="szkoleniakursy.html"
+>
+    Szkolenia i kursy
+</a>
 
-    </section>
 
+<a
+    class="button blue"
+    href="uslugiit.html"
+>
+    Usługi IT
+</a>
 
 
-    <!-- =================================================
-         USŁUGI IT
-    ================================================== -->
+</div>
 
-    <section
-        class="services"
-        id="uslugi">
 
-        <h2 class="section-title">
-            Usługi IT
-        </h2>
+</div>
 
-        <p class="section-description">
+</section>
 
-            Pomagamy w rozwiązywaniu problemów
-            informatycznych oraz tworzeniu nowoczesnych
-            rozwiązań internetowych.
 
-        </p>
 
+<!-- =================================================
+     USŁUGI IT
+================================================== -->
 
-        <div class="services-grid">
+<section
+    class="services"
+    id="uslugi"
+>
 
 
-            <article class="service-card">
+<h2 class="section-title">
+    Usługi IT
+</h2>
 
-                <h3>
-                    Grafika komputerowa
-                </h3>
 
-                <p>
-                    Projekty graficzne, obróbka zdjęć
-                    oraz przygotowanie materiałów.
-                </p>
+<p class="section-description">
 
-                <a href="uslugi/grafika.html">
-                    Więcej
-                </a>
+    Pomagamy w rozwiązywaniu problemów
+    informatycznych oraz tworzeniu nowoczesnych
+    rozwiązań internetowych.
 
-            </article>
+</p>
 
 
-            <article class="service-card">
+<div class="services-grid">
 
-                <h3>
-                    Naprawa i serwis
-                </h3>
 
-                <p>
-                    Pomoc w rozwiązywaniu problemów
-                    sprzętowych i programowych.
-                </p>
+<article class="service-card">
 
-                <a href="uslugi/serwis.html">
-                    Więcej
-                </a>
 
-            </article>
+<h3>
+    Grafika komputerowa
+</h3>
 
 
-            <article class="service-card">
+<p>
+    Projekty graficzne, obróbka zdjęć
+    oraz przygotowanie materiałów.
+</p>
 
-                <h3>
-                    Doradztwo informatyczne
-                </h3>
 
-                <p>
-                    Doradztwo w zakresie oprogramowania,
-                    komputerów i technologii IT.
-                </p>
+<a
+    href="uslugi/grafika.html"
+>
+    Więcej
+</a>
 
-                <a href="uslugi/doradztwo.html">
-                    Więcej
-                </a>
 
-            </article>
+</article>
 
 
-            <article class="service-card">
 
-                <h3>
-                    Projektowanie stron WWW
-                </h3>
+<article class="service-card">
 
-                <p>
-                    Tworzenie nowoczesnych,
-                    responsywnych stron internetowych.
-                </p>
 
-                <a href="uslugi/strony-www.html">
-                    Więcej
-                </a>
+<h3>
+    Naprawa i serwis
+</h3>
 
-            </article>
 
+<p>
+    Pomoc w rozwiązywaniu problemów
+    sprzętowych i programowych.
+</p>
 
-            <article class="service-card">
 
-                <h3>
-                    Programowanie
-                </h3>
+<a
+    href="uslugi/serwis.html"
+>
+    Więcej
+</a>
 
-                <p>
-                    Tworzenie i rozwój aplikacji
-                    oraz indywidualnych rozwiązań.
-                </p>
 
-                <a href="uslugi/programowanie.html">
-                    Więcej
-                </a>
+</article>
 
-            </article>
 
 
-        </div>
+<article class="service-card">
 
-    </section>
 
+<h3>
+    Doradztwo informatyczne
+</h3>
 
 
-    <!-- =================================================
-         SZKOLENIA
-    ================================================== -->
+<p>
+    Doradztwo w zakresie oprogramowania,
+    komputerów i technologii IT.
+</p>
 
-    <section
-        class="about"
-        id="szkolenia">
 
-        <h2>
-            Szkolenia i kursy
-        </h2>
+<a
+    href="uslugi/doradztwo.html"
+>
+    Więcej
+</a>
 
-        <p>
 
-            Oferujemy szkolenia informatyczne obejmujące
-            między innymi pakiet Microsoft Office,
-            bazy danych, programowanie, projektowanie
-            stron WWW, grafikę komputerową oraz systemy CAD.
+</article>
 
-        </p>
 
-        <br>
 
-        <p>
+<article class="service-card">
 
-            Oferta została uporządkowana według kategorii
-            tematycznych. Szczegółowe informacje dotyczące
-            każdego szkolenia znajdują się na odpowiednich
-            stronach kursów.
 
-        </p>
+<h3>
+    Projektowanie stron WWW
+</h3>
 
-    </section>
 
+<p>
+    Tworzenie nowoczesnych,
+    responsywnych stron internetowych.
+</p>
 
 
-    <!-- =================================================
-         CENNIK SZKOLEŃ
-    ================================================== -->
+<a
+    href="uslugi/strony-www.html"
+>
+    Więcej
+</a>
 
-    <section
-        class="price-section"
-        id="cennik-szkolen">
 
-        <h2 class="section-title">
-            Cennik szkoleń
-        </h2>
+</article>
 
-        <p class="section-description">
 
-            Przykładowa oferta cenowa szkoleń ZPCI.
-            Szczegółowa cena może zależeć od zakresu
-            oraz formy szkolenia.
 
-        </p>
+<article class="service-card">
 
 
-        <div class="price-grid">
+<h3>
+    Programowanie
+</h3>
 
 
-            <article class="price-card">
+<p>
+    Tworzenie i rozwój aplikacji
+    oraz indywidualnych rozwiązań.
+</p>
 
-                <h3>
-                    Szkolenia biurowe
-                </h3>
 
-                <div class="price">
-                    od 299 zł
-                </div>
+<a
+    href="uslugi/programowanie.html"
+>
+    Więcej
+</a>
 
-                <ul>
 
-                    <li>MS Office</li>
+</article>
 
-                    <li>MS Excel</li>
 
-                    <li>PowerPoint</li>
+</div>
 
-                    <li>Power Query</li>
+</section>
 
-                    <li>VBA</li>
 
-                </ul>
 
-            </article>
+<!-- =================================================
+     SZKOLENIA
+================================================== -->
 
+<section
+    class="about"
+    id="szkolenia"
+>
 
-            <article class="price-card">
 
-                <h3>
-                    Bazy danych
-                </h3>
+<h2>
+    Szkolenia i kursy
+</h2>
 
-                <div class="price">
-                    od 399 zł
-                </div>
 
-                <ul>
+<p>
 
-                    <li>MS Access</li>
+    Oferujemy szkolenia informatyczne obejmujące
+    między innymi pakiet Microsoft Office,
+    bazy danych, programowanie, projektowanie
+    stron WWW, grafikę komputerową oraz systemy CAD.
 
-                    <li>SQL</li>
+</p>
 
-                    <li>PL/SQL</li>
 
-                </ul>
+<br>
 
-            </article>
 
+<p>
 
-            <article class="price-card">
+    Oferta została uporządkowana według kategorii
+    tematycznych. Szczegółowe informacje dotyczące
+    każdego szkolenia znajdują się na odpowiednich
+    stronach kursów.
 
-                <h3>
-                    Programowanie
-                </h3>
+</p>
 
-                <div class="price">
-                    od 399 zł
-                </div>
 
-                <ul>
+<br>
 
-                    <li>C++</li>
 
-                    <li>C#</li>
+<a
+    class="button blue"
+    href="szkoleniakursy.html"
+>
+    Zobacz wszystkie szkolenia
+</a>
 
-                    <li>Java</li>
 
-                </ul>
+</section>
 
-            </article>
 
 
-            <article class="price-card">
+<!-- =================================================
+     O ZPCI
+================================================== -->
 
-                <h3>
-                    Strony WWW
-                </h3>
+<section class="about">
 
-                <div class="price">
-                    od 399 zł
-                </div>
 
-                <ul>
+<h2>
+    Zachodniopomorskie Centrum Informatyki
+</h2>
 
-                    <li>HTML + CSS</li>
 
-                    <li>JavaScript</li>
+<p>
 
-                    <li>PHP + MySQL</li>
+    ZPCI to centrum szkoleniowe i informatyczne
+    oferujące kursy oraz usługi związane
+    z nowoczesnymi technologiami.
 
-                </ul>
+</p>
 
-            </article>
 
+<br>
 
-            <article class="price-card">
 
-                <h3>
-                    Grafika
-                </h3>
+<p>
 
-                <div class="price">
-                    od 399 zł
-                </div>
+    Naszym celem jest przekazywanie praktycznej
+    wiedzy informatycznej oraz pomoc w wykorzystaniu
+    technologii w pracy i codziennym życiu.
 
-                <ul>
+</p>
 
-                    <li>CorelDRAW</li>
 
-                    <li>GIMP</li>
+</section>
 
-                    <li>Photoshop</li>
 
-                </ul>
 
-            </article>
+<!-- =================================================
+     CYBERBEZPIECZEŃSTWO
+================================================== -->
 
+<section
+    class="cyber-security"
+    id="cyberbezpieczenstwo"
+>
 
-            <article class="price-card">
 
-                <h3>
-                    CAD
-                </h3>
+<h2>
+    Cyberbezpieczeństwo ZPCI
+</h2>
 
-                <div class="price">
-                    399 zł
-                </div>
 
-                <ul>
+<p>
 
-                    <li>CAD – poziom 1</li>
+    Strona ZPCI została przygotowana z uwzględnieniem
+    podstawowych zasad bezpieczeństwa aplikacji
+    internetowych. Zastosowane rozwiązania mają
+    ograniczać typowe zagrożenia występujące
+    podczas korzystania ze strony internetowej.
 
-                    <li>CAD – poziom 2</li>
+</p>
 
-                </ul>
 
-            </article>
+<div class="cyber-security-grid">
 
 
-        </div>
+<article class="cyber-card">
 
-    </section>
 
+<h3>
+    ?? Content Security Policy
+</h3>
 
 
-    <!-- =================================================
-         CENNIK USŁUG
-    ================================================== -->
+<p>
 
-    <section
-        class="price-section"
-        id="cennik-uslug">
+    Polityka CSP ogranicza źródła skryptów,
+    obrazów, ramek i innych zasobów ładowanych
+    przez stronę.
 
-        <h2 class="section-title">
-            Cennik usług IT
-        </h2>
+</p>
 
-        <p class="section-description">
 
-            Ceny usług ustalane są indywidualnie
-            w zależności od zakresu realizacji.
+</article>
 
-        </p>
 
 
-        <div class="price-grid">
+<article class="cyber-card">
 
 
-            <article class="price-card">
+<h3>
+    ??? Ochrona przed MIME sniffing
+</h3>
 
-                <h3>
-                    Usługi graficzne
-                </h3>
 
-                <div class="price">
-                    od 50 zł
-                </div>
+<p>
 
-                <ul>
+    Zastosowano ustawienie
+    X-Content-Type-Options: nosniff,
+    które ogranicza możliwość interpretowania
+    plików w niepożądany sposób.
 
-                    <li>Projekty graficzne</li>
+</p>
 
-                    <li>Obróbka zdjęć</li>
 
-                    <li>Materiały reklamowe</li>
+</article>
 
-                </ul>
 
-            </article>
 
+<article class="cyber-card">
 
-            <article class="price-card">
 
-                <h3>
-                    Naprawa i serwis
-                </h3>
+<h3>
+    ??? Ochrona przed clickjackingiem
+</h3>
 
-                <div class="price">
-                    od 80 zł
-                </div>
 
-                <ul>
+<p>
 
-                    <li>Diagnostyka</li>
+    Polityka frame-ancestors oraz nagłówek
+    X-Frame-Options mają uniemożliwić
+    osadzanie strony w nieautoryzowanej ramce.
 
-                    <li>Konfiguracja systemu</li>
+</p>
 
-                    <li>Pomoc techniczna</li>
 
-                </ul>
+</article>
 
-            </article>
 
 
-            <article class="price-card">
+<article class="cyber-card">
 
-                <h3>
-                    Doradztwo informatyczne
-                </h3>
 
-                <div class="price">
-                    od 100 zł
-                </div>
+<h3>
+    ?? Ograniczenie uprawnień
+</h3>
 
-                <ul>
 
-                    <li>Konsultacje IT</li>
+<p>
 
-                    <li>Dobór oprogramowania</li>
+    Strona nie potrzebuje dostępu do kamery,
+    mikrofonu, geolokalizacji, urządzeń USB
+    ani innych funkcji sprzętowych.
 
-                    <li>Wsparcie techniczne</li>
+</p>
 
-                </ul>
 
-            </article>
+</article>
 
 
-            <article class="price-card">
 
-                <h3>
-                    Strony WWW
-                </h3>
+<article class="cyber-card">
 
-                <div class="price">
-                    od 500 zł
-                </div>
 
-                <ul>
+<h3>
+    ?? Bezpieczny JavaScript
+</h3>
 
-                    <li>Strony wizytówkowe</li>
 
-                    <li>Strony firmowe</li>
+<p>
 
-                    <li>Responsywny projekt</li>
+    Strona nie wykorzystuje eval(),
+    new Function() ani dynamicznego wykonywania
+    kodu pochodzącego od użytkownika.
 
-                </ul>
+</p>
 
-            </article>
 
+</article>
 
-            <article class="price-card">
 
-                <h3>
-                    Programowanie
-                </h3>
 
-                <div class="price">
-                    wycena indywidualna
-                </div>
+<article class="cyber-card">
 
-                <ul>
 
-                    <li>Aplikacje</li>
+<h3>
+    ?? HTTPS
+</h3>
 
-                    <li>Skrypty</li>
 
-                    <li>Systemy internetowe</li>
+<p>
 
-                </ul>
+    Na serwerze docelowym zalecane jest wymuszenie
+    połączenia HTTPS oraz zastosowanie nagłówka
+    HSTS.
 
-            </article>
+</p>
 
 
-        </div>
+</article>
 
-    </section>
 
+</div>
 
 
-    <!-- =================================================
-         VOUCHER
-    ================================================== -->
+</section>
 
-    <section
-        class="voucher"
-        id="voucher">
 
-        <h2>
-            Voucher / karta podarunkowa
-        </h2>
 
-        <p>
+<!-- =================================================
+     KONTAKT
+================================================== -->
 
-            Podaruj bliskiej osobie lub pracownikowi
-            możliwość uczestnictwa w wybranym szkoleniu
-            ZPCI albo skorzystania z wybranej usługi IT.
+<section class="contact-box">
 
-        </p>
 
-        <a
-            class="button"
-            href="mailto:biuro@zpci.pl?subject=Voucher%20-%20karta%20podarunkowa">
+<h2>
+    Masz pytania?
+</h2>
 
-            Zapytaj o voucher
 
-        </a>
+<p>
+    Skontaktuj się z nami:
+</p>
 
-    </section>
 
+<p>
 
+<a
+    href="mailto:biuro@zpci.pl"
+>
+    biuro@zpci.pl
+</a>
 
-    <!-- =================================================
-         O ZPCI
-    ================================================== -->
+</p>
 
-    <section class="about">
 
-        <h2>
-            Zachodniopomorskie Centrum Informatyki
-        </h2>
-
-        <p>
-
-            ZPCI to centrum szkoleniowe i informatyczne
-            oferujące kursy oraz usługi związane
-            z nowoczesnymi technologiami.
-
-        </p>
-
-        <br>
-
-        <p>
-
-            Naszym celem jest przekazywanie praktycznej
-            wiedzy informatycznej oraz pomoc w wykorzystaniu
-            technologii w pracy i codziennym życiu.
-
-        </p>
-
-    </section>
-
-
-
-    <!-- =================================================
-         KONTAKT
-    ================================================== -->
-
-    <section class="contact-box">
-
-        <h2>
-            Masz pytania?
-        </h2>
-
-        <p>
-            Skontaktuj się z nami:
-        </p>
-
-        <p>
-
-            <a href="mailto:biuro@zpci.pl">
-
-                biuro@zpci.pl
-
-            </a>
-
-        </p>
-
-    </section>
+</section>
 
 
 </main>
+
 
 </div>
 
@@ -2346,13 +2630,21 @@ footer p {
 
 <footer>
 
-    <p>
-        &copy; 2026 Zachodniopomorskie Centrum Informatyki
-    </p>
 
-    <p>
-        ZPCI – Szkolenia • Kursy • Usługi IT
-    </p>
+<p>
+    &copy; 2026 Zachodniopomorskie Centrum Informatyki
+</p>
+
+
+<p>
+    ZPCI – Szkolenia • Kursy • Usługi IT
+</p>
+
+
+<p>
+    Cyberbezpieczeństwo • Prywatność • Bezpieczne technologie
+</p>
+
 
 </footer>
 

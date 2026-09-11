@@ -11,12 +11,27 @@
     >
 
     <title>
-        Szkolenia i kursy – Zachodniopomorskie Centrum Informatyki
+        Szkolenia i kursy informatyczne | ZPCI Szczecin
     </title>
 
     <meta
         name="description"
-        content="Szkolenia informatyczne i kursy komputerowe ZPCI. Office, Excel, VBA, grafika komputerowa, programowanie, bazy danych, CAD i szkolenia dla seniorów."
+        content="Szkolenia i kursy informatyczne ZPCI w Szczecinie. MS Office, Excel, VBA, grafika komputerowa, CAD, programowanie, bazy danych, HTML, CSS, PHP, SQL oraz kursy dla seniorów."
+    >
+
+    <meta
+        name="keywords"
+        content="szkolenia informatyczne Szczecin, kursy komputerowe Szczecin, Excel, VBA, MS Office, CAD, grafika komputerowa, programowanie, HTML CSS, PHP MySQL, SQL, Płatnik, ZPCI"
+    >
+
+    <meta
+        name="author"
+        content="Zachodniopomorskie Centrum Informatyki"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
     >
 
     <!-- FAVICON -->
@@ -34,19 +49,38 @@
 
     <style>
 
+        /* ==================================================
+           ZPCI 3 – ZMIENNE
+        ================================================== */
+
         :root {
+
             --primary: #1f3b73;
-            --primary-dark: #0b2148;
+            --primary-dark: #071b37;
             --primary-light: #edf4ff;
+
             --accent: #f2b705;
             --accent-hover: #ffd447;
+
             --white: #ffffff;
             --text: #263238;
             --muted: #5f6b7a;
+
             --border: #dce4ed;
-            --radius: 16px;
-            --shadow: 0 12px 30px rgba(11, 33, 72, 0.1);
+
+            --radius: 18px;
+
+            --shadow:
+                0 12px 30px rgba(11, 33, 72, 0.10);
+
+            --shadow-hover:
+                0 18px 40px rgba(11, 33, 72, 0.17);
         }
+
+
+        /* ==================================================
+           RESET
+        ================================================== */
 
         * {
             margin: 0;
@@ -54,17 +88,25 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
+
             min-height: 100vh;
+
             overflow-x: hidden;
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
 
             color: var(--text);
+
             line-height: 1.6;
 
             background:
@@ -76,42 +118,66 @@
                 );
         }
 
+
         img {
+
             display: block;
+
             max-width: 100%;
+
             height: auto;
         }
 
+
         a {
+
             color: inherit;
+
             text-decoration: none;
         }
 
+
+        ul {
+            list-style: none;
+        }
+
+
         .container {
-            width: calc(100% - 40px);
+
+            width:
+                calc(100% - 40px);
+
             max-width: 1200px;
+
             margin: 0 auto;
         }
 
-        /* =========================
+
+        /* ==================================================
            NAGŁÓWEK
-        ========================= */
+        ================================================== */
 
         header {
+
             position: relative;
+
             overflow: hidden;
 
-            padding: 42px 20px 48px;
+            padding:
+                42px 20px 48px;
 
             color: var(--white);
+
             text-align: center;
 
             background:
+
                 radial-gradient(
                     circle at 85% 20%,
-                    rgba(255, 255, 255, 0.12),
+                    rgba(255,255,255,0.13),
                     transparent 28%
                 ),
+
                 linear-gradient(
                     135deg,
                     var(--primary-dark),
@@ -119,74 +185,125 @@
                 );
         }
 
+
         header::before {
+
             content: "ZPCI";
 
             position: absolute;
+
             top: 50%;
             right: 4%;
 
-            color: rgba(255, 255, 255, 0.045);
+            color:
+                rgba(255,255,255,0.045);
 
-            font-size: clamp(100px, 17vw, 220px);
+            font-size:
+                clamp(110px, 18vw, 230px);
+
             font-weight: 900;
+
             line-height: 1;
 
-            transform: translateY(-50%);
+            transform:
+                translateY(-50%);
+
+            pointer-events: none;
         }
+
+
+        header::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: -10%;
+            bottom: -80px;
+
+            width: 120%;
+            height: 140px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            border-radius: 50%;
+
+            transform: rotate(-2deg);
+        }
+
 
         .header-inner {
+
             position: relative;
-            z-index: 1;
+
+            z-index: 2;
         }
 
-        /* =========================
-           LOGO ZPCI
-        ========================= */
+
+        /* ==================================================
+           LOGO I MARKA
+        ================================================== */
 
         .header-brand {
+
             display: inline-flex;
 
             align-items: center;
+
             justify-content: center;
 
-            gap: 16px;
+            gap: 17px;
 
-            margin-bottom: 24px;
+            margin-bottom: 26px;
 
             color: var(--white);
         }
 
+
         .brand-logo {
+
             width: 96px;
             height: 96px;
+
             flex: 0 0 96px;
 
-            border: 4px solid rgba(255, 255, 255, 0.95);
+            object-fit: contain;
+
+            border:
+                4px solid
+                rgba(255,255,255,0.95);
+
             border-radius: 50%;
 
             background: var(--white);
-            object-fit: contain;
 
             box-shadow:
-                0 14px 30px rgba(0, 0, 0, 0.25);
+                0 14px 30px
+                rgba(0,0,0,0.25);
 
             transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
         }
+
 
         .header-brand:hover .brand-logo {
+
             transform:
-                translateY(-3px)
-                scale(1.03);
+                translateY(-4px)
+                scale(1.04);
 
             box-shadow:
-                0 18px 36px rgba(0, 0, 0, 0.32);
+                0 18px 38px
+                rgba(0,0,0,0.32);
         }
 
+
         .brand-copy {
+
             display: flex;
+
             flex-direction: column;
 
             align-items: flex-start;
@@ -194,184 +311,302 @@
             text-align: left;
         }
 
-        .brand-name {
-            max-width: 620px;
 
-            font-size: clamp(21px, 3vw, 31px);
+        .brand-name {
+
+            max-width: 650px;
+
+            font-size:
+                clamp(21px, 3vw, 31px);
+
             font-weight: 900;
+
             line-height: 1.15;
         }
 
+
         .brand-subtitle {
-            margin-top: 6px;
 
-            color: rgba(255, 255, 255, 0.84);
+            margin-top: 7px;
 
-            font-size: 14px;
+            color:
+                rgba(255,255,255,0.84);
+
+            font-size: 13px;
+
             font-weight: 700;
-            letter-spacing: 0.07em;
-            text-transform: uppercase;
+
+            letter-spacing:
+                0.08em;
+
+            text-transform:
+                uppercase;
         }
 
+
         .header-brand:focus-visible {
-            outline: 3px solid var(--accent);
+
+            outline:
+                3px solid
+                var(--accent);
+
             outline-offset: 7px;
 
             border-radius: 20px;
         }
 
-        header h1 {
-            margin-bottom: 10px;
 
-            font-size: clamp(30px, 5vw, 48px);
+        /* ==================================================
+           TYTUŁ
+        ================================================== */
+
+        header h1 {
+
+            margin-bottom: 11px;
+
+            font-size:
+                clamp(30px, 5vw, 48px);
+
+            font-weight: 900;
+
             line-height: 1.15;
         }
 
-        .header-description {
-            color: rgba(255, 255, 255, 0.88);
 
-            font-size: clamp(17px, 2.3vw, 21px);
+        .header-description {
+
+            color:
+                rgba(255,255,255,0.88);
+
+            font-size:
+                clamp(17px, 2.3vw, 21px);
         }
 
-        /* =========================
+
+        /* ==================================================
            NAWIGACJA
-        ========================= */
+        ================================================== */
 
         nav {
+
             position: sticky;
+
             top: 0;
+
             z-index: 50;
 
-            background: #071b37;
+            background:
+                var(--primary-dark);
 
             box-shadow:
-                0 5px 18px rgba(0, 0, 0, 0.18);
+                0 5px 18px
+                rgba(0,0,0,0.18);
         }
 
+
         .nav-inner {
+
             display: flex;
+
             flex-wrap: wrap;
+
             justify-content: center;
         }
 
+
         nav a {
+
             display: flex;
 
             min-height: 54px;
 
             align-items: center;
+
             justify-content: center;
 
-            padding: 13px 21px;
+            padding:
+                13px 22px;
 
             color: var(--white);
 
             font-size: 16px;
+
             font-weight: 700;
+
             text-align: center;
 
+            border-bottom:
+                3px solid transparent;
+
             transition:
-                background-color 0.2s ease,
-                color 0.2s ease;
+                background 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
         }
+
 
         nav a:hover,
         nav a:focus-visible {
-            background: var(--accent);
-            color: var(--primary-dark);
+
+            color:
+                var(--primary-dark);
+
+            background:
+                var(--accent);
+
+            border-bottom-color:
+                var(--accent);
         }
+
 
         nav a.active {
-            background: var(--primary);
+
+            background:
+                var(--primary);
+
+            border-bottom-color:
+                var(--accent);
         }
 
-        nav a:focus-visible,
-        .course-card:focus-visible {
-            outline: 3px solid var(--accent);
-            outline-offset: -3px;
+
+        nav a:focus-visible {
+
+            outline:
+                3px solid
+                var(--accent);
+
+            outline-offset:
+                -3px;
         }
 
-        /* =========================
-           GŁÓWNA ZAWARTOŚĆ
-        ========================= */
+
+        /* ==================================================
+           GŁÓWNA CZĘŚĆ
+        ================================================== */
 
         main {
-            padding: 42px 0 55px;
+
+            padding:
+                42px 0 60px;
         }
+
 
         .content-box {
+
             padding: 40px;
 
-            border: 1px solid var(--border);
-            border-radius: 20px;
+            border:
+                1px solid
+                var(--border);
 
-            background: rgba(255, 255, 255, 0.96);
+            border-radius: 22px;
 
-            box-shadow: var(--shadow);
+            background:
+                rgba(255,255,255,0.97);
+
+            box-shadow:
+                var(--shadow);
         }
+
+
+        /* ==================================================
+           WPROWADZENIE
+        ================================================== */
 
         .intro {
+
             max-width: 900px;
 
-            margin-bottom: 38px;
+            margin:
+                0 auto 40px;
+
+            text-align: center;
         }
 
+
         .intro h2 {
+
             margin-bottom: 14px;
 
-            color: var(--primary-dark);
+            color:
+                var(--primary-dark);
 
-            font-size: clamp(27px, 4vw, 38px);
+            font-size:
+                clamp(27px, 4vw, 38px);
+
+            font-weight: 900;
+
             line-height: 1.25;
         }
 
+
         .intro p {
-            color: var(--muted);
+
+            color:
+                var(--muted);
 
             font-size: 18px;
         }
 
-        /* =========================
+
+        /* ==================================================
            KAFELKI SZKOLEŃ
-        ========================= */
+        ================================================== */
 
         .courses-grid {
+
             display: grid;
 
             grid-template-columns:
-                repeat(3, minmax(0, 1fr));
+                repeat(4, minmax(0, 1fr));
+
+            gap: 20px;
 
             align-items: stretch;
-
-            gap: 24px;
-
-            list-style: none;
         }
+
 
         .course-item {
+
             display: flex;
+
             min-width: 0;
         }
 
-        .course-card {
-            display: grid;
 
-            grid-template-rows:
-                220px 1fr;
+        .course-card {
+
+            position: relative;
+
+            display: flex;
 
             width: 100%;
-            min-width: 0;
-            height: 100%;
+
+            min-height: 300px;
+
+            flex-direction: column;
 
             overflow: hidden;
 
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
+            padding: 16px;
 
-            background: var(--white);
+            border:
+                1px solid
+                var(--border);
+
+            border-top:
+                5px solid
+                var(--accent);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                var(--white);
 
             box-shadow:
-                0 8px 24px rgba(11, 33, 72, 0.08);
+                0 8px 24px
+                rgba(11,33,72,0.09);
 
             transition:
                 transform 0.22s ease,
@@ -379,53 +614,129 @@
                 border-color 0.22s ease;
         }
 
-        .course-card:hover {
-            border-color: #a9bfd9;
 
-            box-shadow:
-                0 16px 36px rgba(11, 33, 72, 0.15);
+        .course-card::before {
 
-            transform: translateY(-5px);
+            content: "";
+
+            position: absolute;
+
+            top: -55px;
+            right: -55px;
+
+            width: 125px;
+            height: 125px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(242,183,5,0.10);
+
+            pointer-events: none;
         }
 
+
+        .course-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            border-color:
+                #b7c8dc;
+
+            border-top-color:
+                var(--accent);
+
+            box-shadow:
+                var(--shadow-hover);
+        }
+
+
+        .course-card:focus-visible {
+
+            outline:
+                3px solid
+                var(--accent);
+
+            outline-offset:
+                3px;
+        }
+
+
+        /* ==================================================
+           GRAFIKA KAFELKA
+        ================================================== */
+
         .course-thumbnail {
+
             position: relative;
 
             display: flex;
 
             width: 100%;
-            height: 220px;
+
+            height: 155px;
+
+            align-items: center;
+
+            justify-content: center;
 
             overflow: hidden;
 
-            align-items: center;
-            justify-content: center;
+            padding: 17px;
 
-            padding: 10px;
+            border:
+                1px solid
+                #e4ebf4;
 
-            border-bottom: 1px solid var(--border);
+            border-radius: 14px;
 
             background:
                 linear-gradient(
-                    135deg,
-                    #edf4ff,
-                    #f8fbff
+                    145deg,
+                    #ffffff,
+                    #eef4ff
                 );
         }
 
+
         .course-thumbnail img {
-            width: 100%;
-            height: 100%;
+
+            width: auto;
+
+            max-width: 100%;
+
+            height: auto;
+
+            max-height: 100%;
 
             object-fit: contain;
+
             object-position: center;
 
+            filter:
+                drop-shadow(
+                    0 8px 12px
+                    rgba(11,33,72,0.10)
+                );
+
             transition:
-                transform 0.35s ease;
+                transform 0.3s ease;
         }
 
+
+        .course-card:hover
+        .course-thumbnail img {
+
+            transform:
+                scale(1.06);
+        }
+
+
         .course-thumbnail.no-image::after {
-            content: "Brak grafiki";
+
+            content:
+                "Brak grafiki";
 
             display: flex;
 
@@ -435,55 +746,81 @@
             align-items: center;
             justify-content: center;
 
-            color: var(--muted);
+            color:
+                var(--muted);
 
-            font-size: 15px;
+            font-size: 14px;
+
             font-weight: 700;
+        }
+
+
+        /* ==================================================
+           TREŚĆ KAFELKA
+        ================================================== */
+
+        .course-content {
+
+            display: flex;
+
+            flex: 1;
+
+            min-height: 115px;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding:
+                18px 8px 4px;
+
             text-align: center;
         }
 
-        .course-card:hover .course-thumbnail img {
-            transform: scale(1.025);
-        }
-
-        .course-content {
-            display: flex;
-
-            min-height: 145px;
-
-            flex-direction: column;
-            justify-content: space-between;
-
-            padding: 20px;
-        }
 
         .course-title {
-            overflow-wrap: anywhere;
 
-            color: var(--primary-dark);
+            color:
+                var(--primary-dark);
 
-            font-size: 19px;
-            font-weight: 700;
+            font-size: 17px;
+
+            font-weight: 800;
+
             line-height: 1.35;
+
+            overflow-wrap:
+                anywhere;
         }
 
+
         .course-link-text {
+
             display: inline-flex;
 
             align-items: center;
 
-            gap: 8px;
+            justify-content: center;
 
-            margin-top: 16px;
+            gap: 7px;
 
-            color: var(--primary);
+            margin-top: 14px;
 
-            font-size: 15px;
-            font-weight: 700;
+            color:
+                var(--primary);
+
+            font-size: 14px;
+
+            font-weight: 800;
         }
 
+
         .course-link-text::after {
-            content: "\2192";
+
+            content:
+                "\2192";
 
             font-size: 19px;
 
@@ -491,438 +828,471 @@
                 transform 0.2s ease;
         }
 
-        .course-card:hover .course-link-text::after {
-            transform: translateX(4px);
+
+        .course-card:hover
+        .course-link-text::after {
+
+            transform:
+                translateX(5px);
         }
 
-        /* Pierwsze dwa obrazy MS Office – proporcje 3:2 */
 
-        .course-item:nth-child(1) .course-thumbnail,
-        .course-item:nth-child(2) .course-thumbnail {
-            height: auto;
-            padding: 0;
-
-            aspect-ratio: 3 / 2;
-        }
-
-        .course-item:nth-child(1) .course-thumbnail img,
-        .course-item:nth-child(2) .course-thumbnail img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: cover;
-        }
-
-        /* =========================
-           INFORMACJA POD KAFELKAMI
-        ========================= */
+        /* ==================================================
+           INFORMACJA DODATKOWA
+        ================================================== */
 
         .additional-info {
+
             margin-top: 42px;
+
             padding: 28px;
 
-            border-left: 6px solid var(--accent);
+            border-left:
+                6px solid
+                var(--accent);
+
             border-radius: 14px;
 
-            background: var(--primary-light);
+            background:
+                var(--primary-light);
         }
+
 
         .additional-info p {
+
             margin-bottom: 12px;
 
-            color: #465666;
+            color:
+                #465666;
         }
 
+
         .additional-info p:last-child {
+
             margin-bottom: 0;
         }
 
+
         .additional-info strong {
-            color: var(--primary-dark);
+
+            color:
+                var(--primary-dark);
         }
 
+
         .additional-info a {
-            color: var(--primary);
+
+            color:
+                var(--primary);
 
             font-weight: 700;
 
-            text-decoration: underline;
-            text-underline-offset: 3px;
+            text-decoration:
+                underline;
+
+            text-underline-offset:
+                3px;
         }
 
-        /* =========================
+
+        .additional-info a:hover {
+
+            color:
+                var(--primary-dark);
+        }
+
+
+        /* ==================================================
            STOPKA
-        ========================= */
+        ================================================== */
 
         footer {
-            padding: 28px 20px;
 
-            background: var(--primary-dark);
-            color: rgba(255, 255, 255, 0.85);
+            padding:
+                30px 20px;
+
+            color:
+                rgba(255,255,255,0.85);
 
             text-align: center;
+
+            background:
+                var(--primary-dark);
         }
+
+
+        footer p {
+
+            margin-bottom: 5px;
+        }
+
+
+        footer p:last-child {
+
+            margin-bottom: 0;
+        }
+
 
         footer strong {
-            color: var(--white);
+
+            color:
+                var(--white);
         }
 
-        /* =========================
-           TABLETY
-        ========================= */
 
-        @media (max-width: 950px) {
+        /* ==================================================
+           TABLETY / MAŁE LAPTOPY
+        ================================================== */
+
+        @media (max-width: 1100px) {
 
             .courses-grid {
+
                 grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
+                    repeat(3, minmax(0, 1fr));
             }
-
-            .content-box {
-                padding: 32px 26px;
-            }
-
         }
 
-        /* =========================
-           TELEFONY
-        ========================= */
 
-        @media (max-width: 650px) {
+        /* ==================================================
+           TABLETY
+        ================================================== */
+
+        @media (max-width: 800px) {
+
+            .courses-grid {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 18px;
+            }
+
+
+            .content-box {
+
+                padding:
+                    32px 24px;
+            }
+
+
+            .course-card {
+
+                min-height:
+                    285px;
+            }
+        }
+
+
+        /* ==================================================
+           TELEFONY
+        ================================================== */
+
+        @media (max-width: 600px) {
 
             .container {
-                width: calc(100% - 20px);
+
+                width:
+                    calc(100% - 20px);
             }
+
 
             header {
-                padding: 32px 14px 37px;
+
+                padding:
+                    32px 14px 38px;
             }
 
+
             header::before {
+
                 right: 50%;
 
                 transform:
-                    translate(50%, -50%);
+                    translate(
+                        50%,
+                        -50%
+                    );
             }
 
+
             .header-brand {
-                flex-direction: column;
+
+                flex-direction:
+                    column;
 
                 gap: 12px;
             }
 
+
             .brand-logo {
+
                 width: 84px;
                 height: 84px;
+
                 flex-basis: 84px;
             }
 
+
             .brand-copy {
+
                 align-items: center;
 
                 text-align: center;
             }
 
+
             .brand-name {
+
                 font-size: 22px;
             }
 
+
             .brand-subtitle {
-                font-size: 12px;
+
+                font-size: 11px;
             }
 
+
             .nav-inner {
+
                 display: grid;
 
                 grid-template-columns:
                     repeat(2, minmax(0, 1fr));
             }
 
+
             nav a {
+
                 min-height: 50px;
 
-                padding: 10px 8px;
-
-                border-bottom:
-                    1px solid rgba(255, 255, 255, 0.08);
+                padding:
+                    10px 8px;
 
                 font-size: 14px;
             }
 
+
             main {
-                padding: 22px 0 35px;
+
+                padding:
+                    22px 0 38px;
             }
+
 
             .content-box {
-                padding: 24px 16px;
 
-                border-radius: 15px;
+                padding:
+                    25px 16px;
+
+                border-radius:
+                    16px;
             }
+
 
             .intro {
-                margin-bottom: 27px;
+
+                margin-bottom:
+                    28px;
             }
+
 
             .intro p {
-                font-size: 17px;
+
+                font-size:
+                    17px;
             }
+
 
             .courses-grid {
-                grid-template-columns: 1fr;
 
-                gap: 18px;
+                grid-template-columns:
+                    1fr;
+
+                gap: 17px;
             }
+
 
             .course-card {
-                grid-template-rows:
-                    200px 1fr;
+
+                min-height:
+                    270px;
+
+                padding:
+                    15px;
             }
+
 
             .course-thumbnail {
-                height: 200px;
+
+                height:
+                    150px;
+
+                padding:
+                    15px;
             }
+
 
             .course-content {
-                min-height: 132px;
 
-                padding: 18px;
+                min-height:
+                    105px;
+
+                padding-top:
+                    16px;
             }
+
 
             .course-title {
-                font-size: 18px;
+
+                font-size:
+                    18px;
             }
+
 
             .additional-info {
-                margin-top: 30px;
-                padding: 22px 18px;
-            }
 
+                margin-top:
+                    30px;
+
+                padding:
+                    22px 18px;
+            }
         }
+
+
+        /* ==================================================
+           BARDZO MAŁE TELEFONY
+        ================================================== */
 
         @media (max-width: 390px) {
 
             .nav-inner {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
             }
+
 
             nav a {
-                min-height: 46px;
+
+                min-height:
+                    46px;
             }
 
-            .course-card {
-                grid-template-rows:
-                    180px 1fr;
-            }
 
             .course-thumbnail {
-                height: 180px;
-                padding: 8px;
-            }
 
+                height:
+                    140px;
+            }
         }
 
-        /* =========================
-           DRUKOWANIE
-        ========================= */
+
+        /* ==================================================
+           DRUK
+        ================================================== */
 
         @media print {
 
             body {
-                background: #ffffff;
-                color: #000000;
+
+                background:
+                    #ffffff;
+
+                color:
+                    #000000;
             }
+
 
             header {
-                padding: 20px;
 
-                background: #ffffff;
-                color: #000000;
+                padding:
+                    20px;
+
+                background:
+                    #ffffff;
+
+                color:
+                    #000000;
             }
+
 
             header::before,
+            header::after,
             nav,
             footer {
-                display: none;
+
+                display:
+                    none;
             }
+
 
             .brand-logo {
-                width: 72px;
-                height: 72px;
 
-                border: 1px solid #cccccc;
+                width:
+                    72px;
 
-                box-shadow: none;
+                height:
+                    72px;
+
+                border:
+                    1px solid
+                    #cccccc;
+
+                box-shadow:
+                    none;
             }
+
 
             .brand-name,
             .brand-subtitle,
             header h1,
             .header-description {
-                color: #000000;
+
+                color:
+                    #000000;
             }
 
+
             main {
-                padding: 10px 0;
+
+                padding:
+                    10px 0;
             }
+
 
             .content-box,
             .course-card,
             .additional-info {
-                border: 1px solid #cccccc;
 
-                background: #ffffff;
+                border:
+                    1px solid
+                    #cccccc;
 
-                box-shadow: none;
+                background:
+                    #ffffff;
+
+                box-shadow:
+                    none;
             }
+
 
             .courses-grid {
-                display: block;
+
+                display:
+                    block;
             }
+
 
             .course-card {
-                margin-bottom: 15px;
 
-                page-break-inside: avoid;
-            }
+                margin-bottom:
+                    15px;
 
-        }
-
-    
-
-        /* =========================
-           KAFELKI LOGO SZKOLEŃ
-           ========================= */
-
-        .courses-grid {
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 20px;
-        }
-
-        .course-card {
-            position: relative;
-            display: flex;
-            min-height: 285px;
-            flex-direction: column;
-            overflow: hidden;
-            padding: 16px;
-            border: 1px solid var(--border);
-            border-top: 5px solid var(--accent);
-            border-radius: 18px;
-            background: #ffffff;
-            box-shadow: 0 8px 24px rgba(11, 33, 72, 0.09);
-        }
-
-        .course-card::before {
-            position: absolute;
-            top: -55px;
-            right: -55px;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: rgba(242, 183, 5, 0.10);
-            content: "";
-            pointer-events: none;
-        }
-
-        .course-card:hover {
-            border-color: #b7c8dc;
-            border-top-color: var(--accent);
-            box-shadow: 0 17px 38px rgba(11, 33, 72, 0.16);
-            transform: translateY(-6px);
-        }
-
-        .course-thumbnail,
-        .course-item:nth-child(1) .course-thumbnail,
-        .course-item:nth-child(2) .course-thumbnail {
-            position: relative;
-            display: flex;
-            width: 100%;
-            height: 155px;
-            aspect-ratio: auto;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 18px;
-            border: 1px solid #e4ebf4;
-            border-radius: 14px;
-            background: linear-gradient(145deg, #ffffff, #eef4ff);
-        }
-
-        .course-thumbnail img,
-        .course-item:nth-child(1) .course-thumbnail img,
-        .course-item:nth-child(2) .course-thumbnail img {
-            width: auto;
-            max-width: 100%;
-            height: auto;
-            max-height: 100%;
-            object-fit: contain;
-            object-position: center;
-            filter: drop-shadow(0 8px 12px rgba(11, 33, 72, 0.10));
-        }
-
-        .course-card:hover .course-thumbnail img {
-            transform: scale(1.06);
-        }
-
-        .course-content {
-            display: flex;
-            min-height: 108px;
-            flex: 1;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 18px 8px 4px;
-            text-align: center;
-        }
-
-        .course-title {
-            color: var(--primary-dark);
-            font-size: 17px;
-            font-weight: 800;
-            line-height: 1.35;
-        }
-
-        .course-link-text {
-            justify-content: center;
-            margin-top: 14px;
-            color: var(--primary);
-            font-size: 14px;
-            font-weight: 800;
-        }
-
-        @media (max-width: 1100px) {
-            .courses-grid {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-        }
-
-        @media (max-width: 800px) {
-            .courses-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-
-        @media (max-width: 520px) {
-            .courses-grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .course-card {
-                min-height: 260px;
-                grid-template-rows: none;
-            }
-
-            .course-thumbnail,
-            .course-item:nth-child(1) .course-thumbnail,
-            .course-item:nth-child(2) .course-thumbnail {
-                height: 145px;
-                padding: 16px;
-            }
-
-            .course-content {
-                min-height: 96px;
-                padding-top: 16px;
+                page-break-inside:
+                    avoid;
             }
         }
 
@@ -930,9 +1300,13 @@
 
 </head>
 
+
 <body>
 
-    <!-- NAGŁÓWEK -->
+
+    <!-- ==================================================
+         NAGŁÓWEK
+    ================================================== -->
 
     <header>
 
@@ -968,9 +1342,11 @@
 
             </a>
 
+
             <h1>
                 Szkolenia informatyczne i kursy komputerowe
             </h1>
+
 
             <p class="header-description">
                 Praktyczna nauka programów, technologii i narzędzi IT
@@ -980,7 +1356,10 @@
 
     </header>
 
-    <!-- NAWIGACJA -->
+
+    <!-- ==================================================
+         NAWIGACJA
+    ================================================== -->
 
     <nav aria-label="Główna nawigacja">
 
@@ -991,8 +1370,8 @@
             </a>
 
             <a
-                class="active"
                 href="szkoleniakursy.html"
+                class="active"
                 aria-current="page"
             >
                 Szkolenia / Kursy
@@ -1010,7 +1389,10 @@
 
     </nav>
 
-    <!-- GŁÓWNA TREŚĆ -->
+
+    <!-- ==================================================
+         GŁÓWNA ZAWARTOŚĆ
+    ================================================== -->
 
     <main>
 
@@ -1025,17 +1407,22 @@
                     </h2>
 
                     <p>
-                        Zachodniopomorskie Centrum Informatyki realizuje
-                        kursy i szkolenia grupowe w salach wykładowych,
-                        szkolenia w siedzibie klienta oraz zajęcia
-                        indywidualne dopasowane do potrzeb uczestnika.
+                        Zachodniopomorskie Centrum Informatyki
+                        realizuje kursy i szkolenia grupowe,
+                        zajęcia w siedzibie klienta oraz szkolenia
+                        indywidualne dopasowane do potrzeb
+                        uczestnika.
                     </p>
 
                 </div>
 
+
                 <ul class="courses-grid">
 
-                    <!-- MS OFFICE POZIOM 1 -->
+
+                    <!-- ==================================================
+                         MS OFFICE POZIOM 1
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1060,6 +1447,7 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
@@ -1077,7 +1465,10 @@
 
                     </li>
 
-                    <!-- MS OFFICE POZIOM 2 -->
+
+                    <!-- ==================================================
+                         MS OFFICE POZIOM 2
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1101,11 +1492,13 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
                                     MS Office – poziom 2
-                                    (Word, Excel, PowerPoint, Outlook, Access)
+                                    (Word, Excel, PowerPoint,
+                                    Outlook, Access)
                                 </span>
 
                                 <span class="course-link-text">
@@ -1118,14 +1511,17 @@
 
                     </li>
 
-                    <!-- MS EXCEL -->
+
+                    <!-- ==================================================
+                         EXCEL
+                    ================================================== -->
 
                     <li class="course-item">
 
                         <a
                             class="course-card"
                             href="szkoleniakursy/msexcel.html"
-                            aria-label="MS Excel różne poziomy zaawansowania"
+                            aria-label="MS Excel – różne poziomy zaawansowania"
                         >
 
                             <div class="course-thumbnail">
@@ -1140,10 +1536,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    MS Excel – różne poziomy zaawansowania
+                                    MS Excel –
+                                    różne poziomy zaawansowania
                                 </span>
 
                                 <span class="course-link-text">
@@ -1156,7 +1554,10 @@
 
                     </li>
 
-                    <!-- VBA -->
+
+                    <!-- ==================================================
+                         VBA
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1178,10 +1579,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    MS Excel – VBA i automatyzacja pracy
+                                    MS Excel –
+                                    VBA i automatyzacja pracy
                                 </span>
 
                                 <span class="course-link-text">
@@ -1194,7 +1597,10 @@
 
                     </li>
 
-                    <!-- GRAFIKA KOMPUTEROWA -->
+
+                    <!-- ==================================================
+                         GRAFIKA
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1216,6 +1622,7 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
@@ -1233,7 +1640,10 @@
 
                     </li>
 
-                    <!-- CAD -->
+
+                    <!-- ==================================================
+                         CAD
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1255,10 +1665,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Narzędzia CAD – poziom podstawowy
+                                    Narzędzia CAD –
+                                    poziom podstawowy
                                     i zaawansowany
                                 </span>
 
@@ -1272,7 +1684,10 @@
 
                     </li>
 
-                    <!-- BEZWZROKOWE PISANIE -->
+
+                    <!-- ==================================================
+                         BEZWZROKOWE PISANIE
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1294,10 +1709,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Bezwzrokowe pisanie na klawiaturze
+                                    Bezwzrokowe pisanie
+                                    na klawiaturze
                                 </span>
 
                                 <span class="course-link-text">
@@ -1310,7 +1727,10 @@
 
                     </li>
 
-                    <!-- PŁATNIK -->
+
+                    <!-- ==================================================
+                         PŁATNIK
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1332,10 +1752,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Program Płatnik – praktyczne warsztaty
+                                    Program Płatnik –
+                                    praktyczne warsztaty
                                 </span>
 
                                 <span class="course-link-text">
@@ -1348,14 +1770,17 @@
 
                     </li>
 
-                    <!-- PROGRAMOWANIE -->
+
+                    <!-- ==================================================
+                         PROGRAMOWANIE
+                    ================================================== -->
 
                     <li class="course-item">
 
                         <a
                             class="course-card"
                             href="szkoleniakursy/programowanie.html"
-                            aria-label="Programowanie Java C++ i C#"
+                            aria-label="Programowanie Java C++ C#"
                         >
 
                             <div class="course-thumbnail">
@@ -1370,11 +1795,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Programowanie Java, C++, C#
-                                    oraz inne języki
+                                    Programowanie Java,
+                                    C++, C# oraz inne języki
                                 </span>
 
                                 <span class="course-link-text">
@@ -1387,7 +1813,10 @@
 
                     </li>
 
-                    <!-- POWERPOINT -->
+
+                    <!-- ==================================================
+                         POWERPOINT
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1409,10 +1838,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Profesjonalne prezentacje PowerPoint
+                                    Profesjonalne prezentacje
+                                    PowerPoint
                                 </span>
 
                                 <span class="course-link-text">
@@ -1425,7 +1856,10 @@
 
                     </li>
 
-                    <!-- NARZĘDZIA IT W EDUKACJI -->
+
+                    <!-- ==================================================
+                         NARZĘDZIA IT W EDUKACJI
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1447,6 +1881,7 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
@@ -1463,7 +1898,10 @@
 
                     </li>
 
-                    <!-- PODSTAWY KOMPUTERA -->
+
+                    <!-- ==================================================
+                         PODSTAWY KOMPUTERA
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1485,10 +1923,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Podstawy obsługi komputera i Internetu
+                                    Podstawy obsługi komputera
+                                    i Internetu
                                 </span>
 
                                 <span class="course-link-text">
@@ -1501,14 +1941,17 @@
 
                     </li>
 
-                    <!-- MS ACCESS -->
+
+                    <!-- ==================================================
+                         MS ACCESS
+                    ================================================== -->
 
                     <li class="course-item">
 
                         <a
                             class="course-card"
                             href="szkoleniakursy/MSAccess.html"
-                            aria-label="MS Access projektowanie baz danych"
+                            aria-label="MS Access – projektowanie baz danych"
                         >
 
                             <div class="course-thumbnail">
@@ -1523,10 +1966,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    MS Access – projektowanie baz danych
+                                    MS Access –
+                                    projektowanie baz danych
                                 </span>
 
                                 <span class="course-link-text">
@@ -1539,14 +1984,17 @@
 
                     </li>
 
-                    <!-- SQL I PL/SQL -->
+
+                    <!-- ==================================================
+                         SQL
+                    ================================================== -->
 
                     <li class="course-item">
 
                         <a
                             class="course-card"
                             href="szkoleniakursy/sql-plsql.html"
-                            aria-label="SQL i PL SQL programowanie baz danych"
+                            aria-label="SQL i PL SQL"
                         >
 
                             <div class="course-thumbnail">
@@ -1561,10 +2009,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    SQL i PL/SQL – programowanie baz danych
+                                    SQL i PL/SQL –
+                                    programowanie baz danych
                                 </span>
 
                                 <span class="course-link-text">
@@ -1577,14 +2027,17 @@
 
                     </li>
 
-                    <!-- HTML I CSS -->
+
+                    <!-- ==================================================
+                         HTML CSS
+                    ================================================== -->
 
                     <li class="course-item">
 
                         <a
                             class="course-card"
                             href="szkoleniakursy/html-css-strony-www.html"
-                            aria-label="Tworzenie stron WWW HTML i CSS"
+                            aria-label="Tworzenie stron WWW HTML CSS"
                         >
 
                             <div class="course-thumbnail">
@@ -1599,10 +2052,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Tworzenie stron WWW – HTML i CSS
+                                    Tworzenie stron WWW –
+                                    HTML i CSS
                                 </span>
 
                                 <span class="course-link-text">
@@ -1615,14 +2070,17 @@
 
                     </li>
 
-                    <!-- PHP I MYSQL -->
+
+                    <!-- ==================================================
+                         PHP MYSQL
+                    ================================================== -->
 
                     <li class="course-item">
 
                         <a
                             class="course-card"
                             href="szkoleniakursy/php-mysql-programowanie-stron.html"
-                            aria-label="Programowanie stron WWW PHP i MySQL"
+                            aria-label="Programowanie stron WWW PHP MySQL"
                         >
 
                             <div class="course-thumbnail">
@@ -1637,10 +2095,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Programowanie stron WWW – PHP i MySQL
+                                    Programowanie stron WWW –
+                                    PHP i MySQL
                                 </span>
 
                                 <span class="course-link-text">
@@ -1653,7 +2113,10 @@
 
                     </li>
 
-                    <!-- SENIORZY -->
+
+                    <!-- ==================================================
+                         SENIORZY
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1675,10 +2138,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Kursy komputerowe dla seniorów
+                                    Kursy komputerowe
+                                    dla seniorów
                                 </span>
 
                                 <span class="course-link-text">
@@ -1691,7 +2156,10 @@
 
                     </li>
 
-                    <!-- OSOBY Z NIEPEŁNOSPRAWNOŚCIAMI -->
+
+                    <!-- ==================================================
+                         OSOBY Z NIEPEŁNOSPRAWNOŚCIAMI
+                    ================================================== -->
 
                     <li class="course-item">
 
@@ -1713,10 +2181,12 @@
 
                             </div>
 
+
                             <div class="course-content">
 
                                 <span class="course-title">
-                                    Kursy komputerowe dla osób
+                                    Kursy komputerowe
+                                    dla osób
                                     z niepełnosprawnościami
                                 </span>
 
@@ -1730,25 +2200,42 @@
 
                     </li>
 
+
                 </ul>
+
+
+                <!-- ==================================================
+                     INFORMACJA DODATKOWA
+                ================================================== -->
 
                 <div class="additional-info">
 
                     <p>
-                        Jeśli interesuje Cię szkolenie, którego nie ma
-                        na liście, napisz do nas przez
-                        <a href="kontakt.html">formularz kontaktowy</a>.
+                        Jeśli interesuje Cię szkolenie,
+                        którego nie ma na liście, napisz do nas
+                        przez
+                        <a href="kontakt.html">
+                            formularz kontaktowy
+                        </a>.
                     </p>
 
                     <p>
-                        Realizujemy także szkolenia typu
-                        <strong>custom training</strong>, dopasowane
-                        do potrzeb jednej osoby, grupy lub przedsiębiorstwa.
+                        Realizujemy również
+                        <strong>custom training</strong>,
+                        dopasowane do potrzeb uczestnika,
+                        grupy lub przedsiębiorstwa.
                     </p>
 
                     <p>
-                        Każdy kurs kończy się otrzymaniem certyfikatu
-                        Zachodniopomorskiego Centrum Informatyki.
+                        Każde szkolenie może zostać dostosowane
+                        do poziomu wiedzy i indywidualnych potrzeb
+                        uczestnika.
+                    </p>
+
+                    <p>
+                        Po zakończeniu kursu uczestnik otrzymuje
+                        certyfikat Zachodniopomorskiego Centrum
+                        Informatyki.
                     </p>
 
                 </div>
@@ -1759,7 +2246,10 @@
 
     </main>
 
-    <!-- STOPKA -->
+
+    <!-- ==================================================
+         STOPKA
+    ================================================== -->
 
     <footer>
 
@@ -1777,17 +2267,24 @@
 
     </footer>
 
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script>
 
         const yearElement =
             document.getElementById("year");
 
         if (yearElement) {
+
             yearElement.textContent =
                 new Date().getFullYear();
         }
 
     </script>
+
 
 </body>
 

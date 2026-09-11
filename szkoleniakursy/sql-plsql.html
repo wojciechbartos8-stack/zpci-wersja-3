@@ -21,7 +21,7 @@
 
     <meta
         name="keywords"
-        content="szkolenie SQL Szczecin, kurs PL/SQL, bazy danych, SQL, PL/SQL, Oracle, JOIN, procedury składowane, kursory, wyzwalacze, ZPCI"
+        content="szkolenie SQL Szczecin, kurs SQL Szczecin, kurs PL/SQL, bazy danych, SQL, PL/SQL, Oracle, JOIN, procedury, kursory, wyzwalacze, ZPCI"
     >
 
     <meta
@@ -54,6 +54,7 @@
         rel="apple-touch-icon"
         href="../images/Logo+zdjecia/Logotypy/2_Logotypy_okrag.png"
     >
+
 
     <!-- =====================================================
          OPEN GRAPH
@@ -104,6 +105,7 @@
         content="image/png"
     >
 
+
     <!-- =====================================================
          TWITTER / X
     ====================================================== -->
@@ -132,6 +134,7 @@
         name="twitter:image:alt"
         content="Szkolenie SQL i PL/SQL w ZPCI"
     >
+
 
     <!-- =====================================================
          DANE STRUKTURALNE SEO
@@ -198,7 +201,8 @@
                     "@id": "https://www.zpci.pl/#organization"
                 },
 
-                "educationalLevel": "Poziom podstawowy i średniozaawansowany",
+                "educationalLevel":
+                    "Poziom podstawowy i średniozaawansowany",
 
                 "teaches": [
                     "Projektowanie relacyjnych baz danych",
@@ -227,7 +231,8 @@
 
                         "location": {
                             "@type": "Place",
-                            "name": "Zachodniopomorskie Centrum Informatyki",
+                            "name":
+                                "Zachodniopomorskie Centrum Informatyki",
                             "address": {
                                 "@type": "PostalAddress",
                                 "addressLocality": "Szczecin",
@@ -244,7 +249,8 @@
 
                         "location": {
                             "@type": "Place",
-                            "name": "Zachodniopomorskie Centrum Informatyki",
+                            "name":
+                                "Zachodniopomorskie Centrum Informatyki",
                             "address": {
                                 "@type": "PostalAddress",
                                 "addressLocality": "Szczecin",
@@ -272,14 +278,16 @@
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Szkolenia i kursy",
-                        "item": "https://www.zpci.pl/szkoleniakursy.html"
+                        "item":
+                            "https://www.zpci.pl/szkoleniakursy.html"
                     },
 
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "SQL i PL/SQL",
-                        "item": "https://www.zpci.pl/szkoleniakursy/sql-plsql.html"
+                        "item":
+                            "https://www.zpci.pl/szkoleniakursy/sql-plsql.html"
                     }
 
                 ]
@@ -378,11 +386,14 @@
 
         .page-container {
 
-            width: calc(100% - 40px);
+            width:
+                calc(100% - 40px);
 
-            max-width: 1100px;
+            max-width:
+                1100px;
 
-            margin: 0 auto;
+            margin:
+                0 auto;
         }
 
 
@@ -396,7 +407,8 @@
 
             overflow: hidden;
 
-            padding: 48px 20px;
+            padding:
+                48px 20px;
 
             background:
 
@@ -424,16 +436,49 @@
 
             position: absolute;
 
-            top: -150px;
-            right: -90px;
+            top:
+                -150px;
 
-            width: 380px;
-            height: 380px;
+            right:
+                -90px;
 
-            border-radius: 50%;
+            width:
+                380px;
+
+            height:
+                380px;
+
+            border-radius:
+                50%;
 
             background:
                 rgba(255, 255, 255, 0.06);
+        }
+
+
+        .site-header::after {
+
+            content: "";
+
+            position: absolute;
+
+            bottom:
+                -120px;
+
+            left:
+                -100px;
+
+            width:
+                300px;
+
+            height:
+                300px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(242, 183, 5, 0.08);
         }
 
 
@@ -451,37 +496,51 @@
 
         .header-brand {
 
-            display: inline-flex;
+            display:
+                inline-flex;
 
-            align-items: center;
+            align-items:
+                center;
 
-            justify-content: center;
+            justify-content:
+                center;
 
-            gap: 16px;
+            gap:
+                16px;
 
-            margin-bottom: 24px;
+            margin-bottom:
+                24px;
 
-            color: var(--white);
+            color:
+                var(--white);
 
-            text-decoration: none;
+            text-decoration:
+                none;
         }
 
 
         .brand-logo {
 
-            width: 96px;
-            height: 96px;
+            width:
+                96px;
 
-            flex: 0 0 96px;
+            height:
+                96px;
+
+            flex:
+                0 0 96px;
 
             border:
                 4px solid rgba(255, 255, 255, 0.95);
 
-            border-radius: 50%;
+            border-radius:
+                50%;
 
-            background: var(--white);
+            background:
+                var(--white);
 
-            object-fit: contain;
+            object-fit:
+                contain;
 
             box-shadow:
                 0 14px 30px rgba(0, 0, 0, 0.25);
@@ -505,43 +564,55 @@
 
         .brand-copy {
 
-            display: flex;
+            display:
+                flex;
 
-            flex-direction: column;
+            flex-direction:
+                column;
 
-            align-items: flex-start;
+            align-items:
+                flex-start;
 
-            text-align: left;
+            text-align:
+                left;
         }
 
 
         .brand-name {
 
-            max-width: 620px;
+            max-width:
+                620px;
 
             font-size:
                 clamp(21px, 3vw, 31px);
 
-            font-weight: 900;
+            font-weight:
+                900;
 
-            line-height: 1.15;
+            line-height:
+                1.15;
         }
 
 
         .brand-subtitle {
 
-            margin-top: 6px;
+            margin-top:
+                6px;
 
             color:
                 rgba(255, 255, 255, 0.86);
 
-            font-size: 14px;
+            font-size:
+                14px;
 
-            font-weight: 700;
+            font-weight:
+                700;
 
-            letter-spacing: 0.07em;
+            letter-spacing:
+                0.07em;
 
-            text-transform: uppercase;
+            text-transform:
+                uppercase;
         }
 
 
@@ -550,28 +621,34 @@
             outline:
                 3px solid var(--accent);
 
-            outline-offset: 7px;
+            outline-offset:
+                7px;
 
-            border-radius: 20px;
+            border-radius:
+                20px;
         }
 
 
         .site-header h1 {
 
-            margin-bottom: 12px;
+            margin-bottom:
+                12px;
 
             font-size:
                 clamp(36px, 6vw, 58px);
 
-            line-height: 1.1;
+            line-height:
+                1.1;
         }
 
 
         .site-header p {
 
-            max-width: 760px;
+            max-width:
+                760px;
 
-            margin: 0 auto;
+            margin:
+                0 auto;
 
             color:
                 rgba(255, 255, 255, 0.92);
@@ -587,11 +664,14 @@
 
         .main-nav {
 
-            position: sticky;
+            position:
+                sticky;
 
-            top: 0;
+            top:
+                0;
 
-            z-index: 30;
+            z-index:
+                30;
 
             background:
                 var(--primary-dark);
@@ -603,33 +683,45 @@
 
         .nav-inner {
 
-            display: flex;
+            display:
+                flex;
 
-            flex-wrap: wrap;
+            flex-wrap:
+                wrap;
 
-            justify-content: center;
+            justify-content:
+                center;
         }
 
 
         .main-nav a {
 
-            display: flex;
+            display:
+                flex;
 
-            min-height: 54px;
+            min-height:
+                54px;
 
-            align-items: center;
+            align-items:
+                center;
 
-            justify-content: center;
+            justify-content:
+                center;
 
-            padding: 13px 21px;
+            padding:
+                13px 21px;
 
-            color: var(--white);
+            color:
+                var(--white);
 
-            font-size: 16px;
+            font-size:
+                16px;
 
-            font-weight: 700;
+            font-weight:
+                700;
 
-            text-align: center;
+            text-align:
+                center;
 
             transition:
                 background-color 0.2s ease,
@@ -672,7 +764,8 @@
 
         .banner-box {
 
-            overflow: hidden;
+            overflow:
+                hidden;
 
             border:
                 5px solid var(--white);
@@ -690,11 +783,17 @@
 
         .banner-box img {
 
-            width: 100%;
+            width:
+                100%;
 
-            max-width: 100%;
+            max-width:
+                100%;
 
-            height: auto;
+            height:
+                auto;
+
+            object-fit:
+                cover;
         }
 
 
@@ -711,9 +810,11 @@
 
         .content-wrapper {
 
-            display: grid;
+            display:
+                grid;
 
-            gap: 28px;
+            gap:
+                28px;
         }
 
 
@@ -781,7 +882,8 @@
 
         .info-grid {
 
-            display: grid;
+            display:
+                grid;
 
             grid-template-columns:
                 repeat(2, minmax(0, 1fr));
@@ -799,12 +901,13 @@
 
 
         /* =====================================================
-           PROGRAM SZKOLENIA
+           PROGRAM
         ====================================================== */
 
         .program {
 
-            display: grid;
+            display:
+                grid;
 
             grid-template-columns:
                 repeat(2, minmax(0, 1fr));
@@ -842,6 +945,24 @@
 
             background:
                 var(--primary-light);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+
+        .program li:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                var(--primary-medium);
+
+            box-shadow:
+                0 7px 18px rgba(11, 33, 72, 0.09);
         }
 
 
@@ -999,7 +1120,7 @@
 
 
         /* =====================================================
-           SZCZEGÓŁY I CENA
+           SZCZEGÓŁY
         ====================================================== */
 
         .details-list {
@@ -1079,6 +1200,10 @@
                 0;
         }
 
+
+        /* =====================================================
+           PRZYCISK
+        ====================================================== */
 
         .btn {
 
@@ -1528,7 +1653,7 @@
 
 
     <!-- =====================================================
-         TREŚĆ
+         GŁÓWNA TREŚĆ
     ====================================================== -->
 
     <main>
@@ -1551,16 +1676,18 @@
 
 
                     <p>
-                        Szkolenie przeznaczone jest dla przyszłych
-                        projektantów zapytań w języku SQL
-                        oraz programistów baz danych.
+                        Szkolenie przeznaczone jest dla osób
+                        zainteresowanych tworzeniem zapytań
+                        w języku SQL oraz programowaniem
+                        baz danych.
                     </p>
 
 
                     <p>
-                        Adresowane jest do osób planujących pracę
-                        w bankach, firmach IT oraz instytucjach
-                        przetwarzających duże ilości danych.
+                        Kurs jest odpowiedni zarówno dla osób
+                        rozpoczynających naukę baz danych,
+                        jak i dla uczestników posiadających
+                        podstawową znajomość SQL.
                     </p>
 
                 </section>
@@ -1574,8 +1701,8 @@
 
 
                     <p>
-                        Zajęcia prowadzone są indywidualnie lub
-                        w grupach zorganizowanych.
+                        Zajęcia prowadzone są indywidualnie
+                        lub w grupach zorganizowanych.
                     </p>
 
 
@@ -1803,6 +1930,27 @@
                         Szkolenie indywidualne –
                         <strong>
                             16 godzin dydaktycznych
+                        </strong>
+                    </li>
+
+                    <li>
+                        Forma szkolenia –
+                        <strong>
+                            indywidualna lub grupowa
+                        </strong>
+                    </li>
+
+                    <li>
+                        Miejsce –
+                        <strong>
+                            Szczecin
+                        </strong>
+                    </li>
+
+                    <li>
+                        Poziom –
+                        <strong>
+                            podstawowy i średniozaawansowany
                         </strong>
                     </li>
 
