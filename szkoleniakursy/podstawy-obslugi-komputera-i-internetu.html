@@ -971,28 +971,57 @@ main {
 
 
 /* =====================================================
-   COURSE IMAGE
+   COURSE IMAGE – POPRAWIONA
 ===================================================== */
 
 .course-banner {
 
-    width: 100%;
-
-    max-height: 480px;
-
     display: block;
 
-    object-fit: cover;
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    max-height: none;
+
+    margin:
+        0
+        auto
+        38px
+        auto;
+
+    object-fit: contain;
 
     object-position: center;
 
-    margin-bottom: 35px;
+    border-radius: 16px;
 
-    border-radius: 14px;
+    border:
+        1px solid
+        var(--border);
+
+    background: #ffffff;
 
     box-shadow:
-        0 8px 25px
+        0 12px 30px
         rgba(11,33,72,0.14);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.course-banner:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 18px 38px
+        rgba(11,33,72,0.18);
 }
 
 
@@ -1176,7 +1205,7 @@ p {
 
 
 /* =====================================================
-   TAXONOMIA
+   TAKSONOMIA
 ===================================================== */
 
 .taxonomy-intro {
@@ -1703,17 +1732,35 @@ footer a:hover {
 
     .container {
 
-        padding: 23px 18px;
+        padding:
+            23px
+            18px;
 
         border-radius: 14px;
     }
 
 
+    /* =================================================
+       GRAFIKA – TELEFON
+    ================================================= */
+
     .course-banner {
 
-        max-height: 270px;
+        width: 100%;
 
-        margin-bottom: 25px;
+        height: auto;
+
+        max-width: 100%;
+
+        max-height: none;
+
+        margin:
+            0
+            auto
+            25px
+            auto;
+
+        object-fit: contain;
 
         border-radius: 10px;
     }
@@ -1741,7 +1788,9 @@ footer a:hover {
 
     .taxonomy-card {
 
-        padding: 22px 18px;
+        padding:
+            22px
+            18px;
     }
 
 
@@ -1918,9 +1967,15 @@ footer a:hover {
 
     .course-banner {
 
-        box-shadow: none;
+        width: 100%;
 
-        max-height: 300px;
+        height: auto;
+
+        max-height: none;
+
+        object-fit: contain;
+
+        box-shadow: none;
     }
 
 
@@ -2097,7 +2152,7 @@ footer a:hover {
             </a>
 
             <a
-                href="zapis-na-szkolenie.html"
+                href="../cs.html"
                 class="button button-secondary"
             >
                 Zapisz się na szkolenie
@@ -2347,8 +2402,6 @@ footer a:hover {
         <div class="taxonomy-grid">
 
 
-            <!-- WIE -->
-
             <div class="taxonomy-card">
 
                 <h3>
@@ -2385,8 +2438,6 @@ footer a:hover {
 
             </div>
 
-
-            <!-- ROZUMIE -->
 
             <div class="taxonomy-card">
 
@@ -2425,8 +2476,6 @@ footer a:hover {
             </div>
 
 
-            <!-- UMIE -->
-
             <div class="taxonomy-card">
 
                 <h3>
@@ -2463,8 +2512,6 @@ footer a:hover {
 
             </div>
 
-
-            <!-- STOSUJE -->
 
             <div class="taxonomy-card">
 
@@ -2503,8 +2550,6 @@ footer a:hover {
             </div>
 
 
-            <!-- ANALIZUJE -->
-
             <div class="taxonomy-card">
 
                 <h3>
@@ -2541,8 +2586,6 @@ footer a:hover {
 
             </div>
 
-
-            <!-- SAMODZIELNIE -->
 
             <div class="taxonomy-card">
 
@@ -2850,7 +2893,7 @@ footer a:hover {
 
         <a
             class="button button-primary"
-            href="zapis-na-szkolenie.html"
+            href="../cs.html"
         >
             Zapisz się na szkolenie
         </a>
@@ -2880,7 +2923,7 @@ footer a:hover {
             </div>
 
             <a
-                href="zapis-na-szkolenie.html"
+                href="../cs.html"
                 class="button button-primary"
             >
                 Zapisz się na szkolenie
